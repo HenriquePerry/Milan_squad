@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-10",
+  "collected": "2026-11-11",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -90,11 +90,6 @@
      "rank": 6,
      "matches": 11
     },
-    "xga": {
-     "v": 14.3,
-     "rank": 7,
-     "matches": 11
-    },
     "cleanSheets": {
      "v": 3,
      "rank": 6,
@@ -103,6 +98,11 @@
     "possession": {
      "v": 59,
      "rank": 3,
+     "matches": 11
+    },
+    "xga": {
+     "v": 14.3,
+     "rank": 7,
      "matches": 11
     }
    },
@@ -179,9 +179,9 @@
     }
    ],
    "team": {
-    "xga": {
-     "v": 7.7,
-     "rank": 29,
+    "xg": {
+     "v": 5.8,
+     "rank": 20,
      "matches": 4
     },
     "possession": {
@@ -189,14 +189,14 @@
      "rank": 13,
      "matches": 4
     },
-    "xg": {
-     "v": 5.8,
-     "rank": 20,
-     "matches": 4
-    },
     "cleanSheets": {
      "v": 1,
      "rank": 11,
+     "matches": 4
+    },
+    "xga": {
+     "v": 7.7,
+     "rank": 29,
      "matches": 4
     }
    },
@@ -1304,8 +1304,8 @@
   },
   {
    "id": 688278,
-   "name": "Pervis Estupinán",
-   "short": "Estupinán",
+   "name": "Pervis Estupiñán",
+   "short": "Estupiñán",
    "num": 2,
    "dob": "1998-01-21",
    "nat": "Ecuador",
@@ -1826,7 +1826,7 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / LWB / LM",
+   "roles": "RW / RWB / LM / LWB",
    "grp": "AM",
    "pct": [
     97,
