@@ -7,7 +7,11 @@
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
-  "minMatchesRadar": 5
+  "minMatchesRadar": 5,
+  "heatGrid": [
+   24,
+   16
+  ]
  },
  "compOrder": [
   "55",
@@ -85,19 +89,14 @@
     }
    ],
    "team": {
-    "cleanSheets": {
-     "v": 3,
+    "xg": {
+     "v": 18.3,
      "rank": 6,
      "matches": 11
     },
-<<<<<<< HEAD
-    "cleanSheets": {
-     "v": 3,
-=======
-    "xg": {
-     "v": 18.3,
->>>>>>> 000d4382f5ef8ae746843aae284eda01b596262a
-     "rank": 6,
+    "xga": {
+     "v": 14.3,
+     "rank": 7,
      "matches": 11
     },
     "possession": {
@@ -105,13 +104,93 @@
      "rank": 3,
      "matches": 11
     },
-    "xga": {
-     "v": 14.3,
-     "rank": 7,
+    "cleanSheets": {
+     "v": 3,
+     "rank": 6,
      "matches": 11
     }
    },
    "hasStats": true,
+   "teams": 20,
+   "rounds": [
+    {
+     "r": 1,
+     "pos": 6,
+     "pts": 3,
+     "p": 1,
+     "gd": 1
+    },
+    {
+     "r": 2,
+     "pos": 3,
+     "pts": 6,
+     "p": 2,
+     "gd": 3
+    },
+    {
+     "r": 3,
+     "pos": 5,
+     "pts": 7,
+     "p": 3,
+     "gd": 3
+    },
+    {
+     "r": 4,
+     "pos": 6,
+     "pts": 8,
+     "p": 4,
+     "gd": 3
+    },
+    {
+     "r": 5,
+     "pos": 5,
+     "pts": 11,
+     "p": 5,
+     "gd": 6
+    },
+    {
+     "r": 6,
+     "pos": 5,
+     "pts": 12,
+     "p": 6,
+     "gd": 6
+    },
+    {
+     "r": 7,
+     "pos": 4,
+     "pts": 15,
+     "p": 7,
+     "gd": 7
+    },
+    {
+     "r": 8,
+     "pos": 4,
+     "pts": 18,
+     "p": 8,
+     "gd": 9
+    },
+    {
+     "r": 9,
+     "pos": 5,
+     "pts": 18,
+     "p": 9,
+     "gd": 7
+    },
+    {
+     "r": 10,
+     "pos": 5,
+     "pts": 21,
+     "p": 10,
+     "gd": 9
+    },
+    {
+     "r": 11,
+     "pos": 4,
+     "pts": 24,
+     "p": 11,
+     "gd": 10
+    }
+   ],
    "ownGoalsFor": 1
   },
   "73": {
@@ -187,14 +266,11 @@
     "xg": {
      "v": 5.8,
      "rank": 20,
-<<<<<<< HEAD
-=======
      "matches": 4
     },
     "xga": {
      "v": 7.7,
      "rank": 29,
->>>>>>> 000d4382f5ef8ae746843aae284eda01b596262a
      "matches": 4
     },
     "possession": {
@@ -206,14 +282,10 @@
      "v": 1,
      "rank": 11,
      "matches": 4
-    },
-    "xga": {
-     "v": 7.7,
-     "rank": 29,
-     "matches": 4
     }
    },
    "hasStats": true,
+   "teams": 36,
    "ownGoalsFor": 0
   },
   "141": {
@@ -233,429 +305,8429 @@
  },
  "fixtures": [
   {
+   "id": 5749647,
    "date": "2026-08-23T18:45:00.000Z",
    "comp": "55",
    "opp": "Torino",
+   "oppId": 9804,
    "venue": "A",
    "done": true,
    "gf": 2,
-   "ga": 1
+   "ga": 1,
+   "oppPos": 11,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 1
   },
   {
+   "id": 5749650,
    "date": "2026-08-28T18:45:00.000Z",
    "comp": "55",
    "opp": "Venezia",
+   "oppId": 7881,
    "venue": "H",
    "done": true,
    "gf": 2,
-   "ga": 0
+   "ga": 0,
+   "oppPos": 19,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 2
   },
   {
+   "id": 5749667,
    "date": "2026-09-06T18:45:00.000Z",
    "comp": "55",
    "opp": "Juventus",
+   "oppId": 9885,
    "venue": "A",
    "done": true,
    "gf": 1,
-   "ga": 1
+   "ga": 1,
+   "oppPos": 7,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 3
   },
   {
+   "id": 5749674,
    "date": "2026-09-12T16:00:00.000Z",
    "comp": "55",
    "opp": "Lazio",
+   "oppId": 8543,
    "venue": "A",
    "done": true,
    "gf": 2,
-   "ga": 2
+   "ga": 2,
+   "oppPos": 1,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 4
   },
   {
+   "id": 6112254,
    "date": "2026-09-16T19:00:00.000Z",
    "comp": "73",
    "opp": "Benfica",
+   "oppId": 9772,
    "venue": "H",
    "done": true,
    "gf": 0,
-   "ga": 2
+   "ga": 2,
+   "oppPos": 1,
+   "oppOf": 36,
+   "oppTbl": "73",
+   "round": 1
   },
   {
+   "id": 5749680,
    "date": "2026-09-20T18:45:00.000Z",
    "comp": "55",
    "opp": "Lecce",
+   "oppId": 9888,
    "venue": "H",
    "done": true,
    "gf": 3,
-   "ga": 0
+   "ga": 0,
+   "oppPos": 14,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 5
   },
   {
+   "id": 5749698,
    "date": "2026-10-11T16:00:00.000Z",
    "comp": "55",
    "opp": "Sassuolo",
+   "oppId": 7943,
    "venue": "A",
    "done": true,
    "gf": 1,
-   "ga": 1
+   "ga": 1,
+   "oppPos": 17,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 6
   },
   {
+   "id": 6112294,
    "date": "2026-10-15T16:45:00.000Z",
    "comp": "73",
    "opp": "Salzburg",
+   "oppId": 10013,
    "venue": "A",
    "done": true,
    "gf": 4,
-   "ga": 0
+   "ga": 0,
+   "oppPos": 26,
+   "oppOf": 36,
+   "oppTbl": "73",
+   "round": 2
   },
   {
+   "id": 5749700,
    "date": "2026-10-18T16:00:00.000Z",
    "comp": "55",
    "opp": "Atalanta",
+   "oppId": 8524,
    "venue": "H",
    "done": true,
    "gf": 3,
-   "ga": 2
+   "ga": 2,
+   "oppPos": 12,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 7
   },
   {
+   "id": 6112326,
    "date": "2026-10-22T19:00:00.000Z",
    "comp": "73",
    "opp": "Bournemouth",
+   "oppId": 8678,
    "venue": "A",
    "done": true,
    "gf": 0,
-   "ga": 3
+   "ga": 3,
+   "oppPos": 2,
+   "oppOf": 36,
+   "oppTbl": "73",
+   "round": 3
   },
   {
+   "id": 5749719,
    "date": "2026-10-25T19:45:00.000Z",
    "comp": "55",
    "opp": "Udinese",
+   "oppId": 8600,
    "venue": "A",
    "done": true,
    "gf": 2,
-   "ga": 0
+   "ga": 0,
+   "oppPos": 20,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 8
   },
   {
+   "id": 5749720,
    "date": "2026-10-28T17:30:00.000Z",
    "comp": "55",
    "opp": "Bologna",
+   "oppId": 9857,
    "venue": "H",
    "done": true,
    "gf": 2,
-   "ga": 4
+   "ga": 4,
+   "oppPos": 8,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 9
   },
   {
+   "id": 5749730,
    "date": "2026-10-31T19:45:00.000Z",
    "comp": "55",
    "opp": "Inter",
+   "oppId": 8636,
    "venue": "H",
    "done": true,
    "gf": 3,
-   "ga": 1
+   "ga": 1,
+   "oppPos": 2,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 10
   },
   {
+   "id": 6112255,
    "date": "2026-11-05T17:45:00.000Z",
    "comp": "73",
    "opp": "Ferencváros",
+   "oppId": 8222,
    "venue": "H",
    "done": true,
    "gf": 0,
-   "ga": 2
+   "ga": 2,
+   "oppPos": 3,
+   "oppOf": 36,
+   "oppTbl": "73",
+   "round": 4
   },
   {
+   "id": 5749743,
    "date": "2026-11-08T14:00:00.000Z",
    "comp": "55",
    "opp": "Genoa",
+   "oppId": 10233,
    "venue": "A",
    "done": true,
    "gf": 2,
-   "ga": 1
+   "ga": 1,
+   "oppPos": 13,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 11
   },
   {
+   "id": 5749750,
    "date": "2026-11-22T17:00:00.000Z",
    "comp": "55",
    "opp": "Frosinone",
+   "oppId": 9891,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 6,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 12
   },
   {
+   "id": 6112266,
    "date": "2026-11-26T17:45:00.000Z",
    "comp": "73",
    "opp": "Olympiacos",
+   "oppId": 8638,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 6,
+   "oppOf": 36,
+   "oppTbl": "73"
   },
   {
+   "id": 5749761,
    "date": "2026-11-30T19:45:00.000Z",
    "comp": "55",
    "opp": "Cagliari",
+   "oppId": 8529,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 9,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 13
   },
   {
+   "id": 5749770,
    "date": "2026-12-06T19:45:00.000Z",
    "comp": "55",
    "opp": "Parma",
+   "oppId": 10167,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 16,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 14
   },
   {
+   "id": 6112256,
    "date": "2026-12-10T20:00:00.000Z",
    "comp": "73",
    "opp": "Sunderland",
+   "oppId": 8472,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 11,
+   "oppOf": 36,
+   "oppTbl": "73"
   },
   {
+   "id": 5749787,
    "date": "2026-12-13T19:45:00.000Z",
    "comp": "55",
    "opp": "Napoli",
+   "oppId": 9875,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 10,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 15
   },
   {
+   "id": 5749790,
    "date": "2026-12-19T17:00:00.000Z",
    "comp": "55",
    "opp": "Como",
+   "oppId": 10171,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 5,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 16
   },
   {
+   "id": 5749806,
    "date": "2027-01-02T19:45:00.000Z",
    "comp": "55",
    "opp": "Monza",
+   "oppId": 6504,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 18,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 17
   },
   {
+   "id": 5749810,
    "date": "2027-01-05T19:45:00.000Z",
    "comp": "55",
    "opp": "Fiorentina",
+   "oppId": 8535,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 15,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 18
   },
   {
+   "id": 5749820,
    "date": "2027-01-09T17:00:00.000Z",
    "comp": "55",
    "opp": "Roma",
+   "oppId": 8686,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 3,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 19
   },
   {
+   "id": 6003677,
    "date": "2027-01-13T20:00:00.000Z",
    "comp": "141",
    "opp": "Monza",
+   "oppId": 6504,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 18,
+   "oppOf": 20,
+   "oppTbl": "55"
   },
   {
+   "id": 5749830,
    "date": "2027-01-17T17:30:00.000Z",
    "comp": "55",
    "opp": "Torino",
+   "oppId": 9804,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 11,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 20
   },
   {
+   "id": 6112378,
    "date": "2027-01-21T20:00:00.000Z",
    "comp": "73",
    "opp": "Levski Sofia",
+   "oppId": 8632,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 10,
+   "oppOf": 36,
+   "oppTbl": "73"
   },
   {
+   "id": 5749844,
    "date": "2027-01-24T17:30:00.000Z",
    "comp": "55",
    "opp": "Frosinone",
+   "oppId": 9891,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 6,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 21
   },
   {
+   "id": 6112257,
    "date": "2027-01-28T20:00:00.000Z",
    "comp": "73",
    "opp": "Ararat Armenia",
+   "oppId": 866109,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 36,
+   "oppOf": 36,
+   "oppTbl": "73"
   },
   {
+   "id": 5749850,
    "date": "2027-01-31T17:30:00.000Z",
    "comp": "55",
    "opp": "Juventus",
+   "oppId": 9885,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 7,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 22
   },
   {
+   "id": 5749862,
    "date": "2027-02-07T17:30:00.000Z",
    "comp": "55",
    "opp": "Bologna",
+   "oppId": 9857,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 8,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 23
   },
   {
+   "id": 5749875,
    "date": "2027-02-14T17:30:00.000Z",
    "comp": "55",
    "opp": "Inter",
+   "oppId": 8636,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 2,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 24
   },
   {
+   "id": 5749880,
    "date": "2027-02-21T17:30:00.000Z",
    "comp": "55",
    "opp": "Genoa",
+   "oppId": 10233,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 13,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 25
   },
   {
+   "id": 5749893,
    "date": "2027-02-28T17:30:00.000Z",
    "comp": "55",
    "opp": "Como",
+   "oppId": 10171,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 5,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 26
   },
   {
+   "id": 5749900,
    "date": "2027-03-07T17:30:00.000Z",
    "comp": "55",
    "opp": "Cagliari",
+   "oppId": 8529,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 9,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 27
   },
   {
+   "id": 5749910,
    "date": "2027-03-14T17:30:00.000Z",
    "comp": "55",
    "opp": "Sassuolo",
+   "oppId": 7943,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 17,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 28
   },
   {
+   "id": 5749921,
    "date": "2027-03-21T17:30:00.000Z",
    "comp": "55",
    "opp": "Atalanta",
+   "oppId": 8524,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 12,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 29
   },
   {
+   "id": 5749930,
    "date": "2027-04-04T16:30:00.000Z",
    "comp": "55",
    "opp": "Monza",
+   "oppId": 6504,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 18,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 30
   },
   {
+   "id": 5749942,
    "date": "2027-04-11T16:30:00.000Z",
    "comp": "55",
    "opp": "Fiorentina",
+   "oppId": 8535,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 15,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 31
   },
   {
+   "id": 5749950,
    "date": "2027-04-18T16:30:00.000Z",
    "comp": "55",
    "opp": "Napoli",
+   "oppId": 9875,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 10,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 32
   },
   {
+   "id": 5749966,
    "date": "2027-04-25T16:30:00.000Z",
    "comp": "55",
    "opp": "Lecce",
+   "oppId": 9888,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 14,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 33
   },
   {
+   "id": 5749970,
    "date": "2027-05-02T16:30:00.000Z",
    "comp": "55",
    "opp": "Lazio",
+   "oppId": 8543,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 1,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 34
   },
   {
+   "id": 5749986,
    "date": "2027-05-09T16:30:00.000Z",
    "comp": "55",
    "opp": "Parma",
+   "oppId": 10167,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 16,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 35
   },
   {
+   "id": 5749990,
    "date": "2027-05-16T16:30:00.000Z",
    "comp": "55",
    "opp": "Roma",
+   "oppId": 8686,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 3,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 36
   },
   {
+   "id": 5750009,
    "date": "2027-05-23T16:30:00.000Z",
    "comp": "55",
    "opp": "Venezia",
+   "oppId": 7881,
    "venue": "A",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 19,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 37
   },
   {
+   "id": 5750010,
    "date": "2027-05-30T16:30:00.000Z",
    "comp": "55",
    "opp": "Udinese",
+   "oppId": 8600,
    "venue": "H",
    "done": false,
    "gf": null,
-   "ga": null
+   "ga": null,
+   "oppPos": 20,
+   "oppOf": 20,
+   "oppTbl": "55",
+   "round": 38
   }
  ],
+ "matches": {
+  "5749647": {
+   "round": 1,
+   "form": "3-4-2-1",
+   "oform": "3-4-2-1",
+   "tr": [
+    7.2,
+    6.4
+   ],
+   "st": {
+    "xg": [
+     2.15,
+     1.29
+    ],
+    "poss": [
+     59,
+     41
+    ],
+    "shots": [
+     19,
+     8
+    ],
+    "sot": [
+     4,
+     1
+    ],
+    "big": [
+     2,
+     2
+    ],
+    "corners": [
+     4,
+     2
+    ],
+    "pass": [
+     88,
+     82
+    ]
+   },
+   "goals": [
+    {
+     "min": 64,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Adrien Rabiot"
+    },
+    {
+     "min": 67,
+     "side": "M",
+     "name": "Adrien Rabiot",
+     "pid": 352879,
+     "assist": "Samuel Chukwueze"
+    },
+    {
+     "min": 90,
+     "add": 3,
+     "side": "O",
+     "name": "Ché Adams",
+     "pid": 599353,
+     "assist": "Gvidas Gineitis"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Olimpico Grande Torino",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 6.4,
+     "s": {
+      "min": 90,
+      "gc": 1,
+      "xgf": 0.89,
+      "gp": -0.11,
+      "pa": [
+       24,
+       33
+      ],
+      "rec": 4,
+      "tch": 37,
+      "dw": 1,
+      "fd": 1,
+      "f3": 1,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.4,
+     "off": 76,
+     "s": {
+      "min": 76,
+      "xa": 0.11,
+      "pa": [
+       68,
+       74
+      ],
+      "kp": 1,
+      "tch": 87,
+      "f3": 7,
+      "tk": 1,
+      "clr": 2,
+      "rec": 4,
+      "fd": 1,
+      "fc": 1,
+      "dw": 5,
+      "dl": 4
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xg": 0.14,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       62,
+       65
+      ],
+      "tch": 80,
+      "box": 2,
+      "f3": 2,
+      "tk": 5,
+      "clr": 2,
+      "int": 2,
+      "rec": 1,
+      "fc": 1,
+      "dw": 7,
+      "dl": 2
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlovic",
+     "num": 31,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       75,
+       83
+      ],
+      "tch": 102,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 5,
+      "tk": 2,
+      "clr": 6,
+      "rec": 4,
+      "fd": 2,
+      "dw": 6,
+      "dl": 3
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 8.3,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.14,
+      "xa": 0.58,
+      "sh": 2,
+      "pa": [
+       35,
+       45
+      ],
+      "kp": 4,
+      "sot": 1,
+      "tch": 69,
+      "box": 9,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 4,
+      "tk": 1,
+      "rec": 6,
+      "fd": 1,
+      "dw": 3,
+      "dl": 3
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 7,
+     "off": 56,
+     "s": {
+      "min": 56,
+      "xa": 0.04,
+      "pa": [
+       46,
+       49
+      ],
+      "kp": 2,
+      "tch": 55,
+      "box": 1,
+      "f3": 6,
+      "clr": 1,
+      "rec": 2,
+      "fc": 2,
+      "dl": 2
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.9,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       33,
+       38
+      ],
+      "tch": 45,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 3,
+      "clr": 2,
+      "int": 1,
+      "rec": 6,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 7.5,
+     "off": 65,
+     "s": {
+      "min": 66,
+      "xg": 0.06,
+      "xa": 0.07,
+      "sh": 1,
+      "pa": [
+       37,
+       39
+      ],
+      "kp": 2,
+      "tch": 60,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 4,
+      "clr": 2,
+      "int": 1,
+      "rec": 1,
+      "dw": 3,
+      "dl": 1
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 7.1,
+     "yc": 1,
+     "off": 57,
+     "s": {
+      "min": 56,
+      "xg": 0.23,
+      "xa": 0.06,
+      "sh": 4,
+      "pa": [
+       20,
+       20
+      ],
+      "kp": 3,
+      "tch": 31,
+      "box": 7,
+      "dr": [
+       1,
+       3
+      ],
+      "f3": 2,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 8,
+     "g": 1,
+     "off": 66,
+     "s": {
+      "min": 66,
+      "xg": 0.51,
+      "xa": 0.09,
+      "sh": 4,
+      "pa": [
+       21,
+       24
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 43,
+      "box": 6,
+      "dr": [
+       0,
+       1
+      ],
+      "tk": 2,
+      "rec": 4,
+      "fd": 4,
+      "fc": 1,
+      "dw": 6,
+      "dl": 4
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "xg": 0.52,
+      "xa": 0.05,
+      "sh": 5,
+      "pa": [
+       17,
+       25
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 40,
+      "box": 9,
+      "dr": [
+       1,
+       3
+      ],
+      "f3": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 5,
+      "fc": 1,
+      "dw": 5,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 8,
+     "g": 1,
+     "a": 1,
+     "on": 56,
+     "s": {
+      "min": 34,
+      "xg": 0.4,
+      "xa": 0.02,
+      "sh": 1,
+      "pa": [
+       8,
+       12
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 20,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "clr": 1,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 3
+     }
+    },
+    {
+     "id": 31097,
+     "name": "Modric",
+     "num": 14,
+     "r": 6.6,
+     "on": 57,
+     "s": {
+      "min": 34,
+      "xa": 0.11,
+      "pa": [
+       18,
+       19
+      ],
+      "kp": 1,
+      "tch": 23,
+      "f3": 1,
+      "clr": 1,
+      "rec": 2
+     }
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 6.5,
+     "on": 65,
+     "s": {
+      "min": 24,
+      "xa": 0.27,
+      "pa": [
+       7,
+       8
+      ],
+      "kp": 2,
+      "tch": 13,
+      "box": 2,
+      "clr": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 921341,
+     "name": "Saelemaekers",
+     "num": 56,
+     "r": 6.8,
+     "on": 66,
+     "s": {
+      "min": 24,
+      "xg": 0.14,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       10,
+       12
+      ],
+      "tch": 19,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "tk": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 3,
+      "fc": 1,
+      "dw": 3,
+      "dl": 2
+     }
+    },
+    {
+     "id": 844996,
+     "name": "Gabbia",
+     "num": 46,
+     "r": 6.2,
+     "on": 76,
+     "s": {
+      "min": 14,
+      "pa": [
+       1,
+       1
+      ],
+      "tch": 5,
+      "tk": 1,
+      "clr": 2,
+      "dw": 1,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 688300,
+    "name": "Samuel Chukwueze",
+    "r": 8.3,
+    "mine": true
+   }
+  },
+  "5749650": {
+   "round": 2,
+   "form": "3-4-2-1",
+   "oform": "3-5-2",
+   "tr": [
+    7.2,
+    6.4
+   ],
+   "st": {
+    "xg": [
+     2.21,
+     0.8
+    ],
+    "poss": [
+     58,
+     42
+    ],
+    "shots": [
+     16,
+     9
+    ],
+    "sot": [
+     5,
+     2
+    ],
+    "big": [
+     8,
+     1
+    ],
+    "corners": [
+     2,
+     3
+    ],
+    "pass": [
+     87,
+     83
+    ]
+   },
+   "goals": [
+    {
+     "min": 69,
+     "side": "M",
+     "name": "Gonçalo Ramos",
+     "pid": 940087,
+     "assist": "Alexis Saelemaekers"
+    },
+    {
+     "min": 89,
+     "side": "M",
+     "name": "Redouane Halhal",
+     "pid": 1298186,
+     "og": true
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 7.7,
+     "s": {
+      "min": 90,
+      "sv": 2,
+      "xgf": 0.2,
+      "gp": 0.2,
+      "pa": [
+       29,
+       35
+      ],
+      "rec": 7,
+      "tch": 43,
+      "dw": 1,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 4,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.3,
+     "off": 87,
+     "s": {
+      "min": 87,
+      "xa": 0.03,
+      "pa": [
+       54,
+       59
+      ],
+      "kp": 1,
+      "tch": 65,
+      "f3": 7,
+      "tk": 1,
+      "clr": 3,
+      "rec": 5,
+      "dw": 1,
+      "dl": 2
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "xg": 0.24,
+      "xa": 0.01,
+      "sh": 2,
+      "pa": [
+       31,
+       34
+      ],
+      "tch": 48,
+      "box": 4,
+      "tk": 1,
+      "clr": 6,
+      "int": 1,
+      "rec": 8,
+      "fc": 2,
+      "dw": 5,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlovic",
+     "num": 31,
+     "r": 7.6,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.04,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       46,
+       48
+      ],
+      "tch": 65,
+      "box": 2,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 1,
+      "tk": 5,
+      "clr": 3,
+      "rec": 5,
+      "fd": 1,
+      "fc": 1,
+      "dw": 10,
+      "dl": 6
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 7.9,
+     "s": {
+      "min": 90,
+      "xg": 0.05,
+      "xa": 0.09,
+      "sh": 1,
+      "pa": [
+       26,
+       31
+      ],
+      "kp": 3,
+      "sot": 1,
+      "tch": 52,
+      "box": 1,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 3,
+      "tk": 3,
+      "clr": 1,
+      "rec": 2,
+      "dw": 6,
+      "dl": 1
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modric",
+     "num": 14,
+     "r": 7.5,
+     "off": 74,
+     "s": {
+      "min": 74,
+      "xa": 0.25,
+      "pa": [
+       56,
+       63
+      ],
+      "kp": 2,
+      "tch": 74,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 10,
+      "int": 1,
+      "rec": 5,
+      "fd": 1,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 7.8,
+     "s": {
+      "min": 90,
+      "xg": 0.34,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       45,
+       49
+      ],
+      "kp": 1,
+      "tch": 63,
+      "box": 3,
+      "dr": [
+       2,
+       3
+      ],
+      "f3": 3,
+      "tk": 2,
+      "rec": 4,
+      "fd": 3,
+      "dw": 7,
+      "dl": 3
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 7.2,
+     "off": 87,
+     "s": {
+      "min": 87,
+      "xa": 0.17,
+      "pa": [
+       34,
+       41
+      ],
+      "kp": 2,
+      "tch": 69,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 6,
+      "tk": 4,
+      "clr": 3,
+      "int": 1,
+      "rec": 5,
+      "fd": 1,
+      "fc": 1,
+      "dw": 6,
+      "dl": 7
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 6.9,
+     "off": 59,
+     "s": {
+      "min": 59,
+      "xa": 0.14,
+      "pa": [
+       26,
+       27
+      ],
+      "kp": 3,
+      "tch": 35,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 3
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 6.3,
+     "off": 59,
+     "s": {
+      "min": 59,
+      "xg": 0.05,
+      "sh": 1,
+      "pa": [
+       20,
+       29
+      ],
+      "tch": 46,
+      "box": 3,
+      "dr": [
+       0,
+       2
+      ],
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.6,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.94,
+      "sh": 8,
+      "pa": [
+       21,
+       28
+      ],
+      "sot": 3,
+      "tch": 52,
+      "box": 6,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "rec": 1,
+      "fd": 2,
+      "fc": 1,
+      "dw": 6,
+      "dl": 12
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 6.2,
+     "on": 59,
+     "s": {
+      "min": 31,
+      "xg": 0.06,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       18,
+       20
+      ],
+      "tch": 30,
+      "box": 1,
+      "f3": 2,
+      "tk": 1,
+      "clr": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     }
+    },
+    {
+     "id": 921341,
+     "name": "Saelemaekers",
+     "num": 56,
+     "r": 7.6,
+     "a": 1,
+     "on": 59,
+     "s": {
+      "min": 31,
+      "xa": 0.36,
+      "pa": [
+       23,
+       26
+      ],
+      "kp": 3,
+      "tch": 33,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "tk": 1,
+      "int": 1,
+      "rec": 3,
+      "dw": 1,
+      "dl": 3
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.2,
+     "on": 74,
+     "s": {
+      "min": 16,
+      "xg": 0.5,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       13,
+       16
+      ],
+      "sot": 1,
+      "tch": 18,
+      "box": 2,
+      "f3": 2,
+      "rec": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 844996,
+     "name": "Gabbia",
+     "num": 46,
+     "on": 87,
+     "s": {
+      "min": 3,
+      "pa": [
+       0,
+       0
+      ],
+      "tch": 2,
+      "clr": 2
+     }
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "on": 87,
+     "s": {
+      "min": 3,
+      "xa": 0.01,
+      "pa": [
+       2,
+       2
+      ],
+      "tch": 6,
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "fc": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 688300,
+    "name": "Samuel Chukwueze",
+    "r": 7.9,
+    "mine": true
+   }
+  },
+  "5749667": {
+   "round": 3,
+   "form": "3-4-2-1",
+   "oform": "4-2-3-1",
+   "tr": [
+    6.9,
+    6.9
+   ],
+   "st": {
+    "xg": [
+     0.11,
+     1.59
+    ],
+    "poss": [
+     51,
+     49
+    ],
+    "shots": [
+     3,
+     14
+    ],
+    "sot": [
+     1,
+     5
+    ],
+    "big": [
+     0,
+     3
+    ],
+    "corners": [
+     1,
+     7
+    ],
+    "pass": [
+     86,
+     84
+    ]
+   },
+   "goals": [
+    {
+     "min": 68,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Samuel Chukwueze"
+    },
+    {
+     "min": 90,
+     "add": 2,
+     "side": "O",
+     "name": "Federico Gatti",
+     "pid": 1189288,
+     "assist": "Teun Koopmeiners"
+    }
+   ],
+   "reds": [],
+   "stadium": "Allianz Stadium",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "sv": 4,
+      "gc": 1,
+      "xgf": 1.51,
+      "gp": 0.51,
+      "pa": [
+       20,
+       30
+      ],
+      "rec": 7,
+      "clr": 1,
+      "tch": 40,
+      "dw": 1,
+      "f3": 4,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 6.5,
+     "off": 88,
+     "s": {
+      "min": 88,
+      "xa": 0.01,
+      "pa": [
+       56,
+       59
+      ],
+      "tch": 69,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 8,
+      "clr": 2,
+      "int": 1,
+      "rec": 2,
+      "fc": 2,
+      "dw": 3,
+      "dl": 5
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.2,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "pa": [
+       42,
+       45
+      ],
+      "tch": 58,
+      "dr": [
+       1,
+       1
+      ],
+      "tk": 1,
+      "clr": 9,
+      "int": 1,
+      "rec": 2,
+      "fc": 1,
+      "dw": 3,
+      "dl": 2
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 7.9,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       40,
+       47
+      ],
+      "tch": 68,
+      "dr": [
+       2,
+       2
+      ],
+      "f3": 2,
+      "tk": 4,
+      "clr": 7,
+      "int": 1,
+      "rec": 5,
+      "fd": 1,
+      "dw": 9,
+      "dl": 1
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 6.4,
+     "off": 61,
+     "s": {
+      "min": 61,
+      "xa": 0.02,
+      "pa": [
+       27,
+       31
+      ],
+      "tch": 59,
+      "box": 1,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 2,
+      "tk": 2,
+      "clr": 2,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 6
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.3,
+     "off": 82,
+     "s": {
+      "min": 82,
+      "xa": 0.05,
+      "pa": [
+       66,
+       70
+      ],
+      "tch": 82,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 13,
+      "tk": 2,
+      "int": 2,
+      "rec": 7,
+      "fd": 2,
+      "dw": 4,
+      "dl": 2
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 7.2,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       37,
+       40
+      ],
+      "tch": 51,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 3,
+      "clr": 1,
+      "int": 1,
+      "rec": 6,
+      "fd": 1,
+      "dw": 3,
+      "dl": 1
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.7,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.01,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       35,
+       40
+      ],
+      "tch": 68,
+      "tk": 1,
+      "clr": 6,
+      "int": 3,
+      "rec": 3,
+      "fc": 3,
+      "dw": 2,
+      "dl": 5
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 6.9,
+     "off": 61,
+     "s": {
+      "min": 61,
+      "xg": 0.05,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       30,
+       38
+      ],
+      "tch": 46,
+      "box": 2,
+      "f3": 5,
+      "tk": 1,
+      "clr": 1,
+      "rec": 3,
+      "fd": 2,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 921341,
+     "name": "Saelemaekers",
+     "num": 56,
+     "r": 6.5,
+     "off": 61,
+     "s": {
+      "min": 61,
+      "xa": 0.04,
+      "pa": [
+       19,
+       24
+      ],
+      "tch": 33,
+      "box": 1,
+      "dr": [
+       0,
+       3
+      ],
+      "f3": 2,
+      "tk": 1,
+      "rec": 4,
+      "fd": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.6,
+     "s": {
+      "min": 90,
+      "xa": 0.03,
+      "pa": [
+       14,
+       21
+      ],
+      "kp": 1,
+      "tch": 35,
+      "box": 1,
+      "f3": 7,
+      "tk": 3,
+      "clr": 1,
+      "rec": 1,
+      "fd": 1,
+      "fc": 4,
+      "dw": 9,
+      "dl": 7
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 7.1,
+     "g": 1,
+     "yc": 1,
+     "on": 61,
+     "s": {
+      "min": 29,
+      "xg": 0.05,
+      "sh": 1,
+      "pa": [
+       4,
+       4
+      ],
+      "sot": 1,
+      "tch": 9,
+      "box": 2,
+      "dr": [
+       1,
+       3
+      ],
+      "dw": 1,
+      "dl": 3
+     }
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 5.9,
+     "on": 61,
+     "s": {
+      "min": 29,
+      "xa": 0.01,
+      "pa": [
+       10,
+       10
+      ],
+      "tch": 15,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 2,
+      "dw": 1,
+      "dl": 4
+     }
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 6.9,
+     "a": 1,
+     "on": 61,
+     "s": {
+      "min": 29,
+      "xa": 0.01,
+      "pa": [
+       7,
+       13
+      ],
+      "kp": 1,
+      "tch": 18,
+      "rec": 2,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "on": 82,
+     "s": {
+      "min": 8,
+      "pa": [
+       2,
+       3
+      ],
+      "tch": 4,
+      "f3": 1
+     }
+    },
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "on": 88,
+     "s": {
+      "min": 2,
+      "pa": [
+       4,
+       4
+      ],
+      "tch": 6,
+      "f3": 2,
+      "clr": 1,
+      "fd": 1,
+      "dw": 2
+     }
+    }
+   ],
+   "potm": {
+    "id": 1048023,
+    "name": "Strahinja Pavlović",
+    "r": 7.9,
+    "mine": true
+   }
+  },
+  "5749674": {
+   "round": 4,
+   "form": "3-4-2-1",
+   "oform": "4-3-3",
+   "tr": [
+    7,
+    6.8
+   ],
+   "st": {
+    "xg": [
+     1.25,
+     2.01
+    ],
+    "poss": [
+     66,
+     34
+    ],
+    "shots": [
+     16,
+     8
+    ],
+    "sot": [
+     7,
+     6
+    ],
+    "big": [
+     4,
+     4
+    ],
+    "corners": [
+     5,
+     2
+    ],
+    "pass": [
+     91,
+     82
+    ]
+   },
+   "goals": [
+    {
+     "min": 10,
+     "side": "O",
+     "name": "Matteo Cancellieri",
+     "pid": 1146500,
+     "assist": "Mattia Zaccagni"
+    },
+    {
+     "min": 39,
+     "side": "O",
+     "name": "Tijjani Noslin",
+     "pid": 1282285
+    },
+    {
+     "min": 65,
+     "side": "M",
+     "name": "Diego Moreira",
+     "pid": 1342754,
+     "assist": "Christian Pulisic"
+    },
+    {
+     "min": 67,
+     "side": "M",
+     "name": "Diego Moreira",
+     "pid": 1342754,
+     "assist": "Adrien Rabiot"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Olimpico",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 7.3,
+     "s": {
+      "min": 90,
+      "sv": 4,
+      "gc": 2,
+      "xgf": 2.55,
+      "gp": 0.55,
+      "pa": [
+       27,
+       35
+      ],
+      "rec": 9,
+      "tch": 48,
+      "dw": 1,
+      "fd": 1,
+      "f3": 4,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.2,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.31,
+      "xa": 0.05,
+      "sh": 1,
+      "pa": [
+       65,
+       73
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 92,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 9,
+      "tk": 3,
+      "clr": 3,
+      "int": 1,
+      "rec": 2,
+      "fd": 2,
+      "fc": 2,
+      "dw": 5,
+      "dl": 4
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 6.8,
+     "s": {
+      "min": 90,
+      "pa": [
+       79,
+       79
+      ],
+      "tch": 87,
+      "f3": 3,
+      "tk": 1,
+      "clr": 5,
+      "int": 1,
+      "rec": 8,
+      "fd": 1,
+      "fc": 3,
+      "dw": 4,
+      "dl": 3
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 6.5,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.22,
+      "xa": 0.03,
+      "sh": 2,
+      "pa": [
+       86,
+       90
+      ],
+      "sot": 1,
+      "tch": 97,
+      "box": 5,
+      "f3": 2,
+      "tk": 1,
+      "clr": 2,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 8,
+     "s": {
+      "min": 90,
+      "xg": 0.14,
+      "xa": 0.22,
+      "sh": 3,
+      "pa": [
+       53,
+       61
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 92,
+      "box": 5,
+      "dr": [
+       4,
+       5
+      ],
+      "f3": 7,
+      "clr": 1,
+      "int": 4,
+      "rec": 6,
+      "dw": 5,
+      "dl": 1
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 6.2,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.09,
+      "pa": [
+       36,
+       42
+      ],
+      "kp": 1,
+      "tch": 52,
+      "f3": 4,
+      "clr": 1,
+      "int": 1,
+      "rec": 2,
+      "dl": 1
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 7.4,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xa": 0.05,
+      "pa": [
+       57,
+       63
+      ],
+      "kp": 2,
+      "tch": 71,
+      "box": 2,
+      "f3": 7,
+      "clr": 2,
+      "rec": 5,
+      "fc": 3,
+      "dl": 5
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.2,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.02,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       26,
+       28
+      ],
+      "tch": 34,
+      "clr": 1,
+      "rec": 3
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 6.4,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.02,
+      "xa": 0.08,
+      "sh": 1,
+      "pa": [
+       14,
+       16
+      ],
+      "kp": 2,
+      "tch": 22,
+      "box": 2,
+      "f3": 1,
+      "rec": 2,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 3
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 6.2,
+     "off": 77,
+     "s": {
+      "min": 77,
+      "xg": 0.09,
+      "xa": 0.02,
+      "sh": 1,
+      "pa": [
+       31,
+       35
+      ],
+      "kp": 1,
+      "tch": 51,
+      "box": 2,
+      "dr": [
+       0,
+       3
+      ],
+      "f3": 5,
+      "rec": 2,
+      "fd": 3,
+      "dw": 3,
+      "dl": 8
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.4,
+     "off": 85,
+     "s": {
+      "min": 85,
+      "xg": 0.09,
+      "sh": 1,
+      "pa": [
+       13,
+       14
+      ],
+      "tch": 31,
+      "box": 4,
+      "dr": [
+       0,
+       2
+      ],
+      "tk": 2,
+      "clr": 1,
+      "rec": 1,
+      "fd": 2,
+      "fc": 1,
+      "dw": 4,
+      "dl": 4
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.9,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.03,
+      "pa": [
+       30,
+       33
+      ],
+      "tch": 41,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 4,
+      "tk": 1,
+      "int": 1,
+      "rec": 2,
+      "fd": 2,
+      "fc": 1,
+      "dw": 4,
+      "dl": 1
+     }
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 8,
+     "a": 1,
+     "yc": 1,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.07,
+      "xa": 0.16,
+      "sh": 1,
+      "pa": [
+       21,
+       21
+      ],
+      "kp": 4,
+      "sot": 1,
+      "tch": 31,
+      "box": 3,
+      "dr": [
+       3,
+       3
+      ],
+      "f3": 1,
+      "rec": 2,
+      "fc": 2,
+      "dw": 3,
+      "dl": 3
+     }
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 8.7,
+     "g": 2,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.27,
+      "xa": 0.1,
+      "sh": 4,
+      "pa": [
+       24,
+       26
+      ],
+      "sot": 2,
+      "tch": 42,
+      "box": 6,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 3,
+      "rec": 2,
+      "fd": 1,
+      "dw": 2,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6.1,
+     "on": 77,
+     "s": {
+      "min": 13,
+      "xg": 0.01,
+      "sh": 1,
+      "pa": [
+       6,
+       7
+      ],
+      "sot": 1,
+      "tch": 15,
+      "dr": [
+       0,
+       1
+      ],
+      "fd": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "on": 85,
+     "s": {
+      "min": 5,
+      "pa": [
+       1,
+       2
+      ],
+      "tch": 2,
+      "f3": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 1342754,
+    "name": "Diego Moreira",
+    "r": 8.7,
+    "mine": true
+   }
+  },
+  "5749680": {
+   "round": 5,
+   "form": "3-4-2-1",
+   "oform": "4-3-3",
+   "tr": [
+    7.3,
+    6
+   ],
+   "st": {
+    "xg": [
+     2.19,
+     0.21
+    ],
+    "poss": [
+     69,
+     31
+    ],
+    "shots": [
+     10,
+     6
+    ],
+    "sot": [
+     4,
+     3
+    ],
+    "big": [
+     5,
+     0
+    ],
+    "corners": [
+     2,
+     3
+    ],
+    "pass": [
+     91,
+     82
+    ]
+   },
+   "goals": [
+    {
+     "min": 14,
+     "side": "M",
+     "name": "Christian Pulisic",
+     "pid": 688295,
+     "assist": "Strahinja Pavlović"
+    },
+    {
+     "min": 61,
+     "side": "M",
+     "name": "Adrien Rabiot",
+     "pid": 352879,
+     "assist": "Gonçalo Ramos"
+    },
+    {
+     "min": 73,
+     "side": "M",
+     "name": "Diego Moreira",
+     "pid": 1342754
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 8.1,
+     "s": {
+      "min": 90,
+      "sv": 3,
+      "xgf": 0.66,
+      "gp": 0.66,
+      "pa": [
+       33,
+       36
+      ],
+      "rec": 9,
+      "clr": 1,
+      "tch": 48,
+      "dw": 1,
+      "fd": 1,
+      "f3": 1,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.5,
+     "s": {
+      "min": 90,
+      "pa": [
+       59,
+       67
+      ],
+      "tch": 89,
+      "box": 1,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 2,
+      "tk": 3,
+      "clr": 3,
+      "int": 1,
+      "rec": 4,
+      "fd": 2,
+      "dw": 8,
+      "dl": 4
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 6.9,
+     "s": {
+      "min": 90,
+      "xg": 0.23,
+      "sh": 1,
+      "pa": [
+       62,
+       67
+      ],
+      "tch": 72,
+      "box": 1,
+      "tk": 1,
+      "clr": 2,
+      "fc": 1,
+      "dw": 3,
+      "dl": 1
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 8.3,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.21,
+      "xa": 0.17,
+      "sh": 2,
+      "pa": [
+       98,
+       107
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 123,
+      "box": 1,
+      "f3": 8,
+      "tk": 1,
+      "clr": 5,
+      "rec": 6,
+      "fd": 2,
+      "fc": 1,
+      "dw": 5,
+      "dl": 2
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 7.2,
+     "off": 87,
+     "s": {
+      "min": 87,
+      "xa": 0.01,
+      "pa": [
+       28,
+       36
+      ],
+      "tch": 57,
+      "box": 2,
+      "dr": [
+       2,
+       5
+      ],
+      "f3": 4,
+      "tk": 3,
+      "rec": 5,
+      "dw": 5,
+      "dl": 6
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.4,
+     "off": 76,
+     "s": {
+      "min": 76,
+      "xa": 0.02,
+      "pa": [
+       88,
+       93
+      ],
+      "kp": 1,
+      "tch": 108,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 6,
+      "tk": 2,
+      "int": 3,
+      "rec": 7,
+      "fc": 1,
+      "dw": 5,
+      "dl": 7
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 8.3,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.33,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       70,
+       75
+      ],
+      "sot": 1,
+      "tch": 90,
+      "box": 2,
+      "dr": [
+       2,
+       3
+      ],
+      "f3": 5,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 2,
+      "fd": 1,
+      "dw": 5,
+      "dl": 3
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 7.5,
+     "off": 76,
+     "s": {
+      "min": 76,
+      "xg": 0.21,
+      "xa": 0.01,
+      "sh": 2,
+      "pa": [
+       54,
+       58
+      ],
+      "tch": 74,
+      "box": 4,
+      "f3": 4,
+      "tk": 1,
+      "clr": 5,
+      "int": 2,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 7.9,
+     "g": 1,
+     "off": 69,
+     "s": {
+      "min": 69,
+      "xg": 0.62,
+      "xa": 0.57,
+      "sh": 2,
+      "pa": [
+       43,
+       46
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 64,
+      "box": 5,
+      "dr": [
+       2,
+       4
+      ],
+      "f3": 3,
+      "rec": 5,
+      "fd": 2,
+      "dw": 5,
+      "dl": 9
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 921341,
+     "name": "Saelemaekers",
+     "num": 56,
+     "r": 7.6,
+     "off": 69,
+     "s": {
+      "min": 69,
+      "xg": 0.05,
+      "xa": 0.04,
+      "sh": 1,
+      "pa": [
+       49,
+       55
+      ],
+      "kp": 1,
+      "tch": 76,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 6,
+      "tk": 5,
+      "rec": 5,
+      "fd": 4,
+      "fc": 2,
+      "dw": 10,
+      "dl": 5
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.6,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xa": 0.24,
+      "pa": [
+       30,
+       34
+      ],
+      "kp": 2,
+      "tch": 50,
+      "box": 2,
+      "dr": [
+       1,
+       5
+      ],
+      "f3": 5,
+      "clr": 1,
+      "rec": 2,
+      "dw": 1,
+      "dl": 9
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 6.2,
+     "on": 69,
+     "s": {
+      "min": 21,
+      "pa": [
+       2,
+       4
+      ],
+      "tch": 8,
+      "box": 1,
+      "tk": 1,
+      "clr": 1,
+      "rec": 1,
+      "dw": 1
+     }
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 7.7,
+     "g": 1,
+     "on": 69,
+     "s": {
+      "min": 21,
+      "xg": 0.56,
+      "sh": 1,
+      "pa": [
+       5,
+       5
+      ],
+      "sot": 1,
+      "tch": 13,
+      "box": 2,
+      "dr": [
+       3,
+       3
+      ],
+      "tk": 1,
+      "clr": 1,
+      "dw": 5,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 5.8,
+     "on": 76,
+     "s": {
+      "min": 14,
+      "pa": [
+       7,
+       7
+      ],
+      "tch": 13,
+      "dr": [
+       0,
+       2
+      ],
+      "rec": 1,
+      "fc": 1,
+      "dl": 5
+     }
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.2,
+     "on": 76,
+     "s": {
+      "min": 14,
+      "pa": [
+       7,
+       8
+      ],
+      "tch": 10,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1
+     }
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "on": 87,
+     "s": {
+      "min": 3,
+      "pa": [
+       0,
+       0
+      ],
+      "tch": 4,
+      "rec": 1,
+      "fc": 2,
+      "dl": 4
+     }
+    }
+   ],
+   "potm": {
+    "id": 352879,
+    "name": "Adrien Rabiot",
+    "r": 8.3,
+    "mine": true
+   }
+  },
+  "5749698": {
+   "round": 6,
+   "form": "3-4-2-1",
+   "oform": "4-3-3",
+   "tr": [
+    6.8,
+    6.9
+   ],
+   "st": {
+    "xg": [
+     1.18,
+     1.19
+    ],
+    "poss": [
+     59,
+     41
+    ],
+    "shots": [
+     11,
+     10
+    ],
+    "sot": [
+     6,
+     4
+    ],
+    "big": [
+     3,
+     1
+    ],
+    "corners": [
+     5,
+     3
+    ],
+    "pass": [
+     90,
+     87
+    ]
+   },
+   "goals": [
+    {
+     "min": 63,
+     "side": "M",
+     "name": "Adrien Rabiot",
+     "pid": 352879,
+     "assist": "Luka Modrić"
+    },
+    {
+     "min": 68,
+     "side": "O",
+     "name": "Cas Odenthal",
+     "pid": 1079501
+    }
+   ],
+   "reds": [],
+   "stadium": "MAPEI Stadium - Città del Tricolore",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 7,
+     "s": {
+      "min": 90,
+      "sv": 3,
+      "gc": 1,
+      "xgf": 1.24,
+      "gp": 0.24,
+      "pa": [
+       29,
+       34
+      ],
+      "rec": 14,
+      "clr": 1,
+      "tch": 43,
+      "f3": 1,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "xa": 0.02,
+      "pa": [
+       61,
+       63
+      ],
+      "kp": 1,
+      "tch": 90,
+      "f3": 6,
+      "tk": 2,
+      "clr": 1,
+      "int": 3,
+      "rec": 5,
+      "fd": 4,
+      "fc": 1,
+      "dw": 6,
+      "dl": 5
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 844996,
+     "name": "Gabbia",
+     "num": 46,
+     "r": 6.2,
+     "off": 19,
+     "s": {
+      "min": 20,
+      "pa": [
+       12,
+       14
+      ],
+      "tch": 18,
+      "f3": 1,
+      "clr": 3,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dl": 1
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 7,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.05,
+      "xa": 0.15,
+      "sh": 1,
+      "pa": [
+       76,
+       81
+      ],
+      "sot": 1,
+      "tch": 96,
+      "box": 3,
+      "f3": 7,
+      "tk": 3,
+      "clr": 4,
+      "int": 1,
+      "rec": 4,
+      "fd": 1,
+      "fc": 1,
+      "dw": 6,
+      "dl": 5
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 6.5,
+     "off": 85,
+     "s": {
+      "min": 85,
+      "xg": 0.34,
+      "xa": 0.26,
+      "sh": 1,
+      "pa": [
+       27,
+       34
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 44,
+      "box": 4,
+      "f3": 3,
+      "clr": 2,
+      "rec": 4,
+      "dw": 1,
+      "dl": 2
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6,
+     "off": 78,
+     "s": {
+      "min": 78,
+      "xa": 0.01,
+      "pa": [
+       56,
+       60
+      ],
+      "tch": 63,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 5,
+      "rec": 1,
+      "fc": 1,
+      "dl": 4
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 8,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.22,
+      "xa": 0.06,
+      "sh": 2,
+      "pa": [
+       50,
+       59
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 74,
+      "box": 5,
+      "f3": 4,
+      "tk": 2,
+      "rec": 3,
+      "dw": 3
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.5,
+     "yc": 1,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.02,
+      "pa": [
+       24,
+       26
+      ],
+      "kp": 1,
+      "tch": 37,
+      "f3": 1,
+      "tk": 2,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 6.8,
+     "off": 78,
+     "s": {
+      "min": 78,
+      "xg": 0.04,
+      "xa": 0.57,
+      "sh": 1,
+      "pa": [
+       36,
+       41
+      ],
+      "kp": 1,
+      "tch": 53,
+      "box": 1,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 2,
+      "tk": 2,
+      "rec": 2,
+      "dw": 3,
+      "dl": 5
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xg": 0.09,
+      "xa": 0.39,
+      "sh": 2,
+      "pa": [
+       44,
+       52
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 84,
+      "box": 6,
+      "dr": [
+       4,
+       7
+      ],
+      "f3": 2,
+      "tk": 1,
+      "int": 1,
+      "rec": 8,
+      "fd": 3,
+      "dw": 9,
+      "dl": 6
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.4,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.44,
+      "xa": 0.03,
+      "sh": 4,
+      "pa": [
+       14,
+       19
+      ],
+      "sot": 2,
+      "tch": 35,
+      "box": 6,
+      "dr": [
+       0,
+       3
+      ],
+      "f3": 1,
+      "tk": 1,
+      "clr": 2,
+      "fd": 3,
+      "fc": 2,
+      "dw": 4,
+      "dl": 6
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.2,
+     "yc": 1,
+     "on": 19,
+     "s": {
+      "min": 70,
+      "xa": 0.01,
+      "pa": [
+       72,
+       73
+      ],
+      "kp": 1,
+      "tch": 82,
+      "box": 1,
+      "f3": 7,
+      "tk": 3,
+      "int": 2,
+      "rec": 4,
+      "fc": 3,
+      "dw": 3,
+      "dl": 3
+     }
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.4,
+     "a": 1,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.04,
+      "pa": [
+       47,
+       52
+      ],
+      "kp": 1,
+      "tch": 56,
+      "f3": 5,
+      "tk": 1,
+      "rec": 2,
+      "dw": 1
+     }
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 6.2,
+     "on": 78,
+     "s": {
+      "min": 12,
+      "pa": [
+       5,
+       6
+      ],
+      "tch": 9,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 1,
+      "fc": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.1,
+     "on": 78,
+     "s": {
+      "min": 12,
+      "pa": [
+       8,
+       8
+      ],
+      "tch": 8,
+      "f3": 1
+     }
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "on": 85,
+     "s": {
+      "min": 5,
+      "xa": 0.01,
+      "pa": [
+       5,
+       5
+      ],
+      "tch": 7,
+      "dr": [
+       0,
+       1
+      ],
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 760752,
+    "name": "Arijanet Murić",
+    "r": 8.1,
+    "mine": false
+   }
+  },
+  "5749700": {
+   "round": 7,
+   "form": "3-4-2-1",
+   "oform": "4-3-3",
+   "tr": [
+    7.1,
+    6.7
+   ],
+   "st": {
+    "xg": [
+     2.58,
+     1.74
+    ],
+    "poss": [
+     56,
+     44
+    ],
+    "shots": [
+     11,
+     12
+    ],
+    "sot": [
+     6,
+     4
+    ],
+    "big": [
+     3,
+     4
+    ],
+    "corners": [
+     2,
+     2
+    ],
+    "pass": [
+     91,
+     92
+    ]
+   },
+   "goals": [
+    {
+     "min": 24,
+     "side": "M",
+     "name": "Gonçalo Ramos",
+     "pid": 940087,
+     "pen": true
+    },
+    {
+     "min": 43,
+     "side": "M",
+     "name": "Adrien Rabiot",
+     "pid": 352879,
+     "assist": "Diego Moreira"
+    },
+    {
+     "min": 57,
+     "side": "M",
+     "name": "Mario Gila",
+     "pid": 1106074,
+     "assist": "Adrien Rabiot"
+    },
+    {
+     "min": 66,
+     "side": "O",
+     "name": "Gianluca Gaetano",
+     "pid": 1012842,
+     "assist": "Nicola Zalewski"
+    },
+    {
+     "min": 81,
+     "side": "O",
+     "name": "Nikola Krstović",
+     "pid": 833638,
+     "assist": "Raoul Bellanova"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 6.6,
+     "s": {
+      "min": 90,
+      "sv": 2,
+      "gc": 2,
+      "xgf": 2,
+      "pa": [
+       36,
+       42
+      ],
+      "rec": 6,
+      "tch": 49,
+      "dl": 1,
+      "f3": 6,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 8,
+     "g": 1,
+     "off": 84,
+     "s": {
+      "min": 84,
+      "xg": 0.37,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       66,
+       73
+      ],
+      "sot": 1,
+      "tch": 88,
+      "box": 2,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 5,
+      "tk": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 7,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 6.6,
+     "s": {
+      "min": 90,
+      "pa": [
+       66,
+       67
+      ],
+      "tch": 78,
+      "f3": 1,
+      "clr": 4,
+      "int": 3,
+      "rec": 3,
+      "dl": 1
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 6.5,
+     "s": {
+      "min": 90,
+      "pa": [
+       57,
+       64
+      ],
+      "tch": 69,
+      "f3": 2,
+      "tk": 2,
+      "int": 2,
+      "rec": 1,
+      "dw": 2
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 6.8,
+     "off": 53,
+     "s": {
+      "min": 53,
+      "xg": 0.07,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       23,
+       30
+      ],
+      "kp": 1,
+      "tch": 39,
+      "box": 2,
+      "f3": 1,
+      "tk": 1,
+      "rec": 2,
+      "dw": 1,
+      "dl": 1
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 7.4,
+     "off": 75,
+     "s": {
+      "min": 75,
+      "xg": 0.09,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       54,
+       55
+      ],
+      "tch": 64,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 5,
+      "tk": 2,
+      "int": 1,
+      "rec": 3,
+      "fd": 1,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.1,
+     "off": 75,
+     "s": {
+      "min": 75,
+      "xa": 0.05,
+      "pa": [
+       64,
+       67
+      ],
+      "tch": 75,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 11,
+      "int": 1,
+      "rec": 3,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 3
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 7.8,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.02,
+      "xa": 0.27,
+      "sh": 1,
+      "pa": [
+       39,
+       42
+      ],
+      "kp": 1,
+      "tch": 65,
+      "box": 1,
+      "dr": [
+       2,
+       5
+      ],
+      "f3": 1,
+      "clr": 3,
+      "int": 1,
+      "rec": 5,
+      "fd": 1,
+      "dw": 4,
+      "dl": 5
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 9,
+     "g": 1,
+     "a": 1,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.24,
+      "xa": 0.5,
+      "sh": 3,
+      "pa": [
+       49,
+       57
+      ],
+      "kp": 4,
+      "sot": 1,
+      "tch": 70,
+      "box": 5,
+      "f3": 6,
+      "tk": 5,
+      "clr": 1,
+      "rec": 5,
+      "fd": 2,
+      "fc": 1,
+      "dw": 7,
+      "dl": 2
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 6.6,
+     "off": 75,
+     "s": {
+      "min": 75,
+      "xa": 0.02,
+      "pa": [
+       24,
+       28
+      ],
+      "tch": 44,
+      "box": 3,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 2,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 2,
+      "fd": 1,
+      "dw": 2,
+      "dl": 5
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.5,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 1.76,
+      "xa": 0.04,
+      "sh": 3,
+      "pa": [
+       14,
+       19
+      ],
+      "kp": 1,
+      "sot": 3,
+      "tch": 31,
+      "box": 5,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 4,
+      "tk": 1,
+      "rec": 2,
+      "fd": 1,
+      "fc": 1,
+      "dw": 5,
+      "dl": 8
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6.8,
+     "on": 53,
+     "s": {
+      "min": 37,
+      "xa": 0.01,
+      "pa": [
+       18,
+       18
+      ],
+      "tch": 29,
+      "box": 3,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "tk": 4,
+      "clr": 1,
+      "rec": 2,
+      "dw": 4,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.6,
+     "on": 75,
+     "s": {
+      "min": 15,
+      "xg": 0.03,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       15,
+       16
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 21,
+      "f3": 2,
+      "clr": 2,
+      "rec": 2
+     }
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.4,
+     "on": 75,
+     "s": {
+      "min": 15,
+      "xa": 0.01,
+      "pa": [
+       10,
+       11
+      ],
+      "tch": 14,
+      "clr": 2,
+      "rec": 1,
+      "dw": 1
+     }
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 6.4,
+     "on": 75,
+     "s": {
+      "min": 15,
+      "xa": 0.05,
+      "pa": [
+       10,
+       10
+      ],
+      "tch": 14,
+      "box": 1,
+      "clr": 1,
+      "rec": 1
+     }
+    },
+    {
+     "id": 749662,
+     "name": "Tomori",
+     "num": 23,
+     "on": 84,
+     "s": {
+      "min": 6,
+      "pa": [
+       2,
+       3
+      ],
+      "tch": 6,
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "dw": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 352879,
+    "name": "Adrien Rabiot",
+    "r": 9,
+    "mine": true
+   }
+  },
+  "5749719": {
+   "round": 8,
+   "form": "4-4-1-1",
+   "oform": "3-4-2-1",
+   "tr": [
+    7.4,
+    6.6
+   ],
+   "st": {
+    "xg": [
+     3.59,
+     0.55
+    ],
+    "poss": [
+     60,
+     40
+    ],
+    "shots": [
+     19,
+     12
+    ],
+    "sot": [
+     7,
+     5
+    ],
+    "big": [
+     6,
+     1
+    ],
+    "corners": [
+     4,
+     5
+    ],
+    "pass": [
+     87,
+     82
+    ]
+   },
+   "goals": [
+    {
+     "min": 6,
+     "side": "M",
+     "name": "Christian Pulisic",
+     "pid": 688295,
+     "assist": "Luka Modrić"
+    },
+    {
+     "min": 65,
+     "side": "M",
+     "name": "Omari Hutchinson",
+     "pid": 1215652
+    }
+   ],
+   "reds": [],
+   "stadium": "Bluenergy Stadium",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 8,
+     "s": {
+      "min": 90,
+      "sv": 5,
+      "xgf": 0.31,
+      "gp": 0.31,
+      "pa": [
+       23,
+       31
+      ],
+      "rec": 8,
+      "clr": 1,
+      "tch": 46,
+      "f3": 1,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 749662,
+     "name": "Tomori",
+     "num": 23,
+     "r": 6.8,
+     "off": 73,
+     "s": {
+      "min": 73,
+      "xg": 0.13,
+      "xa": 0.51,
+      "sh": 1,
+      "pa": [
+       23,
+       28
+      ],
+      "kp": 1,
+      "tch": 48,
+      "box": 4,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 4,
+      "tk": 1,
+      "clr": 2,
+      "int": 1,
+      "rec": 2,
+      "fd": 1,
+      "dw": 3,
+      "dl": 4
+     },
+     "x": 0.88,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.2,
+     "s": {
+      "min": 90,
+      "pa": [
+       59,
+       67
+      ],
+      "tch": 77,
+      "box": 1,
+      "f3": 6,
+      "tk": 2,
+      "clr": 5,
+      "rec": 2,
+      "fd": 1,
+      "fc": 1,
+      "dw": 6,
+      "dl": 5
+     },
+     "x": 0.63,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 8,
+     "s": {
+      "min": 90,
+      "xg": 0.15,
+      "sh": 1,
+      "pa": [
+       63,
+       73
+      ],
+      "kp": 1,
+      "tch": 92,
+      "box": 2,
+      "f3": 5,
+      "tk": 2,
+      "clr": 9,
+      "int": 2,
+      "rec": 2,
+      "dw": 9,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.71
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 7.3,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       50,
+       58
+      ],
+      "tch": 82,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 2,
+      "tk": 2,
+      "clr": 3,
+      "int": 1,
+      "rec": 4,
+      "fd": 1,
+      "dw": 4,
+      "dl": 3
+     },
+     "x": 0.13,
+     "y": 0.71
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 8.2,
+     "g": 1,
+     "off": 73,
+     "s": {
+      "min": 73,
+      "xg": 0.51,
+      "xa": 0.02,
+      "sh": 1,
+      "pa": [
+       26,
+       30
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 41,
+      "box": 3,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "int": 3,
+      "rec": 6,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 8.1,
+     "a": 1,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xa": 0.06,
+      "pa": [
+       84,
+       91
+      ],
+      "kp": 2,
+      "tch": 103,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 7,
+      "tk": 2,
+      "int": 2,
+      "rec": 8,
+      "fd": 1,
+      "fc": 1,
+      "dw": 4,
+      "dl": 8
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 7.2,
+     "s": {
+      "min": 90,
+      "xg": 0.06,
+      "xa": 0.1,
+      "sh": 1,
+      "pa": [
+       89,
+       97
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 113,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 5,
+      "clr": 4,
+      "rec": 6,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 7.8,
+     "off": 85,
+     "s": {
+      "min": 85,
+      "xg": 1.23,
+      "xa": 0.17,
+      "sh": 3,
+      "pa": [
+       20,
+       30
+      ],
+      "kp": 2,
+      "tch": 63,
+      "box": 6,
+      "dr": [
+       2,
+       4
+      ],
+      "f3": 5,
+      "tk": 6,
+      "clr": 3,
+      "rec": 4,
+      "fc": 2,
+      "dw": 11,
+      "dl": 8
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 8.4,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.88,
+      "xa": 0.4,
+      "sh": 4,
+      "pa": [
+       43,
+       51
+      ],
+      "kp": 3,
+      "sot": 2,
+      "tch": 75,
+      "box": 8,
+      "dr": [
+       2,
+       5
+      ],
+      "f3": 3,
+      "clr": 1,
+      "rec": 7,
+      "fc": 1,
+      "dw": 3,
+      "dl": 9
+     },
+     "x": 0.5,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.6,
+     "yc": 1,
+     "off": 90,
+     "s": {
+      "min": 89,
+      "xg": 0.33,
+      "xa": 0.07,
+      "sh": 4,
+      "pa": [
+       20,
+       24
+      ],
+      "sot": 1,
+      "tch": 39,
+      "box": 4,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 3,
+      "fd": 3,
+      "fc": 6,
+      "dw": 6,
+      "dl": 9
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 6.4,
+     "on": 73,
+     "off": 90,
+     "s": {
+      "min": 16,
+      "xg": 0.22,
+      "xa": 0.01,
+      "sh": 2,
+      "pa": [
+       9,
+       10
+      ],
+      "sot": 1,
+      "tch": 16,
+      "box": 2,
+      "f3": 1,
+      "clr": 1,
+      "rec": 1
+     }
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.4,
+     "on": 73,
+     "s": {
+      "min": 17,
+      "pa": [
+       14,
+       15
+      ],
+      "tch": 20,
+      "f3": 1,
+      "int": 1,
+      "rec": 3
+     }
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "on": 85,
+     "s": {
+      "min": 5,
+      "xg": 0.11,
+      "sh": 2,
+      "pa": [
+       9,
+       9
+      ],
+      "sot": 1,
+      "tch": 12,
+      "box": 1,
+      "dr": [
+       1,
+       1
+      ],
+      "rec": 1,
+      "dw": 1
+     }
+    },
+    {
+     "id": 1787535,
+     "name": "Comotto",
+     "num": 28,
+     "on": 90,
+     "s": {
+      "min": 1,
+      "pa": [
+       1,
+       2
+      ],
+      "tch": 2
+     }
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "on": 90,
+     "s": {
+      "min": 1,
+      "pa": [
+       1,
+       1
+      ],
+      "kp": 1,
+      "tch": 1,
+      "f3": 1,
+      "fc": 1,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 688295,
+    "name": "Christian Pulisic",
+    "r": 8.4,
+    "mine": true
+   }
+  },
+  "5749720": {
+   "round": 9,
+   "form": "4-2-3-1",
+   "oform": "3-4-2-1",
+   "tr": [
+    6.2,
+    6.9
+   ],
+   "st": {
+    "xg": [
+     1.8,
+     2.09
+    ],
+    "poss": [
+     66,
+     34
+    ],
+    "shots": [
+     8,
+     9
+    ],
+    "sot": [
+     3,
+     5
+    ],
+    "big": [
+     4,
+     4
+    ],
+    "corners": [
+     2,
+     3
+    ],
+    "pass": [
+     89,
+     80
+    ]
+   },
+   "goals": [
+    {
+     "min": 8,
+     "side": "O",
+     "name": "Samuel Mbangula",
+     "pid": 1402900,
+     "assist": "Nadir Zortea"
+    },
+    {
+     "min": 14,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650
+    },
+    {
+     "min": 27,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Fikayo Tomori"
+    },
+    {
+     "min": 60,
+     "side": "O",
+     "name": "Davide Bartesaghi",
+     "pid": 1385856,
+     "og": true
+    },
+    {
+     "min": 62,
+     "side": "O",
+     "name": "Samuel Mbangula",
+     "pid": 1402900,
+     "assist": "Juan Miranda"
+    },
+    {
+     "min": 86,
+     "side": "O",
+     "name": "Samuel Mbangula",
+     "pid": 1402900,
+     "assist": "Jens Odgaard"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 5.5,
+     "s": {
+      "min": 90,
+      "sv": 2,
+      "gc": 4,
+      "xgf": 2.49,
+      "gp": -0.51,
+      "pa": [
+       36,
+       45
+      ],
+      "rec": 9,
+      "tch": 52,
+      "f3": 4,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 749662,
+     "name": "Tomori",
+     "num": 23,
+     "r": 7.4,
+     "a": 1,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.08,
+      "sh": 1,
+      "pa": [
+       24,
+       27
+      ],
+      "kp": 1,
+      "tch": 42,
+      "box": 5,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 2,
+      "tk": 4,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 6,
+      "dl": 1
+     },
+     "x": 0.88,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 5.1,
+     "s": {
+      "min": 90,
+      "pa": [
+       100,
+       105
+      ],
+      "tch": 114,
+      "f3": 1,
+      "tk": 1,
+      "clr": 3,
+      "rec": 4,
+      "fc": 2,
+      "dw": 3,
+      "dl": 4
+     },
+     "x": 0.63,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 6,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       101,
+       110
+      ],
+      "tch": 121,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 5,
+      "tk": 2,
+      "clr": 2,
+      "rec": 5,
+      "fd": 2,
+      "fc": 1,
+      "dw": 10,
+      "dl": 4
+     },
+     "x": 0.38,
+     "y": 0.71
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.9,
+     "off": 58,
+     "s": {
+      "min": 58,
+      "xg": 0.03,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       40,
+       47
+      ],
+      "tch": 61,
+      "f3": 2,
+      "tk": 4,
+      "clr": 1,
+      "int": 1,
+      "rec": 4,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.13,
+     "y": 0.71
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 5.3,
+     "s": {
+      "min": 90,
+      "xa": 0.12,
+      "pa": [
+       57,
+       64
+      ],
+      "kp": 1,
+      "tch": 78,
+      "f3": 6,
+      "clr": 1,
+      "rec": 6,
+      "fd": 2,
+      "fc": 1,
+      "dw": 2,
+      "dl": 2
+     },
+     "x": 0.7,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.6,
+     "s": {
+      "min": 90,
+      "xg": 0.02,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       89,
+       94
+      ],
+      "tch": 105,
+      "f3": 7,
+      "tk": 2,
+      "int": 1,
+      "rec": 6,
+      "fd": 1,
+      "fc": 2,
+      "dw": 4,
+      "dl": 5
+     },
+     "x": 0.3,
+     "y": 0.52
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6,
+     "off": 58,
+     "s": {
+      "min": 58,
+      "xa": 0.01,
+      "pa": [
+       17,
+       21
+      ],
+      "kp": 1,
+      "tch": 41,
+      "dr": [
+       2,
+       10
+      ],
+      "f3": 3,
+      "tk": 1,
+      "int": 1,
+      "rec": 2,
+      "dw": 3,
+      "dl": 12
+     },
+     "x": 0.84,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 8.7,
+     "g": 2,
+     "s": {
+      "min": 90,
+      "xg": 1.25,
+      "xa": 0.13,
+      "sh": 2,
+      "pa": [
+       23,
+       28
+      ],
+      "kp": 1,
+      "sot": 2,
+      "tch": 52,
+      "box": 2,
+      "dr": [
+       2,
+       4
+      ],
+      "f3": 3,
+      "int": 1,
+      "rec": 3,
+      "fd": 1,
+      "fc": 2,
+      "dw": 4,
+      "dl": 10
+     },
+     "x": 0.5,
+     "y": 0.32
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 5.4,
+     "og": 1,
+     "off": 63,
+     "s": {
+      "min": 63,
+      "xa": 0.04,
+      "pa": [
+       13,
+       20
+      ],
+      "tch": 31,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "tk": 1,
+      "clr": 1,
+      "rec": 2,
+      "fd": 1,
+      "dw": 2,
+      "dl": 2
+     },
+     "x": 0.16,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 5.8,
+     "off": 87,
+     "s": {
+      "min": 87,
+      "xa": 0.01,
+      "pa": [
+       13,
+       17
+      ],
+      "tch": 32,
+      "f3": 2,
+      "rec": 2,
+      "fd": 4,
+      "fc": 1,
+      "dw": 6,
+      "dl": 6
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 6.6,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.04,
+      "pa": [
+       39,
+       41
+      ],
+      "kp": 1,
+      "tch": 46,
+      "f3": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 4,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 6.7,
+     "on": 58,
+     "s": {
+      "min": 32,
+      "pa": [
+       17,
+       19
+      ],
+      "tch": 23,
+      "box": 2,
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "int": 2,
+      "rec": 1,
+      "dw": 2
+     }
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 6.5,
+     "on": 58,
+     "s": {
+      "min": 32,
+      "xg": 0.07,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       18,
+       21
+      ],
+      "sot": 1,
+      "tch": 26,
+      "box": 1,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 2,
+      "fd": 1,
+      "dw": 4
+     }
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "r": 5.2,
+     "on": 63,
+     "s": {
+      "min": 27,
+      "xg": 0.35,
+      "sh": 2,
+      "pa": [
+       5,
+       8
+      ],
+      "tch": 12,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 1,
+      "fd": 1,
+      "dw": 2,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1787535,
+     "name": "Comotto",
+     "num": 28,
+     "on": 87,
+     "s": {
+      "min": 3,
+      "pa": [
+       1,
+       1
+      ],
+      "tch": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 1402900,
+    "name": "Samuel Mbangula",
+    "r": 9.7,
+    "mine": false
+   }
+  },
+  "5749730": {
+   "round": 10,
+   "form": "3-4-2-1",
+   "oform": "3-4-2-1",
+   "tr": [
+    7.6,
+    6.6
+   ],
+   "st": {
+    "xg": [
+     0.62,
+     1.68
+    ],
+    "poss": [
+     43,
+     57
+    ],
+    "shots": [
+     7,
+     19
+    ],
+    "sot": [
+     4,
+     8
+    ],
+    "big": [
+     2,
+     4
+    ],
+    "corners": [
+     3,
+     11
+    ],
+    "pass": [
+     88,
+     88
+    ]
+   },
+   "goals": [
+    {
+     "min": 4,
+     "side": "M",
+     "name": "Christian Pulisic",
+     "pid": 688295,
+     "assist": "Diego Moreira"
+    },
+    {
+     "min": 10,
+     "side": "M",
+     "name": "Adrien Rabiot",
+     "pid": 352879,
+     "assist": "Diego Moreira"
+    },
+    {
+     "min": 22,
+     "side": "O",
+     "name": "Alessandro Bastoni",
+     "pid": 805451,
+     "assist": "Manuel Akanji"
+    },
+    {
+     "min": 43,
+     "side": "M",
+     "name": "Diego Moreira",
+     "pid": 1342754
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 8.2,
+     "s": {
+      "min": 90,
+      "sv": 7,
+      "gc": 1,
+      "xgf": 1.64,
+      "gp": 0.64,
+      "pa": [
+       19,
+       30
+      ],
+      "rec": 13,
+      "clr": 4,
+      "tch": 50,
+      "dw": 1,
+      "f3": 3,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 6.2,
+     "s": {
+      "min": 90,
+      "pa": [
+       47,
+       53
+      ],
+      "tch": 70,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 5,
+      "clr": 3,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dl": 8
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.8,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "pa": [
+       43,
+       47
+      ],
+      "tch": 67,
+      "f3": 2,
+      "tk": 1,
+      "clr": 10,
+      "int": 3,
+      "rec": 4,
+      "fd": 3,
+      "fc": 1,
+      "dw": 6,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xg": 0.13,
+      "sh": 1,
+      "pa": [
+       36,
+       41
+      ],
+      "tch": 52,
+      "box": 1,
+      "f3": 3,
+      "tk": 2,
+      "clr": 3,
+      "int": 2,
+      "rec": 1,
+      "fd": 1,
+      "fc": 2,
+      "dw": 5,
+      "dl": 3
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 8.9,
+     "g": 1,
+     "a": 2,
+     "yc": 1,
+     "off": 89,
+     "s": {
+      "min": 89,
+      "xg": 0.07,
+      "xa": 0.29,
+      "sh": 1,
+      "pa": [
+       22,
+       26
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 46,
+      "box": 3,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 3,
+      "tk": 1,
+      "clr": 1,
+      "fd": 1,
+      "dw": 4,
+      "dl": 8
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "xg": 0.02,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       67,
+       74
+      ],
+      "kp": 1,
+      "tch": 88,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 4,
+      "tk": 2,
+      "int": 2,
+      "rec": 5,
+      "fc": 1,
+      "dw": 4,
+      "dl": 4
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 7.1,
+     "off": 82,
+     "s": {
+      "min": 82,
+      "pa": [
+       41,
+       43
+      ],
+      "tch": 53,
+      "f3": 1,
+      "tk": 2,
+      "clr": 2,
+      "int": 1,
+      "fd": 2,
+      "fc": 1,
+      "dw": 6,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 7,
+     "off": 83,
+     "s": {
+      "min": 83,
+      "xa": 0.09,
+      "pa": [
+       15,
+       15
+      ],
+      "kp": 1,
+      "tch": 31,
+      "dr": [
+       0,
+       1
+      ],
+      "tk": 2,
+      "clr": 2,
+      "fd": 1,
+      "dw": 6,
+      "dl": 4
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 7.8,
+     "g": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.13,
+      "xa": 0.02,
+      "sh": 2,
+      "pa": [
+       29,
+       32
+      ],
+      "sot": 1,
+      "tch": 47,
+      "box": 3,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "clr": 4,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 1,
+      "dl": 2
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 8.2,
+     "g": 1,
+     "off": 82,
+     "s": {
+      "min": 82,
+      "xg": 0.25,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       27,
+       32
+      ],
+      "sot": 1,
+      "tch": 44,
+      "box": 1,
+      "dr": [
+       3,
+       3
+      ],
+      "f3": 5,
+      "tk": 1,
+      "clr": 1,
+      "rec": 4,
+      "fd": 1,
+      "fc": 1,
+      "dw": 5,
+      "dl": 2
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.1,
+     "off": 89,
+     "s": {
+      "min": 89,
+      "pa": [
+       10,
+       10
+      ],
+      "tch": 32,
+      "box": 3,
+      "dr": [
+       0,
+       2
+      ],
+      "tk": 2,
+      "clr": 2,
+      "int": 2,
+      "rec": 2,
+      "fd": 1,
+      "dw": 4,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "on": 82,
+     "s": {
+      "min": 8,
+      "xg": 0.03,
+      "sh": 1,
+      "pa": [
+       0,
+       0
+      ],
+      "sot": 1,
+      "tch": 3,
+      "clr": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "on": 82,
+     "s": {
+      "min": 8,
+      "pa": [
+       1,
+       1
+      ],
+      "tch": 4,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "on": 83,
+     "s": {
+      "min": 7,
+      "pa": [
+       1,
+       3
+      ],
+      "tch": 7,
+      "f3": 1,
+      "clr": 2,
+      "rec": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "on": 89,
+     "s": {
+      "min": 1,
+      "pa": [
+       1,
+       1
+      ],
+      "tch": 2,
+      "tk": 1,
+      "dw": 1
+     }
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "on": 89,
+     "s": {
+      "min": 1,
+      "pa": [
+       0,
+       1
+      ],
+      "tch": 3,
+      "fd": 1,
+      "dw": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 1342754,
+    "name": "Diego Moreira",
+    "r": 8.9,
+    "mine": true
+   }
+  },
+  "5749743": {
+   "round": 11,
+   "form": "3-4-3",
+   "oform": "3-4-2-1",
+   "tr": [
+    7.2,
+    6.5
+   ],
+   "st": {
+    "xg": [
+     0.63,
+     1.15
+    ],
+    "poss": [
+     62,
+     38
+    ],
+    "shots": [
+     6,
+     17
+    ],
+    "sot": [
+     2,
+     5
+    ],
+    "big": [
+     2,
+     2
+    ],
+    "corners": [
+     0,
+     3
+    ],
+    "pass": [
+     85,
+     79
+    ]
+   },
+   "goals": [
+    {
+     "min": 13,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Adrien Rabiot"
+    },
+    {
+     "min": 19,
+     "side": "M",
+     "name": "Christian Pulisic",
+     "pid": 688295,
+     "assist": "Gonçalo Ramos"
+    },
+    {
+     "min": 88,
+     "side": "O",
+     "name": "Mikael Egill Ellertsson",
+     "pid": 942193,
+     "assist": "Tommaso Baldanzi"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Comunale Luigi Ferraris",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 6.9,
+     "s": {
+      "min": 90,
+      "sv": 5,
+      "gc": 1,
+      "xgf": 0.63,
+      "gp": -0.37,
+      "pa": [
+       25,
+       45
+      ],
+      "rec": 9,
+      "tch": 52,
+      "f3": 9,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7.5,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       49,
+       56
+      ],
+      "tch": 80,
+      "box": 1,
+      "f3": 2,
+      "tk": 7,
+      "clr": 5,
+      "int": 1,
+      "rec": 6,
+      "fd": 1,
+      "fc": 3,
+      "dw": 10,
+      "dl": 6
+     },
+     "x": 0.79,
+     "y": 0.64
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xg": 0.01,
+      "sh": 1,
+      "pa": [
+       56,
+       65
+      ],
+      "tch": 88,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 5,
+      "tk": 1,
+      "clr": 11,
+      "int": 4,
+      "rec": 5,
+      "fd": 1,
+      "fc": 1,
+      "dw": 7,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.64
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 6.8,
+     "yc": 1,
+     "off": 61,
+     "s": {
+      "min": 62,
+      "pa": [
+       40,
+       44
+      ],
+      "tch": 49,
+      "f3": 3,
+      "tk": 1,
+      "clr": 2,
+      "int": 2,
+      "fc": 1,
+      "dw": 1,
+      "dl": 1
+     },
+     "x": 0.21,
+     "y": 0.64
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xg": 0.08,
+      "xa": 0.05,
+      "sh": 1,
+      "pa": [
+       33,
+       43
+      ],
+      "tch": 74,
+      "box": 2,
+      "dr": [
+       5,
+       7
+      ],
+      "f3": 1,
+      "tk": 3,
+      "clr": 1,
+      "int": 2,
+      "rec": 8,
+      "dw": 8,
+      "dl": 9
+     },
+     "x": 0.88,
+     "y": 0.39
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 7.3,
+     "s": {
+      "min": 90,
+      "xa": 0.03,
+      "pa": [
+       93,
+       102
+      ],
+      "tch": 112,
+      "f3": 8,
+      "tk": 1,
+      "clr": 3,
+      "int": 2,
+      "rec": 7,
+      "fd": 1,
+      "dw": 2,
+      "dl": 3
+     },
+     "x": 0.63,
+     "y": 0.39
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 8.1,
+     "a": 1,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.05,
+      "xa": 0.08,
+      "sh": 1,
+      "pa": [
+       50,
+       57
+      ],
+      "kp": 1,
+      "tch": 70,
+      "box": 1,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 1,
+      "tk": 1,
+      "clr": 3,
+      "rec": 6,
+      "fd": 3,
+      "dw": 5,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.39
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.8,
+     "off": 87,
+     "s": {
+      "min": 87,
+      "xa": 0.02,
+      "pa": [
+       35,
+       40
+      ],
+      "kp": 1,
+      "tch": 52,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 6,
+      "clr": 1,
+      "int": 1,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 1
+     },
+     "x": 0.13,
+     "y": 0.39
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 8.3,
+     "g": 1,
+     "yc": 1,
+     "off": 79,
+     "s": {
+      "min": 79,
+      "xg": 0.25,
+      "xa": 0.08,
+      "sh": 1,
+      "pa": [
+       38,
+       39
+      ],
+      "kp": 2,
+      "sot": 1,
+      "tch": 56,
+      "box": 1,
+      "dr": [
+       0,
+       3
+      ],
+      "f3": 3,
+      "tk": 3,
+      "clr": 2,
+      "int": 1,
+      "rec": 3,
+      "fd": 2,
+      "fc": 1,
+      "dw": 5,
+      "dl": 7
+     },
+     "x": 0.79,
+     "y": 0.13
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.4,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.08,
+      "xa": 0.2,
+      "sh": 1,
+      "pa": [
+       11,
+       17
+      ],
+      "kp": 1,
+      "tch": 33,
+      "box": 5,
+      "dr": [
+       1,
+       4
+      ],
+      "f3": 1,
+      "rec": 2,
+      "fd": 2,
+      "fc": 5,
+      "dw": 5,
+      "dl": 10
+     },
+     "x": 0.5,
+     "y": 0.13
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 7.3,
+     "g": 1,
+     "off": 61,
+     "s": {
+      "min": 61,
+      "xg": 0.17,
+      "xa": 0.02,
+      "sh": 1,
+      "pa": [
+       18,
+       19
+      ],
+      "sot": 1,
+      "tch": 29,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "rec": 1,
+      "fc": 1,
+      "dl": 5
+     },
+     "x": 0.21,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "r": 6.3,
+     "on": 61,
+     "s": {
+      "min": 28,
+      "pa": [
+       24,
+       27
+      ],
+      "tch": 31,
+      "f3": 1,
+      "clr": 3,
+      "rec": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6.4,
+     "on": 61,
+     "s": {
+      "min": 29,
+      "pa": [
+       10,
+       13
+      ],
+      "tch": 22,
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "rec": 2,
+      "fd": 1,
+      "dw": 2,
+      "dl": 2
+     }
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.2,
+     "on": 79,
+     "s": {
+      "min": 11,
+      "xa": 0.02,
+      "pa": [
+       6,
+       8
+      ],
+      "tch": 11,
+      "fd": 1,
+      "dw": 2
+     }
+    },
+    {
+     "id": 688278,
+     "name": "Estupiñán",
+     "num": 2,
+     "on": 87,
+     "s": {
+      "min": 3,
+      "pa": [
+       0,
+       1
+      ],
+      "tch": 2,
+      "f3": 1,
+      "fc": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 688295,
+    "name": "Christian Pulisic",
+    "r": 8.3,
+    "mine": true
+   }
+  },
+  "6112254": {
+   "round": 1,
+   "form": "3-4-2-1",
+   "oform": "4-2-3-1",
+   "tr": [
+    6.4,
+    7.3
+   ],
+   "st": {
+    "xg": [
+     1.03,
+     0.63
+    ],
+    "poss": [
+     60,
+     40
+    ],
+    "shots": [
+     17,
+     11
+    ],
+    "sot": [
+     4,
+     4
+    ],
+    "big": [
+     0,
+     1
+    ],
+    "corners": [
+     10,
+     1
+    ],
+    "pass": [
+     91,
+     85
+    ]
+   },
+   "goals": [
+    {
+     "min": 16,
+     "side": "O",
+     "name": "Dodi Lukébakio",
+     "pid": 688876,
+     "assist": "Jakub Kamiński"
+    },
+    {
+     "min": 53,
+     "side": "O",
+     "name": "Jakub Kamiński",
+     "pid": 1067260,
+     "assist": "Souffian El Karouani"
+    }
+   ],
+   "reds": [],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 5.5,
+     "s": {
+      "min": 90,
+      "sv": 2,
+      "gc": 2,
+      "xgf": 1.03,
+      "gp": -0.97,
+      "pa": [
+       17,
+       21
+      ],
+      "rec": 7,
+      "tch": 25,
+      "f3": 2,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "r": 6.1,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.02,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       35,
+       36
+      ],
+      "sot": 1,
+      "tch": 39,
+      "f3": 2,
+      "rec": 2,
+      "fd": 1,
+      "dw": 1,
+      "dl": 2
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 6.1,
+     "s": {
+      "min": 90,
+      "xg": 0.12,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       58,
+       61
+      ],
+      "tch": 71,
+      "box": 3,
+      "f3": 7,
+      "clr": 1,
+      "rec": 8,
+      "fd": 2,
+      "fc": 1,
+      "dw": 3,
+      "dl": 6
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 6.2,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.07,
+      "xa": 0.04,
+      "sh": 2,
+      "pa": [
+       71,
+       77
+      ],
+      "tch": 93,
+      "box": 4,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 13,
+      "tk": 1,
+      "clr": 1,
+      "rec": 5,
+      "fd": 1,
+      "fc": 4,
+      "dw": 5,
+      "dl": 11
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 688300,
+     "name": "Chukwueze",
+     "num": 21,
+     "r": 7.6,
+     "s": {
+      "min": 90,
+      "xa": 0.31,
+      "pa": [
+       30,
+       34
+      ],
+      "kp": 4,
+      "tch": 49,
+      "box": 1,
+      "dr": [
+       3,
+       4
+      ],
+      "f3": 2,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 4,
+      "fd": 1,
+      "dw": 6,
+      "dl": 1
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6,
+     "off": 73,
+     "s": {
+      "min": 73,
+      "xg": 0.04,
+      "xa": 0.09,
+      "sh": 1,
+      "pa": [
+       45,
+       49
+      ],
+      "kp": 1,
+      "tch": 54,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 8,
+      "rec": 3,
+      "fd": 1,
+      "dw": 1,
+      "dl": 3
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.9,
+     "s": {
+      "min": 90,
+      "xg": 0.09,
+      "xa": 0.06,
+      "sh": 1,
+      "pa": [
+       63,
+       65
+      ],
+      "kp": 2,
+      "tch": 71,
+      "box": 1,
+      "f3": 13,
+      "clr": 1,
+      "int": 1,
+      "rec": 2,
+      "fd": 2,
+      "fc": 1,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 6.7,
+     "off": 57,
+     "s": {
+      "min": 57,
+      "xa": 0.4,
+      "pa": [
+       25,
+       29
+      ],
+      "kp": 3,
+      "tch": 49,
+      "box": 5,
+      "dr": [
+       2,
+       4
+      ],
+      "f3": 2,
+      "tk": 2,
+      "rec": 1,
+      "dw": 4,
+      "dl": 4
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.01,
+      "sh": 1,
+      "pa": [
+       13,
+       16
+      ],
+      "tch": 26,
+      "box": 3,
+      "dr": [
+       1,
+       2
+      ],
+      "tk": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 6.1,
+     "off": 57,
+     "s": {
+      "min": 57,
+      "xg": 0.13,
+      "xa": 0.07,
+      "sh": 2,
+      "pa": [
+       27,
+       29
+      ],
+      "sot": 1,
+      "tch": 40,
+      "box": 4,
+      "f3": 1,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 2
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.4,
+     "s": {
+      "min": 90,
+      "xg": 0.35,
+      "xa": 0.01,
+      "sh": 3,
+      "pa": [
+       13,
+       16
+      ],
+      "tch": 37,
+      "box": 4,
+      "dr": [
+       1,
+       3
+      ],
+      "f3": 1,
+      "tk": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 3,
+      "fc": 2,
+      "dw": 6,
+      "dl": 9
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 7,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.01,
+      "xa": 0.03,
+      "sh": 1,
+      "pa": [
+       45,
+       47
+      ],
+      "tch": 52,
+      "box": 1,
+      "f3": 8,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 3,
+      "fc": 1,
+      "dw": 2,
+      "dl": 2
+     }
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 6.4,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.18,
+      "xa": 0.14,
+      "sh": 2,
+      "pa": [
+       22,
+       26
+      ],
+      "kp": 2,
+      "sot": 2,
+      "tch": 36,
+      "box": 4,
+      "dr": [
+       0,
+       2
+      ],
+      "f3": 4,
+      "rec": 3,
+      "dl": 4
+     }
+    },
+    {
+     "id": 921341,
+     "name": "Saelemaekers",
+     "num": 56,
+     "r": 6.5,
+     "on": 57,
+     "s": {
+      "min": 33,
+      "xa": 0.41,
+      "pa": [
+       19,
+       24
+      ],
+      "kp": 2,
+      "tch": 34,
+      "box": 3,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 3,
+      "rec": 1,
+      "fd": 2,
+      "fc": 2,
+      "dw": 3,
+      "dl": 4
+     }
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 6.1,
+     "on": 57,
+     "s": {
+      "min": 33,
+      "xg": 0.01,
+      "xa": 0.04,
+      "sh": 1,
+      "pa": [
+       23,
+       23
+      ],
+      "tch": 32,
+      "f3": 5,
+      "rec": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 6.3,
+     "on": 73,
+     "s": {
+      "min": 17,
+      "xg": 0.01,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       15,
+       17
+      ],
+      "tch": 24,
+      "box": 5,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "tk": 1,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 2
+     }
+    }
+   ],
+   "potm": {
+    "id": 1022350,
+    "name": "Anatoliy Trubin",
+    "r": 8.6,
+    "mine": false
+   }
+  },
+  "6112255": {
+   "round": 4,
+   "form": "4-4-1-1",
+   "oform": "4-2-3-1",
+   "tr": [
+    6.6,
+    7.3
+   ],
+   "st": {
+    "xg": [
+     1.22,
+     3.11
+    ],
+    "poss": [
+     70,
+     30
+    ],
+    "shots": [
+     15,
+     12
+    ],
+    "sot": [
+     2,
+     8
+    ],
+    "big": [
+     2,
+     5
+    ],
+    "corners": [
+     2,
+     4
+    ],
+    "pass": [
+     88,
+     71
+    ]
+   },
+   "goals": [
+    {
+     "min": 52,
+     "side": "O",
+     "name": "Lenny Joseph",
+     "pid": 1242314,
+     "assist": "Kristoffer Zachariassen"
+    },
+    {
+     "min": 66,
+     "side": "O",
+     "name": "Lenny Joseph",
+     "pid": 1242314,
+     "assist": "Kristoffer Zachariassen"
+    }
+   ],
+   "reds": [
+    {
+     "min": 77,
+     "side": "O",
+     "name": "Bamidele Yusuf"
+    }
+   ],
+   "stadium": "Stadio Giuseppe Meazza",
+   "xi": [
+    {
+     "id": 1642393,
+     "name": "Torriani",
+     "num": 96,
+     "r": 7.3,
+     "s": {
+      "min": 90,
+      "sv": 6,
+      "gc": 2,
+      "xgf": 3.38,
+      "gp": 1.38,
+      "pa": [
+       33,
+       42
+      ],
+      "rec": 13,
+      "tch": 56,
+      "dw": 1,
+      "dl": 1,
+      "fd": 1,
+      "f3": 3,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "r": 6.7,
+     "s": {
+      "min": 90,
+      "xa": 0.12,
+      "pa": [
+       61,
+       72
+      ],
+      "kp": 1,
+      "tch": 95,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 8,
+      "tk": 1,
+      "clr": 6,
+      "int": 1,
+      "rec": 3,
+      "fd": 1,
+      "fc": 1,
+      "dw": 3,
+      "dl": 3
+     },
+     "x": 0.88,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.5,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xa": 0.08,
+      "pa": [
+       81,
+       87
+      ],
+      "kp": 2,
+      "tch": 106,
+      "dr": [
+       2,
+       3
+      ],
+      "f3": 10,
+      "tk": 1,
+      "clr": 6,
+      "int": 3,
+      "rec": 4,
+      "fc": 1,
+      "dw": 4,
+      "dl": 3
+     },
+     "x": 0.63,
+     "y": 0.71
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 7,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "pa": [
+       41,
+       46
+      ],
+      "tch": 55,
+      "f3": 3,
+      "tk": 2,
+      "clr": 3,
+      "int": 1,
+      "rec": 4,
+      "fd": 2,
+      "fc": 1,
+      "dw": 4,
+      "dl": 2
+     },
+     "x": 0.38,
+     "y": 0.71
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 5.9,
+     "off": 67,
+     "s": {
+      "min": 67,
+      "xa": 0.02,
+      "pa": [
+       31,
+       37
+      ],
+      "kp": 1,
+      "tch": 65,
+      "f3": 10,
+      "tk": 1,
+      "clr": 3,
+      "int": 1,
+      "rec": 4,
+      "fc": 2,
+      "dw": 2,
+      "dl": 7
+     },
+     "x": 0.13,
+     "y": 0.71
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 6.7,
+     "s": {
+      "min": 90,
+      "xg": 0.44,
+      "xa": 0.11,
+      "sh": 5,
+      "pa": [
+       54,
+       60
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 79,
+      "box": 7,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 4,
+      "tk": 1,
+      "rec": 3,
+      "dw": 3,
+      "dl": 3
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.3,
+     "off": 63,
+     "s": {
+      "min": 63,
+      "xa": 0.02,
+      "pa": [
+       53,
+       58
+      ],
+      "tch": 64,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 2,
+      "clr": 1,
+      "int": 2,
+      "rec": 1,
+      "dw": 3,
+      "dl": 2
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 6.4,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.01,
+      "pa": [
+       28,
+       29
+      ],
+      "tch": 42,
+      "f3": 1,
+      "tk": 3,
+      "clr": 2,
+      "int": 1,
+      "rec": 3,
+      "dw": 4,
+      "dl": 1
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 6,
+     "yc": 1,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.09,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       9,
+       14
+      ],
+      "kp": 1,
+      "tch": 23,
+      "box": 1,
+      "dr": [
+       0,
+       1
+      ],
+      "clr": 1,
+      "rec": 4,
+      "fd": 1,
+      "fc": 2,
+      "dw": 2,
+      "dl": 5
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 6.8,
+     "s": {
+      "min": 90,
+      "xa": 0.06,
+      "pa": [
+       45,
+       56
+      ],
+      "kp": 1,
+      "tch": 73,
+      "box": 4,
+      "dr": [
+       1,
+       3
+      ],
+      "f3": 7,
+      "tk": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 5,
+      "fd": 1,
+      "fc": 1,
+      "dw": 6,
+      "dl": 7
+     },
+     "x": 0.5,
+     "y": 0.32
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 6.7,
+     "s": {
+      "min": 90,
+      "xg": 0.1,
+      "xa": 0.26,
+      "sh": 2,
+      "pa": [
+       12,
+       13
+      ],
+      "kp": 3,
+      "tch": 25,
+      "box": 4,
+      "dr": [
+       3,
+       4
+      ],
+      "tk": 1,
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 7,
+      "dl": 8
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1106074,
+     "name": "Gila",
+     "num": 34,
+     "r": 6.5,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.06,
+      "pa": [
+       39,
+       46
+      ],
+      "tch": 58,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 1,
+      "clr": 1,
+      "rec": 5,
+      "fd": 2,
+      "dw": 2,
+      "dl": 1
+     }
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 7.1,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.02,
+      "xa": 0.17,
+      "sh": 1,
+      "pa": [
+       30,
+       32
+      ],
+      "kp": 2,
+      "tch": 39,
+      "box": 3,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 2,
+      "rec": 3,
+      "fd": 1,
+      "dw": 3,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 6.3,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xg": 0.15,
+      "xa": 0.42,
+      "sh": 3,
+      "pa": [
+       27,
+       29
+      ],
+      "kp": 1,
+      "tch": 48,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 3
+     }
+    },
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 6.7,
+     "on": 63,
+     "s": {
+      "min": 27,
+      "xg": 0.03,
+      "xa": 0.1,
+      "sh": 1,
+      "pa": [
+       47,
+       50
+      ],
+      "kp": 1,
+      "sot": 1,
+      "tch": 52,
+      "f3": 14
+     }
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "r": 5.9,
+     "on": 67,
+     "s": {
+      "min": 23,
+      "xg": 0.41,
+      "sh": 2,
+      "pa": [
+       0,
+       1
+      ],
+      "tch": 6,
+      "box": 5,
+      "fd": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 532097,
+    "name": "Kristoffer Zachariassen",
+    "r": 9,
+    "mine": false
+   }
+  },
+  "6112294": {
+   "round": 2,
+   "form": "3-4-2-1",
+   "oform": "4-2-3-1",
+   "tr": [
+    7.6,
+    6
+   ],
+   "st": {
+    "xg": [
+     3.38,
+     0.81
+    ],
+    "poss": [
+     48,
+     52
+    ],
+    "shots": [
+     15,
+     14
+    ],
+    "sot": [
+     10,
+     2
+    ],
+    "big": [
+     7,
+     2
+    ],
+    "corners": [
+     2,
+     3
+    ],
+    "pass": [
+     90,
+     88
+    ]
+   },
+   "goals": [
+    {
+     "min": 15,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Omari Hutchinson"
+    },
+    {
+     "min": 32,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Davide Bartesaghi"
+    },
+    {
+     "min": 49,
+     "side": "M",
+     "name": "Alphadjo Cissè",
+     "pid": 1445650,
+     "assist": "Adrien Rabiot"
+    },
+    {
+     "min": 72,
+     "side": "M",
+     "name": "Gonçalo Ramos",
+     "pid": 940087,
+     "assist": "Ardon Jashari"
+    }
+   ],
+   "reds": [
+    {
+     "min": 84,
+     "side": "M",
+     "name": "Filippo Terracciano"
+    }
+   ],
+   "stadium": "Red Bull Arena",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 7.9,
+     "s": {
+      "min": 90,
+      "sv": 2,
+      "xgf": 0.07,
+      "gp": 0.07,
+      "pa": [
+       31,
+       37
+      ],
+      "rec": 12,
+      "tch": 47,
+      "dw": 1,
+      "tk": 1,
+      "f3": 2,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 749662,
+     "name": "Tomori",
+     "num": 23,
+     "r": 7.6,
+     "off": 67,
+     "s": {
+      "min": 67,
+      "pa": [
+       43,
+       46
+      ],
+      "tch": 65,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 4,
+      "tk": 2,
+      "clr": 1,
+      "int": 3,
+      "rec": 6,
+      "fd": 1,
+      "dw": 4,
+      "dl": 2
+     },
+     "x": 0.79,
+     "y": 0.71
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.4,
+     "s": {
+      "min": 90,
+      "pa": [
+       56,
+       61
+      ],
+      "tch": 73,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 1,
+      "tk": 2,
+      "clr": 3,
+      "int": 2,
+      "rec": 3,
+      "fd": 1,
+      "fc": 2,
+      "dw": 4,
+      "dl": 5
+     },
+     "x": 0.5,
+     "y": 0.71
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 7.3,
+     "off": 81,
+     "s": {
+      "min": 81,
+      "xa": 0.02,
+      "pa": [
+       50,
+       55
+      ],
+      "tch": 67,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 5,
+      "tk": 3,
+      "clr": 4,
+      "int": 1,
+      "fd": 1,
+      "dw": 6,
+      "dl": 3
+     },
+     "x": 0.21,
+     "y": 0.71
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 8.3,
+     "a": 1,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.29,
+      "xa": 0.55,
+      "sh": 3,
+      "pa": [
+       29,
+       32
+      ],
+      "kp": 2,
+      "sot": 2,
+      "tch": 51,
+      "box": 9,
+      "dr": [
+       4,
+       4
+      ],
+      "rec": 6,
+      "fd": 3,
+      "fc": 2,
+      "dw": 7,
+      "dl": 4
+     },
+     "x": 0.88,
+     "y": 0.52
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 8.4,
+     "s": {
+      "min": 90,
+      "xg": 0.08,
+      "xa": 0.05,
+      "sh": 1,
+      "pa": [
+       60,
+       64
+      ],
+      "kp": 2,
+      "tch": 86,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 7,
+      "tk": 1,
+      "clr": 5,
+      "int": 6,
+      "rec": 13,
+      "fd": 1,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.63,
+     "y": 0.52
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 8.1,
+     "a": 1,
+     "off": 60,
+     "s": {
+      "min": 61,
+      "xg": 0.16,
+      "xa": 0.84,
+      "sh": 2,
+      "pa": [
+       32,
+       35
+      ],
+      "kp": 3,
+      "sot": 1,
+      "tch": 44,
+      "box": 2,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 5,
+      "tk": 1,
+      "rec": 2,
+      "fd": 1,
+      "fc": 1,
+      "dw": 3,
+      "dl": 1
+     },
+     "x": 0.38,
+     "y": 0.52
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 8.6,
+     "a": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.02,
+      "xa": 0.44,
+      "sh": 1,
+      "pa": [
+       34,
+       38
+      ],
+      "kp": 3,
+      "sot": 1,
+      "tch": 68,
+      "box": 2,
+      "dr": [
+       3,
+       5
+      ],
+      "f3": 4,
+      "tk": 4,
+      "int": 3,
+      "rec": 4,
+      "fd": 1,
+      "dw": 8,
+      "dl": 4
+     },
+     "x": 0.13,
+     "y": 0.52
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 7.5,
+     "s": {
+      "min": 90,
+      "xg": 0.18,
+      "xa": 0.02,
+      "sh": 1,
+      "pa": [
+       23,
+       28
+      ],
+      "sot": 1,
+      "tch": 41,
+      "box": 1,
+      "f3": 3,
+      "tk": 7,
+      "rec": 3,
+      "dw": 9,
+      "dl": 3
+     },
+     "x": 0.7,
+     "y": 0.32
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 9.6,
+     "g": 3,
+     "off": 60,
+     "s": {
+      "min": 60,
+      "xg": 1.79,
+      "xa": 0.02,
+      "sh": 4,
+      "pa": [
+       15,
+       16
+      ],
+      "sot": 4,
+      "tch": 26,
+      "box": 6,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 2,
+      "tk": 1,
+      "rec": 2,
+      "fd": 1,
+      "fc": 2,
+      "dw": 3,
+      "dl": 3
+     },
+     "x": 0.3,
+     "y": 0.32
+    },
+    {
+     "id": 1554575,
+     "name": "Camarda",
+     "num": 73,
+     "r": 6.4,
+     "off": 60,
+     "s": {
+      "min": 60,
+      "xa": 0.01,
+      "pa": [
+       7,
+       9
+      ],
+      "tch": 21,
+      "box": 3,
+      "dr": [
+       1,
+       2
+      ],
+      "rec": 1,
+      "fd": 1,
+      "fc": 3,
+      "dw": 5,
+      "dl": 8
+     },
+     "x": 0.5,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 31097,
+     "name": "Modrić",
+     "num": 14,
+     "r": 6.7,
+     "on": 60,
+     "s": {
+      "min": 29,
+      "pa": [
+       19,
+       20
+      ],
+      "kp": 1,
+      "tch": 25,
+      "f3": 2,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 4,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 688295,
+     "name": "Pulisic",
+     "num": 11,
+     "r": 7.1,
+     "on": 60,
+     "s": {
+      "min": 30,
+      "xg": 0.14,
+      "sh": 1,
+      "pa": [
+       9,
+       11
+      ],
+      "kp": 1,
+      "tch": 25,
+      "box": 1,
+      "dr": [
+       3,
+       5
+      ],
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "int": 1,
+      "rec": 3,
+      "fd": 2,
+      "fc": 1,
+      "dw": 6,
+      "dl": 4
+     }
+    },
+    {
+     "id": 940087,
+     "name": "Ramos",
+     "num": 9,
+     "r": 7.3,
+     "g": 1,
+     "on": 60,
+     "s": {
+      "min": 30,
+      "xg": 0.74,
+      "sh": 2,
+      "pa": [
+       3,
+       6
+      ],
+      "sot": 1,
+      "tch": 11,
+      "box": 2,
+      "f3": 1,
+      "rec": 2,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1163501,
+     "name": "Terracciano",
+     "num": 42,
+     "r": 5.3,
+     "rc": 1,
+     "on": 67,
+     "s": {
+      "min": 16,
+      "pa": [
+       7,
+       9
+      ],
+      "tch": 11,
+      "tk": 1,
+      "clr": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "on": 81,
+     "s": {
+      "min": 9,
+      "pa": [
+       11,
+       11
+      ],
+      "tch": 12,
+      "dl": 1
+     }
+    }
+   ],
+   "potm": {
+    "id": 1445650,
+    "name": "Alphadjo Cissè",
+    "r": 9.6,
+    "mine": true
+   }
+  },
+  "6112326": {
+   "round": 3,
+   "form": "3-4-3",
+   "oform": "4-4-2",
+   "tr": [
+    6.2,
+    7.2
+   ],
+   "st": {
+    "xg": [
+     0.11,
+     3.14
+    ],
+    "poss": [
+     36,
+     64
+    ],
+    "shots": [
+     3,
+     20
+    ],
+    "sot": [
+     0,
+     7
+    ],
+    "big": [
+     0,
+     4
+    ],
+    "corners": [
+     4,
+     6
+    ],
+    "pass": [
+     79,
+     88
+    ]
+   },
+   "goals": [
+    {
+     "min": 8,
+     "side": "O",
+     "name": "Justin Kluivert",
+     "pid": 794253,
+     "pen": true
+    },
+    {
+     "min": 32,
+     "side": "O",
+     "name": "Marcus Tavernier",
+     "pid": 789630,
+     "pen": true
+    },
+    {
+     "min": 84,
+     "side": "O",
+     "name": "Amine Adli",
+     "pid": 1079557
+    }
+   ],
+   "reds": [
+    {
+     "min": 28,
+     "side": "M",
+     "name": "Mike Maignan"
+    }
+   ],
+   "stadium": "Vitality Stadium",
+   "xi": [
+    {
+     "id": 466439,
+     "name": "Maignan",
+     "num": 16,
+     "r": 4.6,
+     "rc": 1,
+     "s": {
+      "min": 27,
+      "sv": 3,
+      "gc": 1,
+      "xgf": 1.04,
+      "gp": -0.96,
+      "pa": [
+       8,
+       11
+      ],
+      "rec": 2,
+      "clr": 1,
+      "tch": 16,
+      "dl": 1,
+      "fc": 1,
+      "f3": 2,
+      "gk": 1
+     },
+     "x": 0.5,
+     "y": 0.9
+    },
+    {
+     "id": 749662,
+     "name": "Tomori",
+     "num": 23,
+     "r": 6.7,
+     "yc": 1,
+     "off": 66,
+     "s": {
+      "min": 66,
+      "pa": [
+       15,
+       19
+      ],
+      "tch": 32,
+      "f3": 3,
+      "tk": 2,
+      "clr": 4,
+      "rec": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.79,
+     "y": 0.64
+    },
+    {
+     "id": 1200630,
+     "name": "De Winter",
+     "num": 5,
+     "r": 7.1,
+     "yc": 1,
+     "s": {
+      "min": 90,
+      "xg": 0.03,
+      "xa": 0.01,
+      "sh": 1,
+      "pa": [
+       29,
+       33
+      ],
+      "tch": 49,
+      "box": 1,
+      "f3": 5,
+      "tk": 4,
+      "clr": 7,
+      "int": 1,
+      "rec": 6,
+      "fd": 2,
+      "fc": 2,
+      "dw": 8,
+      "dl": 1
+     },
+     "x": 0.5,
+     "y": 0.64
+    },
+    {
+     "id": 1048023,
+     "name": "Pavlović",
+     "num": 31,
+     "r": 6.6,
+     "s": {
+      "min": 90,
+      "xg": 0.07,
+      "sh": 1,
+      "pa": [
+       31,
+       32
+      ],
+      "tch": 51,
+      "box": 2,
+      "dr": [
+       1,
+       2
+      ],
+      "tk": 1,
+      "clr": 3,
+      "int": 1,
+      "rec": 3,
+      "fd": 5,
+      "fc": 2,
+      "dw": 9,
+      "dl": 7
+     },
+     "x": 0.21,
+     "y": 0.64
+    },
+    {
+     "id": 1342754,
+     "name": "Moreira",
+     "num": 22,
+     "r": 6.9,
+     "off": 76,
+     "s": {
+      "min": 76,
+      "xa": 0.05,
+      "pa": [
+       9,
+       12
+      ],
+      "kp": 1,
+      "tch": 35,
+      "dr": [
+       4,
+       6
+      ],
+      "f3": 2,
+      "tk": 2,
+      "clr": 1,
+      "rec": 4,
+      "fd": 2,
+      "dw": 8,
+      "dl": 7
+     },
+     "x": 0.88,
+     "y": 0.39
+    },
+    {
+     "id": 1137272,
+     "name": "Musah",
+     "num": 80,
+     "r": 5.9,
+     "s": {
+      "min": 90,
+      "xg": 0.02,
+      "sh": 1,
+      "pa": [
+       23,
+       23
+      ],
+      "tch": 33,
+      "tk": 2,
+      "clr": 1,
+      "int": 1,
+      "rec": 6,
+      "fd": 1,
+      "fc": 3,
+      "dw": 3,
+      "dl": 7
+     },
+     "x": 0.63,
+     "y": 0.39
+    },
+    {
+     "id": 1163219,
+     "name": "Jashari",
+     "num": 30,
+     "r": 6.8,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       35,
+       45
+      ],
+      "tch": 53,
+      "dr": [
+       1,
+       1
+      ],
+      "f3": 10,
+      "tk": 1,
+      "clr": 3,
+      "rec": 8,
+      "dw": 2,
+      "dl": 1
+     },
+     "x": 0.38,
+     "y": 0.39
+    },
+    {
+     "id": 688278,
+     "name": "Estupinán",
+     "num": 2,
+     "r": 6.3,
+     "yc": 1,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "pa": [
+       13,
+       17
+      ],
+      "tch": 39,
+      "dr": [
+       0,
+       1
+      ],
+      "f3": 2,
+      "tk": 3,
+      "clr": 2,
+      "int": 1,
+      "rec": 1,
+      "fc": 1,
+      "dw": 4,
+      "dl": 4
+     },
+     "x": 0.13,
+     "y": 0.39
+    },
+    {
+     "id": 1215652,
+     "name": "Hutchinson",
+     "num": 20,
+     "r": 5.9,
+     "off": 32,
+     "s": {
+      "min": 32,
+      "pa": [
+       9,
+       11
+      ],
+      "tch": 20,
+      "dr": [
+       1,
+       2
+      ],
+      "f3": 2,
+      "int": 1,
+      "rec": 1,
+      "dw": 1,
+      "dl": 3
+     },
+     "x": 0.79,
+     "y": 0.13
+    },
+    {
+     "id": 1445650,
+     "name": "Cissè",
+     "num": 70,
+     "r": 5.7,
+     "s": {
+      "min": 90,
+      "xa": 0.01,
+      "pa": [
+       12,
+       15
+      ],
+      "tch": 30,
+      "box": 2,
+      "int": 1,
+      "rec": 1,
+      "fd": 3,
+      "fc": 1,
+      "dw": 4,
+      "dl": 8
+     },
+     "x": 0.5,
+     "y": 0.13
+    },
+    {
+     "id": 604982,
+     "name": "Loftus-Cheek",
+     "num": 8,
+     "r": 5.7,
+     "off": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.01,
+      "pa": [
+       7,
+       10
+      ],
+      "tch": 17,
+      "box": 2,
+      "dr": [
+       0,
+       1
+      ],
+      "rec": 1,
+      "fd": 1,
+      "fc": 1,
+      "dw": 2,
+      "dl": 4
+     },
+     "x": 0.21,
+     "y": 0.13
+    }
+   ],
+   "subs": [
+    {
+     "id": 1642393,
+     "name": "Torriani",
+     "num": 96,
+     "r": 6.1,
+     "on": 32,
+     "s": {
+      "min": 58,
+      "sv": 1,
+      "gc": 2,
+      "xgf": 1.87,
+      "gp": 0.87,
+      "pa": [
+       17,
+       29
+      ],
+      "rec": 2,
+      "tch": 31,
+      "f3": 5,
+      "gk": 1
+     }
+    },
+    {
+     "id": 352879,
+     "name": "Rabiot",
+     "num": 12,
+     "r": 6.5,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "pa": [
+       7,
+       12
+      ],
+      "tch": 25,
+      "box": 1,
+      "f3": 1,
+      "tk": 1,
+      "clr": 1,
+      "int": 2,
+      "rec": 3,
+      "fd": 1,
+      "fc": 3,
+      "dw": 5,
+      "dl": 4
+     }
+    },
+    {
+     "id": 1385856,
+     "name": "Bartesaghi",
+     "num": 33,
+     "r": 6,
+     "on": 46,
+     "s": {
+      "min": 45,
+      "xa": 0.06,
+      "pa": [
+       7,
+       11
+      ],
+      "kp": 1,
+      "tch": 20,
+      "f3": 1,
+      "clr": 3,
+      "rec": 1,
+      "dl": 5
+     }
+    },
+    {
+     "id": 1669433,
+     "name": "Diawara",
+     "num": 13,
+     "r": 6,
+     "on": 66,
+     "s": {
+      "min": 24,
+      "pa": [
+       1,
+       3
+      ],
+      "tch": 6,
+      "box": 1,
+      "clr": 1,
+      "dw": 1,
+      "dl": 1
+     }
+    },
+    {
+     "id": 1787535,
+     "name": "Comotto",
+     "num": 28,
+     "r": 6,
+     "on": 76,
+     "s": {
+      "min": 14,
+      "pa": [
+       3,
+       3
+      ],
+      "tch": 8,
+      "clr": 2,
+      "rec": 1,
+      "fd": 1,
+      "dw": 1,
+      "dl": 2
+     }
+    }
+   ],
+   "potm": {
+    "id": 959407,
+    "name": "James Hill",
+    "r": 7.9,
+    "mine": false
+   }
+  }
+ },
+ "unavailable": {
+  "matchId": 5749750,
+  "list": [
+   {
+    "id": 1048023,
+    "name": "Strahinja Pavlović",
+    "type": "injury",
+    "reason": "Knee injury",
+    "back": "About 1-2 weeks"
+   },
+   {
+    "id": 749662,
+    "name": "Fikayo Tomori",
+    "type": "injury",
+    "reason": "Muscle injury",
+    "back": "Doubtful"
+   },
+   {
+    "id": 281762,
+    "name": "Pietro Terracciano",
+    "type": "injury",
+    "reason": "Physical discomfort",
+    "back": "Doubtful"
+   },
+   {
+    "id": 604982,
+    "name": "Ruben Loftus-Cheek",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "Doubtful"
+   },
+   {
+    "id": 688300,
+    "name": "Samuel Chukwueze",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "Mid January 2027"
+   },
+   {
+    "id": 844996,
+    "name": "Matteo Gabbia",
+    "type": "injury",
+    "reason": "Tendon injury",
+    "back": "Early January 2027"
+   },
+   {
+    "id": 921341,
+    "name": "Alexis Saelemaekers",
+    "type": "injury",
+    "reason": "Ankle injury",
+    "back": "Mid January 2027"
+   }
+  ]
+ },
+ "lineup": {
+  "formation": "3-4-2-1",
+  "used": 8,
+  "of": 11,
+  "comp": "55",
+  "forms": {
+   "3-4-2-1": 8,
+   "4-4-1-1": 1,
+   "4-2-3-1": 1,
+   "3-4-3": 1
+  },
+  "xi": [
+   {
+    "id": 940087,
+    "x": 0.5,
+    "y": 0.13,
+    "starts": 11
+   },
+   {
+    "id": 1445650,
+    "x": 0.3,
+    "y": 0.32,
+    "starts": 5
+   },
+   {
+    "id": 352879,
+    "x": 0.7,
+    "y": 0.32,
+    "starts": 7
+   },
+   {
+    "id": 688278,
+    "x": 0.13,
+    "y": 0.52,
+    "starts": 6
+   },
+   {
+    "id": 1137272,
+    "x": 0.38,
+    "y": 0.52,
+    "starts": 8
+   },
+   {
+    "id": 31097,
+    "x": 0.63,
+    "y": 0.52,
+    "starts": 8
+   },
+   {
+    "id": 688300,
+    "x": 0.88,
+    "y": 0.52,
+    "starts": 6
+   },
+   {
+    "id": 1048023,
+    "x": 0.21,
+    "y": 0.71,
+    "starts": 10
+   },
+   {
+    "id": 1200630,
+    "x": 0.5,
+    "y": 0.71,
+    "starts": 10
+   },
+   {
+    "id": 1106074,
+    "x": 0.79,
+    "y": 0.71,
+    "starts": 9
+   },
+   {
+    "id": 466439,
+    "x": 0.5,
+    "y": 0.9,
+    "starts": 11
+   }
+  ]
+ },
+ "extra": {
+  "fanta": {
+   "asOf": "2026-11-11",
+   "n": 23
+  },
+  "phys": {
+   "asOf": "2026-11-11",
+   "n": 24
+  }
+ },
  "groups": {
   "GK": {
    "label": "Goalkeepers",
@@ -700,6 +8772,33 @@
     57,
     79
    ],
+   "heat": {
+    "55": {
+     "k": 11,
+     "n": 608,
+     "m": 70,
+     "g": "0000100000000000000000000110000000000000000000000000000000000000000000000111010010000000000000002224101010000000000000002542211100000000000000005b7511300000000000000000vvnc31111000000000000000zug976100000000000000000524322200000000000000000212241111000000000000000010220100000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "73": {
+     "k": 3,
+     "n": 114,
+     "m": 17,
+     "g": "0000000000000000000000000000000000000000000000000000002000000000000000000002000400000000000000000000020000000000000000002244220000000000000000004a8842004000000000000000zne640000000000000000000vgc202200000000000000000200400200000000000000000202004000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 11,
+    "mv": 6.27,
+    "fm": 5.09
+   },
+   "phys": {
+    "73": {
+     "km": 10.88,
+     "top": 20.75,
+     "min": 207,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 11,
@@ -778,6 +8877,23 @@
    "roles": "GK",
    "grp": "GK",
    "pct": null,
+   "heat": {
+    "73": {
+     "k": 2,
+     "n": 107,
+     "m": 12,
+     "g": "000000000000000000000000300000603000000000000000000003000000000000000000003000000000000000000000033000000000000000000000603000000000000000000000nc9606300000000000000000zni9036600000000000000009qk9330000000000000000006f3300003300000000000000030000300000000000000000000000000060000000000000000000000000000000000000000000060000000000000000000300000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": null,
+   "phys": {
+    "73": {
+     "km": 9.27,
+     "top": 27.7,
+     "min": 149,
+     "mp": 2
+    }
+   },
    "c": {
     "73": {
      "mp": 2,
@@ -824,6 +8940,9 @@
    "roles": "GK",
    "grp": "GK",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -836,6 +8955,9 @@
    "roles": "",
    "grp": "GK",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -857,6 +8979,33 @@
     40,
     63
    ],
+   "heat": {
+    "55": {
+     "k": 11,
+     "n": 965,
+     "m": 23,
+     "g": "00200200000000000000000002520302022000000000000002002200000020000000000000300022003000000000002030022535020500000000000002002e36368252222000000032053533b66522020000030025653bebc3298002220002205ic8bbnifbfc3602000000b326658fofib89e2250000000320b3zhwqhlnee93200002000589choiuurt9e862022000020f89e8ikec6532532000000056ib5b66e9c82823020000000898833cbf50333060000000032020302222225200000000"
+    },
+    "73": {
+     "k": 4,
+     "n": 346,
+     "m": 8,
+     "g": "004000000000004400040000090d000000000000040000000004400400009000040400004000d04440004040400400009049000000000944049000000d0400449940090000000040404d094994d4904000000400i094004mi4990044000409090994d9i9qdi49d94040000000444diqzqi949994000000004qm4m9mdi49d9di4000004904dqdv9mdm994ii004000000009iii944444049000000000044400094009040000004000000940d449494044000000000090900000009000d00000000"
+    }
+   },
+   "fanta": {
+    "pv": 11,
+    "mv": 6,
+    "fm": 5.86
+   },
+   "phys": {
+    "73": {
+     "km": 38.77,
+     "top": 30.93,
+     "min": 360,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 11,
@@ -919,6 +9068,33 @@
     86,
     14
    ],
+   "heat": {
+    "55": {
+     "k": 10,
+     "n": 977,
+     "m": 20,
+     "g": "477b759e77b47g42000000004ccbcliebgbcjb442240000047ibjqjsijcbe9295400000220b5ignnc7i55b7442040000244bnlzxqiwbg5c2470020004547iqgzunnjcc4940202200ii779ilpqe795224522004402572b2cll44b7200400527b04590049b9055200000000002200000050020200000000420402000222402042200000020000002220002000000000000000020402200000000000000002000000000020000000000000000000000200000000000002000000020000000000000"
+    },
+    "73": {
+     "k": 3,
+     "n": 243,
+     "m": 8,
+     "g": "004409400i94049404000000004m440i44940909440400000m004ddd49i999444090400040d049q9d9m4d4044000040000i09ddm4id4mi9400000040040449zdd990999944440040m44000404m9404449400000040i9000000000040400004i0994004400440000004400440000000000004000000000000000040004004004000000000000000000000000000000000000000000000000000000000000000040000000000000000000040004000004000000000000000000000000000000040"
+    }
+   },
+   "fanta": {
+    "pv": 10,
+    "mv": 6.15,
+    "fm": 6.1
+   },
+   "phys": {
+    "73": {
+     "km": 30.03,
+     "top": 32.74,
+     "min": 261,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 10,
@@ -983,6 +9159,33 @@
     77,
     32
    ],
+   "heat": {
+    "55": {
+     "k": 9,
+     "n": 822,
+     "m": 15,
+     "g": "000002000000000000000000002000000020000200000000000000000000000000020000000000000000000000000000000000020020200250000000020002052000225000000000250020222002000000000020070020072200720200000000275002c75007250020000005027225577l772075200000000722c9gc5cg22n90c2200005c9e97qequlgecnc2e0500020e5g799nelgcl2c757070002059lcncjcxjeg9l797952050079geeqjzsnxqnlu7c752772277ejnsxuqlsnsujng2277000"
+    },
+    "73": {
+     "k": 2,
+     "n": 124,
+     "m": 5,
+     "g": "0000000000000000000000000000070e00000e00000000000000l0000700000700000000000777700700e07000000000000707000ee7707000000000070000070e000007000000000700000000000e07000000000070000070e0070000000000007000007700007007000000000000770000e0007000070000700070es0007e777e00000000077e7l77e0e7l000000007e070070700007e7z700700007e000000e0000e70000000700777700070e00700e007000000000000000007000000000"
+    }
+   },
+   "fanta": {
+    "pv": 9,
+    "mv": 6.44,
+    "fm": 6.67
+   },
+   "phys": {
+    "73": {
+     "km": 9.85,
+     "top": 33.85,
+     "min": 90,
+     "mp": 2
+    }
+   },
    "c": {
     "55": {
      "mp": 9,
@@ -1038,6 +9241,33 @@
    "roles": "CB / LB",
    "grp": "CB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 4,
+     "n": 204,
+     "m": 7,
+     "g": "5a50aakppapp5zzfa5500000a0555kfzf5ffkpf0a50a5005050550a5kff0a000k0500005055055fa0a0k0005a000000005555a0aa55500000000500000050ff0aka0000005000000000550a0a00500a0000050000f5505500550000000000000055000500050000000000000000000000a00000000000000000000000050000000000000000000000000000000000000000000000000000000000000000000050500000000000000000000000000000000000000000000000000000000000000"
+    },
+    "73": {
+     "k": 3,
+     "n": 82,
+     "m": 4,
+     "g": "9000090000000000000009009900000000000900000000000z0i99000000z0000090000009q909ii9ii00900000000000909qiizii99000900000i000099990909909000000000009990000090900900000000000000000000009900000000000i9000009000900000000000000000000900000000000000000000909000000000000000000000000000009000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 4,
+    "mv": 5.88,
+    "fm": 5.75
+   },
+   "phys": {
+    "73": {
+     "km": 9.35,
+     "top": 30.46,
+     "min": 78,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 4,
@@ -1099,6 +9329,33 @@
    "roles": "CB / RB",
    "grp": "CB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 3,
+     "n": 106,
+     "m": 9,
+     "g": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040004040000000000000000000000000000000000040000000000400080040004000004g40404440c00440004000000800000400000040044004000404800440888040080g4400040400808cj0cjzg4gc880040448"
+    },
+    "73": {
+     "k": 2,
+     "n": 108,
+     "m": 6,
+     "g": "00006000000000000000000000600000000000000600000000000000000000000000000000000000000000000000000000000000000600000000000000600060000000000000000000000000060000000000000000000060060000000000000000000c0006600000000000006000600606006000000000000006000cc000c000000000000000c066060600600000000006000i6c006066000000000000606c00c0660060000000006c00cn0cci060nc0000600000cczznc0c0600ccc00606000"
+    }
+   },
+   "fanta": {
+    "pv": 2,
+    "mv": 6.5,
+    "fm": 7
+   },
+   "phys": {
+    "73": {
+     "km": 14.24,
+     "top": 31.67,
+     "min": 133,
+     "mp": 2
+    }
+   },
    "c": {
     "55": {
      "mp": 3,
@@ -1156,6 +9413,33 @@
    "roles": "CB / RB",
    "grp": "CB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 3,
+     "n": 44,
+     "m": 2,
+     "g": "0000000000000000000000000000ii000i0000000000000000iiz000i000i0000000000000ii0z0zi0000000000000000i00i000i000i00000000000000000i0zz00000000000000000zi00i00i00000000000000ii000z0i00000000000000000i000000000000000000000000000000000000000000000000000i0z00000i000000000000000i00000000000000000000000000000000000000000000000000000000000000000000000000i00000i000000000000000000000000i0000000"
+    },
+    "73": {
+     "k": 3,
+     "n": 159,
+     "m": 5,
+     "g": "000000000000000000000000000070000000000000000000000000000e000000000000000000000000007000000000000000000000000707000000000000000000000e0000000000000000000700707e0000000000l000000077000000000000e0707000e00070700000000007077000070007007700000007700000ls0l0l7007000000000070l7l7777770000000007l70l007esl0e7ee7700000000z0770l07077770000ee000770e07s7s70707700007000000l0l7ese0l7e7e77070e700"
+    }
+   },
+   "fanta": {
+    "pv": 1,
+    "mv": 6,
+    "fm": 6
+   },
+   "phys": {
+    "73": {
+     "km": 18.46,
+     "top": 33.99,
+     "min": 151,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 3,
@@ -1212,6 +9496,20 @@
    "roles": "CB",
    "grp": "CB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 3,
+     "n": 28,
+     "m": 2,
+     "g": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000i000i000000000i0000000i0i000000000000000000000z000i000000z0000000000000iz0000i00ii000000000000i00ii00i00i00000i0000000000z0000i0000000000000000000000000000ii0000000000000000000000000000000000000000000i0000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 2,
+    "mv": 5.75,
+    "fm": 5.75
+   },
+   "phys": null,
    "c": {
     "55": {
      "mp": 3,
@@ -1248,6 +9546,9 @@
    "roles": "CB",
    "grp": "CB",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -1260,6 +9561,9 @@
    "roles": "CB",
    "grp": "CB",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -1272,6 +9576,33 @@
    "roles": "LM / LB / LWB / CB",
    "grp": "FB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 6,
+     "n": 233,
+     "m": 10,
+     "g": "44047epee7p4bspz47b770be07i74e4i77e07pell047400004447b0040400774774747000400e4440047040740000b47400444470774044000740400000000700440400000400404474004000004000400000000bb0000000000400000000704044007000000000000000000000000000000040000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007"
+    },
+    "73": {
+     "k": 4,
+     "n": 227,
+     "m": 11,
+     "g": "336ad0aggtdzgdj6dg6d66aw060aaag6d3a3ada663da333000333036a63600660336aa060060636360330a360300a333303030006000030006003030000300000000000003000030000300000000000000000003360030000000000000300000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003"
+    }
+   },
+   "fanta": {
+    "pv": 4,
+    "mv": 6,
+    "fm": 5.5
+   },
+   "phys": {
+    "73": {
+     "km": 30.77,
+     "top": 33.03,
+     "min": 260,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 6,
@@ -1334,6 +9665,33 @@
     51,
     97
    ],
+   "heat": {
+    "55": {
+     "k": 9,
+     "n": 392,
+     "m": 14,
+     "g": "0505aknasixiszfaida0d00305f8dandapspkfda05f55355035385nd5di85385d085330350003300053530305005000003303530533d880050035303303000030553000003300300535500500033000330000300588300030000500003000050300000000000000050000030003000000000000003000000000003000000000000000000000000000300300000000000000030000000000000000000000330000000000000000030003000000000000000000000000000000000000000000003"
+    },
+    "73": {
+     "k": 1,
+     "n": 46,
+     "m": 4,
+     "g": "0990999iz9990i9z90i9i0000009000009009009i000000000q00i900000000009000000990000000000090000000000000000000000000000000000000000000000000000000000090000000000000000000000000000000000000000000000000090000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000090000000000000000000000000000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 7,
+    "mv": 5.71,
+    "fm": 5.57
+   },
+   "phys": {
+    "73": {
+     "km": 4.98,
+     "top": 30.9,
+     "min": 45,
+     "mp": 1
+    }
+   },
    "c": {
     "55": {
      "mp": 9,
@@ -1390,6 +9748,33 @@
    "roles": "RM / RW / AM",
    "grp": "FB",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 4,
+     "n": 186,
+     "m": 7,
+     "g": "005000500p0ff5ppa5500000050050aa5ap05kf5fa5f555000a50055a00505a0az0fa50500005000kf5a055000f000000000055a05faa00a5k550050000000055fa50ak505055000000000a00aa05050a005500000000000500050005000500000000000000a50000a000000005000000000000000000000000000000000000000550000000000000500000050000000000000000000a0000000005000000a000000000000005005000055050000000000000000050000a00005000000000000"
+    },
+    "73": {
+     "k": 1,
+     "n": 38,
+     "m": 4,
+     "g": "0000009900000000i0i0000000000000000009009z09000000000000000000009qi9i00000000000000000000i0909i0000000900000009990000000000000000000000900000900000000000000000900000000000000000000000000000000000000000000000009090000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 4,
+    "mv": 6.25,
+    "fm": 6.5
+   },
+   "phys": {
+    "73": {
+     "km": 4.43,
+     "top": 29.65,
+     "min": 33,
+     "mp": 1
+    }
+   },
    "c": {
     "55": {
      "mp": 4,
@@ -1454,6 +9839,33 @@
     6,
     52
    ],
+   "heat": {
+    "55": {
+     "k": 11,
+     "n": 598,
+     "m": 9,
+     "g": "000c400cgn84ccg4004040004804g84cj4g448cg8444400000404c8004c0j00c404000000084004c44404440800000044000084gc04c4cn0c400000040440c4ncgccgcc00400400084000ggc8gg4jc0c8044000040048ggnjcjnzccg8480000400400j4484jgjj8c00480000000404jrg8cr04c8880084000800c0c0jcv8r8ncg4040000008444cjgrj8jncjc0040000088000c0g0cg4804808000004g0c4488ccc044c4048000000404480ccg48gg8c848048000000c448j0484gj4c4808440"
+    },
+    "73": {
+     "k": 3,
+     "n": 166,
+     "m": 5,
+     "g": "00000000000e707000700000700700007000777000000000000000e77007007e070000000700070077e007777000000000000770elz0ees0l0700000000000777le7l7ss770000000070077e0700s777el70700000e00707e077077ee000000007000700e707777070000000000000007000070770000000000077e07077070l0000000000e0070000000700700000000e0007070000000000000000707000e000000000770700000007000070700e0070000000000000077770077077000000"
+    }
+   },
+   "fanta": {
+    "pv": 10,
+    "mv": 6.05,
+    "fm": 6.05
+   },
+   "phys": {
+    "73": {
+     "km": 26.96,
+     "top": 32.91,
+     "min": 225,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 11,
@@ -1516,6 +9928,33 @@
     41,
     12
    ],
+   "heat": {
+    "55": {
+     "k": 9,
+     "n": 572,
+     "m": 9,
+     "g": "04000004404844884g8c800000000408480g0jgg48c84400004044c4cc8g4zcc4484840040400048jjcr40848884404c00044jn8nggg0cgcg80000c8c00084448jvn4gj48844440c04840088cg00444j0080040000040048r0c44g8440444004c04040448888c840j0484444g4044c0444g884g4c44404004044004jg4rj8c4cc4484400084040048jv88v8c808c044004004n44880c04844c0440044440044c884804jg4gc48000000004004084cn04844840800040440044448jcc84444400"
+    },
+    "73": {
+     "k": 4,
+     "n": 193,
+     "m": 5,
+     "g": "070000000007000e77ee0070000000e007070s77el0ee0700000000e70e77z0ll7077000000000007ee77e7070707l70000000e00e0e7e7e00000070000000770e0e7l77000e07000700000e0ele707007000e0007070070007l000000000000000070700700700007770000700000007000e07770707e0070700l77770770707007070000000000e07000707l7000000000700007ee700070070700000000000007070000e00000000e000000000l070e0077000070000000077e700e000000"
+    }
+   },
+   "fanta": {
+    "pv": 9,
+    "mv": 6.67,
+    "fm": 8.67
+   },
+   "phys": {
+    "73": {
+     "km": 26.14,
+     "top": 33.35,
+     "min": 214,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 9,
@@ -1578,6 +10017,33 @@
     28,
     95
    ],
+   "heat": {
+    "55": {
+     "k": 11,
+     "n": 897,
+     "m": 20,
+     "g": "00002250200440000200200p0002400552425225220222002400202594922j52702002252222455492959724420000000404457ijecil759b0040000002249llgzqi4gb94420000000424597ic7eg742592000000224075bnbjq7425520000000055049l9e94g5052220000000040777bc4527452440000000444559el7be9b77240000000405b27belbcbi7470200000225425472b7527244020000204525940759705045202000002045744472222024402200000004075200092000200002"
+    },
+    "73": {
+     "k": 2,
+     "n": 81,
+     "m": 4,
+     "g": "00000900000000000000000000000000090000000000000000000099000099000i90000000000i000000090099900000009q00900000090090000000000090i090009090900000000000009000009000000000000099000009909iz99900000000000900009990qi009000000000000000090009i990000000000900000099990000000009090900000000000900000000000i0000000009i00000000000090900000090i0090000000000000000000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 11,
+    "mv": 6.27,
+    "fm": 6.41
+   },
+   "phys": {
+    "73": {
+     "km": 6.82,
+     "top": 27.54,
+     "min": 57,
+     "mp": 2
+    }
+   },
    "c": {
     "55": {
      "mp": 11,
@@ -1644,6 +10110,33 @@
     2,
     16
    ],
+   "heat": {
+    "55": {
+     "k": 9,
+     "n": 368,
+     "m": 8,
+     "g": "0049000900449904000000004d4004ivm9dd9i04440000000004404idmzqmid9040000400400009dddq0dqi9404000004440049q9mzm99m40di04000009044449iid4i4999d00000000009id9i400d49004040000000099ii09d040d090400000000004d94900d9940400000000d040iidm4440049000000090440440dv9009940000000000000d404i400d400440000000004090440044094000400000000444000049440000000000000004000000000000000000000000000000044000000"
+    },
+    "73": {
+     "k": 4,
+     "n": 292,
+     "m": 7,
+     "g": "5000000500p00a005000050500000555a550055f5000000500050f5aaa05500055000000005a0a050550f05a5500050000005k0akf5u0a05a555005a555005k0kpu5fk5aa050005050a5005a5aauf55000000000005005kaz0pfff0ak5000000050500kaaaap0a00a00000500a505555aaf5a0faa5500000000500a500faaa050a000000000005a055a0u000000500000050000005500550f5500000005000a550k0000050050000500005005000005000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 6,
+    "mv": 5.92,
+    "fm": 5.92
+   },
+   "phys": {
+    "73": {
+     "km": 39.91,
+     "top": 34.01,
+     "min": 316,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 9,
@@ -1697,6 +10190,29 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 2,
+     "n": 3,
+     "m": 1,
+     "g": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000z00000000z000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000z00000000000000000000000000000000000000000000000000"
+    },
+    "73": {
+     "k": 1,
+     "n": 10,
+     "m": 2,
+     "g": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000i0000000000000000000000000000000000000000000000i000000000000000000000000i00000000000000000000000000i00i00000000000000000000000i00000000000000000z00000000000000000000000000000000000z000000000"
+    }
+   },
+   "fanta": null,
+   "phys": {
+    "73": {
+     "km": 2.45,
+     "top": 28.42,
+     "min": 14,
+     "mp": 1
+    }
+   },
    "c": {
     "55": {
      "mp": 2,
@@ -1756,6 +10272,9 @@
    "roles": "",
    "grp": "CM",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -1768,6 +10287,9 @@
    "roles": "",
    "grp": "CM",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   },
   {
@@ -1789,6 +10311,33 @@
     7,
     26
    ],
+   "heat": {
+    "55": {
+     "k": 9,
+     "n": 294,
+     "m": 8,
+     "g": "0040004i9499mmqi9ii40i0904040040d99idiizd9v9id9q0900004d94di4944id49i4940000094499i40i99i949d9490000000d4i409v40i444i99400000044494i09i049040909000404009444904009900000000000040009490049004004000000404044044004404040000000400000000000000044000000000000044000009000000000000440004000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000"
+    },
+    "73": {
+     "k": 4,
+     "n": 145,
+     "m": 4,
+     "g": "000009i0q00i990z09iq000i00000909iz0iii9q0i90i90090000000090i990999ii09000000099990i00q9iqi90i000000009q09i0000909q0i909000000090i0090i0900q00i09000000i000q0000090i000q000000000000i90009q009i990000000i0000i00000000090000000000000000000000000000000000909000000000090000000000009000009000000000000000000000000000000000000000000000900000000000000090000000000000000000000000009000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 6,
+    "mv": 6.58,
+    "fm": 9
+   },
+   "phys": {
+    "73": {
+     "km": 29.54,
+     "top": 32.71,
+     "min": 252,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 9,
@@ -1851,6 +10400,33 @@
     57,
     78
    ],
+   "heat": {
+    "55": {
+     "k": 7,
+     "n": 434,
+     "m": 11,
+     "g": "06000zjgd6a66gtgjd63d3060603363303aj003g66aa060003a03630d66a303306630p300306063036006600a3606606003006360030003003033330036030336060060600063606003000060000003033006600003000063000000a030033000330a003303000000000000030000000030006000033000006300000003030300036000003003030a3300033003300000a333003030300300j0300d336a3336d3600003036033da3306630ajg6606336da6jag3006303ag66jd03mggjg0d6603"
+    },
+    "73": {
+     "k": 3,
+     "n": 126,
+     "m": 3,
+     "g": "000000000cc0cncnn0n0zn000000000000c0cnnzz0zcznc00000000000000czccncc0cnc000000000c0c000c000000cc00000000000c000000c0000000000000000000c00n0n000000000000000000c00000000000000000000000000000c000c0c0000000000000c00000000000000000n0000000000000c000000000000000000c0000000000cn000000c000c0000000c00000000c0cnc0000000000ncc000c00c000c00ccn0nc00nccn00ccccc000c00n00c0c0c00nccc0n00cc0c0000000"
+    }
+   },
+   "fanta": {
+    "pv": 7,
+    "mv": 6.86,
+    "fm": 8.93
+   },
+   "phys": {
+    "73": {
+     "km": 17.45,
+     "top": 31.92,
+     "min": 154,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 7,
@@ -1915,6 +10491,33 @@
     49,
     61
    ],
+   "heat": {
+    "55": {
+     "k": 7,
+     "n": 415,
+     "m": 17,
+     "g": "00000000000000000000000000000000000000000000000000000000000000020000020000000000000200000000000000000000020000000000000000000000000000000000000000000000000000200000000000020000000000004020020002000000000020020020000000400000420000000000060040802200020284200022228000600002a022022642040424000242002022064440644e822220424444e0246622a68a4000004c86ajgaal6cl46ae400444846ljtgpplzpjg60a8a4c"
+    },
+    "73": {
+     "k": 1,
+     "n": 56,
+     "m": 5,
+     "g": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000770000000000000000000000000000000000000000e0000000000000000000e000000000070007000000000000000000000000000000000700000007700000000700000e000007e07e00700000000077z0l00e0777e0e0000000e00707700l70l700707"
+    }
+   },
+   "fanta": {
+    "pv": 7,
+    "mv": 6.21,
+    "fm": 6.5
+   },
+   "phys": {
+    "73": {
+     "km": 10.09,
+     "top": 31.72,
+     "min": 90,
+     "mp": 1
+    }
+   },
    "c": {
     "55": {
      "mp": 7,
@@ -1970,6 +10573,33 @@
    "roles": "RW / RM / AM / LW",
    "grp": "AM",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 7,
+     "n": 179,
+     "m": 5,
+     "g": "0000000007000000007077700000007000000000000000000000000000000070007000000000070007000000000000000000000070007l70000000000000000000e00700000000000070000e700e00007700000000000000000007770700e0000007e00000700000070070070000000000070070700007000000e00077e07e070e07000000000s00e0700e000l77700e077070l0e07e77770e0700000070ele0e0le007see00000e000000lels700l77se70e0700070077ee0l77e7zse77l0e0"
+    },
+    "73": {
+     "k": 4,
+     "n": 198,
+     "m": 7,
+     "g": "00000000000000050005000000000005000000000500500000000000000000005000500000000000000000000000000000000000000050000000000000000000000555005000055500050005500000050500050000000000a000f00005550000000050000005k0000000005000000000000k005a0000a050000050550000050000555k0500005505505005000055aaf000000a05500505a0a550aa0a00000000af55fa055a5kffp00050aa5p05a5a5a05kz5a50000500a0ffafaakafak55005f"
+    }
+   },
+   "fanta": {
+    "pv": 4,
+    "mv": 6.12,
+    "fm": 6.88
+   },
+   "phys": {
+    "73": {
+     "km": 29.85,
+     "top": 34.11,
+     "min": 257,
+     "mp": 4
+    }
+   },
    "c": {
     "55": {
      "mp": 7,
@@ -2023,6 +10653,33 @@
    "roles": "AM / CM / ST",
    "grp": "AM",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 7,
+     "n": 161,
+     "m": 4,
+     "g": "0090000000000000000000000000000000900000000000000000000900000000000009000000000000000900009000000i00000000000000090900900000000000000i0000000000009000i00000900009900090000000009000i0000000000000000090099i990900009i0000900900900i000009ii09ii0909900999iz9990i9990990000000i0i99q0zi99ii00q000i000900i90i0iiiq90990i00009000iiiqi99i9i09009900000000900zi9099999i0000000000090090990090009900"
+    },
+    "73": {
+     "k": 2,
+     "n": 70,
+     "m": 4,
+     "g": "000000990i000009q00i0000000900900900000099000000000000000000000000000090000000009000000000000000000000000000000000009i00000000000000000000000000000000000000000i000000000000000000090000000000000000000000009z00000000000000900q90009000000000000000909009990000000000900000090090i9999i900000000000099i0990000009900000000000000000090900000000000000i000009q0090000000000000009000900000000000"
+    }
+   },
+   "fanta": {
+    "pv": 7,
+    "mv": 5.79,
+    "fm": 5.71
+   },
+   "phys": {
+    "73": {
+     "km": 16.12,
+     "top": 32.71,
+     "min": 135,
+     "mp": 2
+    }
+   },
    "c": {
     "55": {
      "mp": 7,
@@ -2090,6 +10747,33 @@
     66,
     54
    ],
+   "heat": {
+    "55": {
+     "k": 11,
+     "n": 514,
+     "m": 9,
+     "g": "000040cc80j404ngc00000040000840004cg0nccc48484000000040440c8cccg444044444040044404c408004844008000000008gjzcj4z848c48040000004480j8vc4488ccj88c00400000408044jjcj0jc48g400004480480r8c0c4888cjjc00004004044g880c440c0jg8g44004000cg448c884844g440000040448j4ncgg40c40484000c000044nj0484004484800000000000jjc400448g004400000004c4848c0c0080480400000044n4j8044g000000040000000048gcc8c800440040"
+    },
+    "73": {
+     "k": 3,
+     "n": 97,
+     "m": 5,
+     "g": "0000000000700000007700000000000000700e00000000000000000070000e0700007000000000070000007000000000000000000000e00ee0000000000000000777007007007e000000000000770e00000l0ee000000000l0000700e0z07lz000700000e0007070ee0el070000000000e00007007le00000000000070770000770700000000000007007700007000000000000070000000000000000000000000e0000007000000000000000070000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 11,
+    "mv": 6,
+    "fm": 6.36
+   },
+   "phys": {
+    "73": {
+     "km": 24.49,
+     "top": 30.51,
+     "min": 210,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 11,
@@ -2152,6 +10836,33 @@
     75,
     60
    ],
+   "heat": {
+    "55": {
+     "k": 8,
+     "n": 442,
+     "m": 8,
+     "g": "0040009000m044490494000i040004494i99d49444490d4004404904d9004vmii0d4440000000009d4940ii9m994400d00004009idd4id049094444d000009494mim9mqdd4449000000000i49i99q4499d90040400000404094d9qd099940494000040000044zi444909094000000040004q44d9444d09400000000d94m94904449i04000004009494d09994d90d000404044400d4490009d99004000000000040d94i044i4i0090000000400i94di4094444000404400009040004004040440"
+    },
+    "73": {
+     "k": 3,
+     "n": 115,
+     "m": 4,
+     "g": "0000000i09009090000900090000000999000q099909000000000900090i00990q990900000000000900i90090999000q00090900009000i90909000000000900000900009000000000000000i0000009i0900900000000z9909099099000090000000000000990i090990000000000909000009i000090000000000009009090909i90000000000090000009i09990000000i00000099000099000900000000090000009900000000000000000000009909090000000000000000000000000q"
+    }
+   },
+   "fanta": {
+    "pv": 8,
+    "mv": 6.5,
+    "fm": 8
+   },
+   "phys": {
+    "73": {
+     "km": 16.6,
+     "top": 32.01,
+     "min": 120,
+     "mp": 3
+    }
+   },
    "c": {
     "55": {
      "mp": 8,
@@ -2205,6 +10916,33 @@
    "roles": "ST",
    "grp": "ST",
    "pct": null,
+   "heat": {
+    "55": {
+     "k": 4,
+     "n": 25,
+     "m": 3,
+     "g": "0000000000c00c0c0000c0000000000000c00c0000000000000000000c0000000000000000000000000000000000000000000000000000000000000000000000000000zc00000000000000000000000c0c00000c00000000000n0000000000c00000000000000000000000000000000000000cc0000000000000000000000n0000000000000000000000c0c000000000000000000000c00000000000000000000000000000000000000000000000c00000000000000000000000000000000000"
+    },
+    "73": {
+     "k": 2,
+     "n": 36,
+     "m": 2,
+     "g": "00000000000000000000000000000000i000i000000000000000000iz0000000000000000000000000000i0000000000000000000ii00000000000z00000000000000000000000000000000000000000000i0z0000000000000000000000i0ii0000000000000i0000000ii0000000000z00i00000000000000000000000000000ii00i000000000000i00000i0i00000000000000z000000000000000000000z0i0000i00000000000000i00i00000000000000000000000000000000000000"
+    }
+   },
+   "fanta": {
+    "pv": 1,
+    "mv": 5,
+    "fm": 5
+   },
+   "phys": {
+    "73": {
+     "km": 10.85,
+     "top": 28.47,
+     "min": 83,
+     "mp": 2
+    }
+   },
    "c": {
     "55": {
      "mp": 4,
@@ -2263,6 +11001,9 @@
    "roles": "",
    "grp": "ST",
    "pct": null,
+   "heat": null,
+   "fanta": null,
+   "phys": null,
    "c": {}
   }
  ]

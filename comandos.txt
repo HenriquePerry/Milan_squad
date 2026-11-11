@@ -6,3 +6,15 @@ start index.html
 
 
 npx http-server -p 8080 
+
+
+
+Endereço	O que se vê
+https://<utilizador>.github.io/<repositório>/	Site normal, sem a secção Validation nem o botão no menu
+https://<utilizador>.github.io/<repositório>/?debug	O mesmo site, com a secção Validation e o botão "Validation" no menu
+ou 
+index.html?debug
+
+
+ver erros: 
+abrir consolo ->  F12
