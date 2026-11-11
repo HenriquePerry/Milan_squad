@@ -1,0 +1,8 @@
+node scripts/update.mjs          # recolhe, valida e escreve os dados
+node scripts/update.mjs --dry    # recolhe e valida, sem escrever
+
+start index.html
+
+
+
+npx http-server -p 8080 

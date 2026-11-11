@@ -1,0 +1,2256 @@
+{
+ "meta": {
+  "team": "Milan",
+  "teamId": 8564,
+  "season": "2026/2027",
+  "collected": "2026-11-10",
+  "coach": "Ruben Amorim",
+  "primary": "55",
+  "minMinutesRadar": 300,
+  "minMatchesRadar": 5
+ },
+ "compOrder": [
+  "55",
+  "73",
+  "141"
+ ],
+ "comps": {
+  "55": {
+   "label": "Serie A",
+   "short": "SA",
+   "played": 11,
+   "gf": 23,
+   "ga": 13,
+   "w": 7,
+   "d": 3,
+   "l": 1,
+   "table": {
+    "pos": 4,
+    "played": 11,
+    "w": 7,
+    "d": 3,
+    "l": 1,
+    "gf": 23,
+    "ga": 13,
+    "pts": 24
+   },
+   "top": [
+    {
+     "pos": 1,
+     "team": "Lazio",
+     "p": 11,
+     "gd": 16,
+     "pts": 29,
+     "me": false
+    },
+    {
+     "pos": 2,
+     "team": "Inter",
+     "p": 11,
+     "gd": 15,
+     "pts": 28,
+     "me": false
+    },
+    {
+     "pos": 3,
+     "team": "Roma",
+     "p": 11,
+     "gd": 21,
+     "pts": 27,
+     "me": false
+    },
+    {
+     "pos": 4,
+     "team": "Milan",
+     "p": 11,
+     "gd": 10,
+     "pts": 24,
+     "me": true
+    },
+    {
+     "pos": 5,
+     "team": "Como",
+     "p": 11,
+     "gd": 8,
+     "pts": 23,
+     "me": false
+    },
+    {
+     "pos": 6,
+     "team": "Frosinone",
+     "p": 11,
+     "gd": 9,
+     "pts": 20,
+     "me": false
+    }
+   ],
+   "team": {
+    "xg": {
+     "v": 18.3,
+     "rank": 6,
+     "matches": 11
+    },
+    "xga": {
+     "v": 14.3,
+     "rank": 7,
+     "matches": 11
+    },
+    "cleanSheets": {
+     "v": 3,
+     "rank": 6,
+     "matches": 11
+    },
+    "possession": {
+     "v": 59,
+     "rank": 3,
+     "matches": 11
+    }
+   },
+   "hasStats": true,
+   "ownGoalsFor": 1
+  },
+  "73": {
+   "label": "Europa League",
+   "short": "EL",
+   "played": 4,
+   "gf": 4,
+   "ga": 7,
+   "w": 1,
+   "d": 0,
+   "l": 3,
+   "table": {
+    "pos": 28,
+    "played": 4,
+    "w": 1,
+    "d": 0,
+    "l": 3,
+    "gf": 4,
+    "ga": 7,
+    "pts": 3
+   },
+   "top": [
+    {
+     "pos": 25,
+     "team": "NK Celje",
+     "p": 4,
+     "gd": -4,
+     "pts": 4,
+     "me": false
+    },
+    {
+     "pos": 26,
+     "team": "Salzburg",
+     "p": 4,
+     "gd": -5,
+     "pts": 4,
+     "me": false
+    },
+    {
+     "pos": 27,
+     "team": "Celta Vigo",
+     "p": 4,
+     "gd": -2,
+     "pts": 3,
+     "me": false
+    },
+    {
+     "pos": 28,
+     "team": "Milan",
+     "p": 4,
+     "gd": -3,
+     "pts": 3,
+     "me": true
+    },
+    {
+     "pos": 29,
+     "team": "Jagiellonia Białystok",
+     "p": 4,
+     "gd": -3,
+     "pts": 3,
+     "me": false
+    },
+    {
+     "pos": 30,
+     "team": "Viktoria Plzeň",
+     "p": 4,
+     "gd": -4,
+     "pts": 3,
+     "me": false
+    }
+   ],
+   "team": {
+    "xga": {
+     "v": 7.7,
+     "rank": 29,
+     "matches": 4
+    },
+    "possession": {
+     "v": 53.5,
+     "rank": 13,
+     "matches": 4
+    },
+    "xg": {
+     "v": 5.8,
+     "rank": 20,
+     "matches": 4
+    },
+    "cleanSheets": {
+     "v": 1,
+     "rank": 11,
+     "matches": 4
+    }
+   },
+   "hasStats": true,
+   "ownGoalsFor": 0
+  },
+  "141": {
+   "label": "Coppa Italia",
+   "short": "CI",
+   "played": 0,
+   "gf": 0,
+   "ga": 0,
+   "w": 0,
+   "d": 0,
+   "l": 0,
+   "table": null,
+   "top": null,
+   "team": {},
+   "hasStats": false
+  }
+ },
+ "fixtures": [
+  {
+   "date": "2026-08-23T18:45:00.000Z",
+   "comp": "55",
+   "opp": "Torino",
+   "venue": "A",
+   "done": true,
+   "gf": 2,
+   "ga": 1
+  },
+  {
+   "date": "2026-08-28T18:45:00.000Z",
+   "comp": "55",
+   "opp": "Venezia",
+   "venue": "H",
+   "done": true,
+   "gf": 2,
+   "ga": 0
+  },
+  {
+   "date": "2026-09-06T18:45:00.000Z",
+   "comp": "55",
+   "opp": "Juventus",
+   "venue": "A",
+   "done": true,
+   "gf": 1,
+   "ga": 1
+  },
+  {
+   "date": "2026-09-12T16:00:00.000Z",
+   "comp": "55",
+   "opp": "Lazio",
+   "venue": "A",
+   "done": true,
+   "gf": 2,
+   "ga": 2
+  },
+  {
+   "date": "2026-09-16T19:00:00.000Z",
+   "comp": "73",
+   "opp": "Benfica",
+   "venue": "H",
+   "done": true,
+   "gf": 0,
+   "ga": 2
+  },
+  {
+   "date": "2026-09-20T18:45:00.000Z",
+   "comp": "55",
+   "opp": "Lecce",
+   "venue": "H",
+   "done": true,
+   "gf": 3,
+   "ga": 0
+  },
+  {
+   "date": "2026-10-11T16:00:00.000Z",
+   "comp": "55",
+   "opp": "Sassuolo",
+   "venue": "A",
+   "done": true,
+   "gf": 1,
+   "ga": 1
+  },
+  {
+   "date": "2026-10-15T16:45:00.000Z",
+   "comp": "73",
+   "opp": "Salzburg",
+   "venue": "A",
+   "done": true,
+   "gf": 4,
+   "ga": 0
+  },
+  {
+   "date": "2026-10-18T16:00:00.000Z",
+   "comp": "55",
+   "opp": "Atalanta",
+   "venue": "H",
+   "done": true,
+   "gf": 3,
+   "ga": 2
+  },
+  {
+   "date": "2026-10-22T19:00:00.000Z",
+   "comp": "73",
+   "opp": "Bournemouth",
+   "venue": "A",
+   "done": true,
+   "gf": 0,
+   "ga": 3
+  },
+  {
+   "date": "2026-10-25T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Udinese",
+   "venue": "A",
+   "done": true,
+   "gf": 2,
+   "ga": 0
+  },
+  {
+   "date": "2026-10-28T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Bologna",
+   "venue": "H",
+   "done": true,
+   "gf": 2,
+   "ga": 4
+  },
+  {
+   "date": "2026-10-31T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Inter",
+   "venue": "H",
+   "done": true,
+   "gf": 3,
+   "ga": 1
+  },
+  {
+   "date": "2026-11-05T17:45:00.000Z",
+   "comp": "73",
+   "opp": "Ferencváros",
+   "venue": "H",
+   "done": true,
+   "gf": 0,
+   "ga": 2
+  },
+  {
+   "date": "2026-11-08T14:00:00.000Z",
+   "comp": "55",
+   "opp": "Genoa",
+   "venue": "A",
+   "done": true,
+   "gf": 2,
+   "ga": 1
+  },
+  {
+   "date": "2026-11-22T17:00:00.000Z",
+   "comp": "55",
+   "opp": "Frosinone",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-11-26T17:45:00.000Z",
+   "comp": "73",
+   "opp": "Olympiacos",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-11-30T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Cagliari",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-12-06T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Parma",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-12-10T20:00:00.000Z",
+   "comp": "73",
+   "opp": "Sunderland",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-12-13T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Napoli",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2026-12-19T17:00:00.000Z",
+   "comp": "55",
+   "opp": "Como",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-02T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Monza",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-05T19:45:00.000Z",
+   "comp": "55",
+   "opp": "Fiorentina",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-09T17:00:00.000Z",
+   "comp": "55",
+   "opp": "Roma",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-13T20:00:00.000Z",
+   "comp": "141",
+   "opp": "Monza",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-17T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Torino",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-21T20:00:00.000Z",
+   "comp": "73",
+   "opp": "Levski Sofia",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-24T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Frosinone",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-28T20:00:00.000Z",
+   "comp": "73",
+   "opp": "Ararat Armenia",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-01-31T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Juventus",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-02-07T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Bologna",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-02-14T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Inter",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-02-21T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Genoa",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-02-28T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Como",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-03-07T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Cagliari",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-03-14T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Sassuolo",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-03-21T17:30:00.000Z",
+   "comp": "55",
+   "opp": "Atalanta",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-04-04T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Monza",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-04-11T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Fiorentina",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-04-18T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Napoli",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-04-25T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Lecce",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-05-02T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Lazio",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-05-09T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Parma",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-05-16T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Roma",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-05-23T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Venezia",
+   "venue": "A",
+   "done": false,
+   "gf": null,
+   "ga": null
+  },
+  {
+   "date": "2027-05-30T16:30:00.000Z",
+   "comp": "55",
+   "opp": "Udinese",
+   "venue": "H",
+   "done": false,
+   "gf": null,
+   "ga": null
+  }
+ ],
+ "groups": {
+  "GK": {
+   "label": "Goalkeepers",
+   "n": 21
+  },
+  "CB": {
+   "label": "Centre-backs",
+   "n": 68
+  },
+  "FB": {
+   "label": "Full-backs and wing-backs",
+   "n": 44
+  },
+  "CM": {
+   "label": "Central midfielders",
+   "n": 72
+  },
+  "AM": {
+   "label": "Attacking midfielders and wingers",
+   "n": 48
+  },
+  "ST": {
+   "label": "Strikers",
+   "n": 34
+  }
+ },
+ "players": [
+  {
+   "id": 466439,
+   "name": "Mike Maignan",
+   "short": "Maignan",
+   "num": 16,
+   "dob": "1995-07-03",
+   "nat": "France",
+   "roles": "GK",
+   "grp": "GK",
+   "pct": [
+    43,
+    74,
+    79,
+    69,
+    57,
+    79
+   ],
+   "c": {
+    "55": {
+     "mp": 11,
+     "min": 990,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 0,
+     "int": 0,
+     "passPct": 76,
+     "accPass90": 27.4,
+     "rating": 7.2,
+     "gk": {
+      "saves": 37,
+      "savePct": 74,
+      "ga": 13,
+      "cs": 3,
+      "prevented": 2.1
+     },
+     "inferred": [
+      "xg",
+      "sh",
+      "kp",
+      "tk",
+      "int"
+     ]
+    },
+    "73": {
+     "mp": 3,
+     "min": 207,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 1,
+     "xg": 0,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 1,
+     "int": 0,
+     "passPct": 81.2,
+     "accPass90": 24.3,
+     "rating": 5.98,
+     "gk": {
+      "saves": 7,
+      "savePct": 70,
+      "ga": 3,
+      "cs": 1,
+      "prevented": -1.9
+     },
+     "inferred": [
+      "xg",
+      "sh",
+      "kp",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1642393,
+   "name": "Lorenzo Torriani",
+   "short": "Torriani",
+   "num": 96,
+   "dob": "2005-01-31",
+   "nat": "Italy",
+   "roles": "GK",
+   "grp": "GK",
+   "pct": null,
+   "c": {
+    "73": {
+     "mp": 2,
+     "min": 148,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 0,
+     "int": 0,
+     "passPct": 70.4,
+     "accPass90": 30.4,
+     "rating": 6.67,
+     "gk": {
+      "saves": 7,
+      "savePct": 63.6,
+      "ga": 4,
+      "cs": 0,
+      "prevented": 2.3
+     },
+     "inferred": [
+      "xg",
+      "sh",
+      "kp",
+      "tk",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 281762,
+   "name": "Pietro Terracciano",
+   "short": "P. Terracciano",
+   "num": 1,
+   "dob": "1990-03-08",
+   "nat": "Italy",
+   "roles": "GK",
+   "grp": "GK",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 2022740,
+   "name": "Leo Paul Bouyer",
+   "short": "Paul Bouyer",
+   "num": 41,
+   "dob": "2008-08-14",
+   "nat": "France",
+   "roles": "",
+   "grp": "GK",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 1200630,
+   "name": "Koni De Winter",
+   "short": "De Winter",
+   "num": 5,
+   "dob": "2002-06-12",
+   "nat": "Belgium",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": [
+    33,
+    54,
+    35,
+    7,
+    17,
+    93,
+    40,
+    63
+   ],
+   "c": {
+    "55": {
+     "mp": 11,
+     "min": 970,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 3,
+     "rc": 0,
+     "xg": 0.6,
+     "xa": 0,
+     "sh90": 0.5,
+     "sh": 5,
+     "kp": 1,
+     "tk": 17,
+     "int": 17,
+     "passPct": 94.1,
+     "accPass90": 62.4,
+     "rating": 7.04,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 360,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 2,
+     "rc": 0,
+     "xg": 0.1,
+     "xa": 0.1,
+     "sh90": 0.5,
+     "sh": 2,
+     "kp": 2,
+     "tk": 7,
+     "int": 6,
+     "passPct": 92.6,
+     "accPass90": 56,
+     "rating": 7.02,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 1048023,
+   "name": "Strahinja Pavlović",
+   "short": "Pavlović",
+   "num": 31,
+   "dob": "2001-05-24",
+   "nat": "Serbia",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": [
+    33,
+    67,
+    71,
+    72,
+    34,
+    75,
+    86,
+    14
+   ],
+   "c": {
+    "55": {
+     "mp": 10,
+     "min": 900,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 3,
+     "rc": 0,
+     "xg": 0.8,
+     "xa": 0.4,
+     "sh90": 0.8,
+     "sh": 8,
+     "kp": 2,
+     "tk": 24,
+     "int": 8,
+     "passPct": 91.1,
+     "accPass90": 67.8,
+     "rating": 7.27,
+     "inferred": []
+    },
+    "73": {
+     "mp": 3,
+     "min": 261,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0.1,
+     "xa": 0.1,
+     "sh90": 1,
+     "sh": 3,
+     "kp": 0,
+     "tk": 5,
+     "int": 2,
+     "passPct": 92.7,
+     "accPass90": 52.4,
+     "rating": 6.69,
+     "inferred": [
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1106074,
+   "name": "Mario Gila",
+   "short": "Gila",
+   "num": 34,
+   "dob": "2000-08-29",
+   "nat": "Spain",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": [
+    76,
+    68,
+    10,
+    65,
+    80,
+    72,
+    77,
+    32
+   ],
+   "c": {
+    "55": {
+     "mp": 9,
+     "min": 785,
+     "g": 1,
+     "pg": 0,
+     "a": 0,
+     "yc": 2,
+     "rc": 0,
+     "xg": 0.7,
+     "xa": 0.3,
+     "sh90": 0.2,
+     "sh": 2,
+     "kp": 5,
+     "tk": 19,
+     "int": 9,
+     "passPct": 91,
+     "accPass90": 60.2,
+     "rating": 7.21,
+     "inferred": []
+    },
+    "73": {
+     "mp": 2,
+     "min": 90,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.1,
+     "sh90": 1,
+     "sh": 1,
+     "kp": 0,
+     "tk": 1,
+     "int": 1,
+     "passPct": 90.3,
+     "accPass90": 84,
+     "rating": 6.76,
+     "inferred": [
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1669433,
+   "name": "Sankhoun Diawara",
+   "short": "Diawara",
+   "num": 13,
+   "dob": "2006-01-13",
+   "nat": "France",
+   "roles": "CB / LB",
+   "grp": "CB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 4,
+     "min": 267,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.1,
+     "sh90": null,
+     "sh": null,
+     "kp": 1,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg"
+     ]
+    },
+    "73": {
+     "mp": 3,
+     "min": 78,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 0,
+     "int": 0,
+     "passPct": null,
+     "accPass90": null,
+     "rating": 6.5,
+     "inferred": [
+      "xg",
+      "sh",
+      "kp",
+      "tk",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 749662,
+   "name": "Fikayo Tomori",
+   "short": "Tomori",
+   "num": 23,
+   "dob": "1997-12-19",
+   "nat": "England",
+   "roles": "CB / RB",
+   "grp": "CB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 3,
+     "min": 124,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.2,
+     "xa": 0.5,
+     "sh90": null,
+     "sh": null,
+     "kp": 2,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": []
+    },
+    "73": {
+     "mp": 2,
+     "min": 133,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 4,
+     "int": 3,
+     "passPct": 89.2,
+     "accPass90": 39.2,
+     "rating": 7.15,
+     "inferred": [
+      "xg",
+      "sh",
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1163501,
+   "name": "Filippo Terracciano",
+   "short": "F. Terracciano",
+   "num": 42,
+   "dob": "2003-02-08",
+   "nat": "Italy",
+   "roles": "CB / RB",
+   "grp": "CB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 3,
+     "min": 31,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 0,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg",
+      "kp"
+     ]
+    },
+    "73": {
+     "mp": 3,
+     "min": 151,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 1,
+     "xg": 0,
+     "xa": 0.1,
+     "sh90": 0.6,
+     "sh": 1,
+     "kp": 1,
+     "tk": 2,
+     "int": 1,
+     "passPct": 88,
+     "accPass90": 61.4,
+     "rating": 6.06,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 844996,
+   "name": "Matteo Gabbia",
+   "short": "Gabbia",
+   "num": 46,
+   "dob": "1999-10-21",
+   "nat": "Italy",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 3,
+     "min": 37,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 0,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg",
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1988780,
+   "name": "Valeri Vladimirov",
+   "short": "Vladimirov",
+   "num": 35,
+   "dob": "2008-06-05",
+   "nat": "Bulgaria",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 1844316,
+   "name": "El Hadji Cisse",
+   "short": "Hadji Cisse",
+   "num": 48,
+   "dob": "2008-01-05",
+   "nat": "Senegal",
+   "roles": "CB",
+   "grp": "CB",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 1385856,
+   "name": "Davide Bartesaghi",
+   "short": "Bartesaghi",
+   "num": 33,
+   "dob": "2005-12-29",
+   "nat": "Italy",
+   "roles": "LM / LB / LWB / CB",
+   "grp": "FB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 6,
+     "min": 280,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 1.2,
+     "xa": 0.6,
+     "sh90": 1,
+     "sh": 3,
+     "kp": 6,
+     "tk": 11,
+     "int": 1,
+     "passPct": 75.2,
+     "accPass90": 26.4,
+     "rating": 6.54,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 259,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.9,
+     "sh90": 0.3,
+     "sh": 1,
+     "kp": 8,
+     "tk": 7,
+     "int": 4,
+     "passPct": 84.3,
+     "accPass90": 33.7,
+     "rating": 6.78,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 688278,
+   "name": "Pervis Estupinán",
+   "short": "Estupinán",
+   "num": 2,
+   "dob": "1998-01-21",
+   "nat": "Ecuador",
+   "roles": "LM / LWB / LB",
+   "grp": "FB",
+   "pct": [
+    31,
+    69,
+    75,
+    15,
+    17,
+    90,
+    51,
+    97
+   ],
+   "c": {
+    "55": {
+     "mp": 9,
+     "min": 401,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 2,
+     "rc": 0,
+     "xg": 0.3,
+     "xa": 0.2,
+     "sh90": 1.3,
+     "sh": 6,
+     "kp": 3,
+     "tk": 9,
+     "int": 8,
+     "passPct": 90.5,
+     "accPass90": 51.2,
+     "rating": 6.82,
+     "inferred": []
+    },
+    "73": {
+     "mp": 1,
+     "min": 45,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 0,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg",
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 921341,
+   "name": "Alexis Saelemaekers",
+   "short": "Saelemaekers",
+   "num": 56,
+   "dob": "1999-06-27",
+   "nat": "Belgium",
+   "roles": "RM / RW / AM",
+   "grp": "FB",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 4,
+     "min": 185,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.2,
+     "xa": 0.5,
+     "sh90": null,
+     "sh": null,
+     "kp": 4,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": []
+    },
+    "73": {
+     "mp": 1,
+     "min": 33,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.4,
+     "sh90": null,
+     "sh": null,
+     "kp": 2,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1137272,
+   "name": "Yunus Musah",
+   "short": "Musah",
+   "num": 80,
+   "dob": "2002-11-29",
+   "nat": "USA",
+   "roles": "DM / CM",
+   "grp": "CM",
+   "pct": [
+    25,
+    30,
+    3,
+    15,
+    3,
+    85,
+    6,
+    52
+   ],
+   "c": {
+    "55": {
+     "mp": 11,
+     "min": 758,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.4,
+     "xa": 0.3,
+     "sh90": 0.2,
+     "sh": 2,
+     "kp": 3,
+     "tk": 7,
+     "int": 7,
+     "passPct": 91.9,
+     "accPass90": 48.6,
+     "rating": 6.72,
+     "inferred": []
+    },
+    "73": {
+     "mp": 3,
+     "min": 225,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.1,
+     "xa": 0.1,
+     "sh90": 0.8,
+     "sh": 2,
+     "kp": 2,
+     "tk": 5,
+     "int": 3,
+     "passPct": 97.4,
+     "accPass90": 45.6,
+     "rating": 6.39,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 352879,
+   "name": "Adrien Rabiot",
+   "short": "Rabiot",
+   "num": 12,
+   "dob": "1995-04-03",
+   "nat": "France",
+   "roles": "CM / DM / AM",
+   "grp": "CM",
+   "pct": [
+    98,
+    83,
+    69,
+    66,
+    62,
+    51,
+    41,
+    12
+   ],
+   "c": {
+    "55": {
+     "mp": 9,
+     "min": 666,
+     "g": 5,
+     "pg": 0,
+     "a": 4,
+     "yc": 2,
+     "rc": 0,
+     "xg": 1.5,
+     "xa": 0.8,
+     "sh90": 1.6,
+     "sh": 12,
+     "kp": 9,
+     "tk": 11,
+     "int": 2,
+     "passPct": 87.4,
+     "accPass90": 48.8,
+     "rating": 7.74,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 213,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.2,
+     "xa": 0.9,
+     "sh90": 1.3,
+     "sh": 3,
+     "kp": 4,
+     "tk": 5,
+     "int": 3,
+     "passPct": 82.5,
+     "accPass90": 41.8,
+     "rating": 6.94,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 31097,
+   "name": "Luka Modrić",
+   "short": "Modrić",
+   "num": 14,
+   "dob": "1985-09-09",
+   "nat": "Croatia",
+   "roles": "CM / DM",
+   "grp": "CM",
+   "pct": [
+    25,
+    1,
+    2,
+    55,
+    60,
+    90,
+    28,
+    95
+   ],
+   "c": {
+    "55": {
+     "mp": 11,
+     "min": 746,
+     "g": 0,
+     "pg": 0,
+     "a": 2,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.8,
+     "sh90": 0.1,
+     "sh": 1,
+     "kp": 10,
+     "tk": 10,
+     "int": 15,
+     "passPct": 92.2,
+     "accPass90": 79.4,
+     "rating": 7.17,
+     "inferred": []
+    },
+    "73": {
+     "mp": 2,
+     "min": 56,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.1,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 2,
+     "tk": 0,
+     "int": 0,
+     "passPct": null,
+     "accPass90": null,
+     "rating": 6.68,
+     "inferred": [
+      "sh",
+      "tk",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1163219,
+   "name": "Ardon Jashari",
+   "short": "Jashari",
+   "num": 30,
+   "dob": "2002-07-30",
+   "nat": "Switzerland",
+   "roles": "CM / DM",
+   "grp": "CM",
+   "pct": [
+    25,
+    76,
+    53,
+    31,
+    59,
+    88,
+    2,
+    16
+   ],
+   "c": {
+    "55": {
+     "mp": 9,
+     "min": 306,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.6,
+     "xa": 0.2,
+     "sh90": 1.2,
+     "sh": 4,
+     "kp": 4,
+     "tk": 2,
+     "int": 1,
+     "passPct": 92.1,
+     "accPass90": 79.1,
+     "rating": 6.55,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 316,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.1,
+     "xa": 0.2,
+     "sh90": 0.6,
+     "sh": 2,
+     "kp": 3,
+     "tk": 2,
+     "int": 8,
+     "passPct": 89.4,
+     "accPass90": 55,
+     "rating": 6.88,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 1787535,
+   "name": "Christian Comotto",
+   "short": "Comotto",
+   "num": 28,
+   "dob": "2008-04-25",
+   "nat": "Italy",
+   "roles": "CM / DM",
+   "grp": "CM",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 2,
+     "min": 4,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 0,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg",
+      "kp"
+     ]
+    },
+    "73": {
+     "mp": 1,
+     "min": 14,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 0,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg",
+      "kp"
+     ]
+    }
+   }
+  },
+  {
+   "id": 2412013,
+   "name": "Luca Menon",
+   "short": "Menon",
+   "num": 49,
+   "dob": "2009-03-07",
+   "nat": "Italy",
+   "roles": "",
+   "grp": "CM",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 2412014,
+   "name": "Maiga-Hamadoun Cisse",
+   "short": "Cisse",
+   "num": 79,
+   "dob": "2008-03-27",
+   "nat": "France",
+   "roles": "",
+   "grp": "CM",
+   "pct": null,
+   "c": {}
+  },
+  {
+   "id": 1445650,
+   "name": "Alphadjo Cissè",
+   "short": "Cissè",
+   "num": 70,
+   "dob": "2006-10-22",
+   "nat": "Italy",
+   "roles": "AM / ST / CM",
+   "grp": "AM",
+   "pct": [
+    99,
+    97,
+    61,
+    18,
+    14,
+    61,
+    7,
+    26
+   ],
+   "c": {
+    "55": {
+     "mp": 9,
+     "min": 407,
+     "g": 5,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 2.2,
+     "xa": 0.3,
+     "sh90": 2.9,
+     "sh": 13,
+     "kp": 3,
+     "tk": 2,
+     "int": 1,
+     "passPct": 85.1,
+     "accPass90": 29,
+     "rating": 7.11,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 252,
+     "g": 3,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 2,
+     "xa": 0.1,
+     "sh90": 2.5,
+     "sh": 7,
+     "kp": 1,
+     "tk": 1,
+     "int": 1,
+     "passPct": 85.1,
+     "accPass90": 22.5,
+     "rating": 6.88,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 1342754,
+   "name": "Diego Moreira",
+   "short": "Moreira",
+   "num": 22,
+   "dob": "2004-08-06",
+   "nat": "Belgium",
+   "roles": "RW / RWB / LWB / LM",
+   "grp": "AM",
+   "pct": [
+    97,
+    39,
+    30,
+    72,
+    16,
+    74,
+    57,
+    78
+   ],
+   "c": {
+    "55": {
+     "mp": 7,
+     "min": 486,
+     "g": 4,
+     "pg": 0,
+     "a": 3,
+     "yc": 1,
+     "rc": 0,
+     "xg": 1.1,
+     "xa": 1.1,
+     "sh90": 1.9,
+     "sh": 10,
+     "kp": 5,
+     "tk": 8,
+     "int": 5,
+     "passPct": 86.2,
+     "accPass90": 35.9,
+     "rating": 7.82,
+     "inferred": []
+    },
+    "73": {
+     "mp": 3,
+     "min": 154,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.2,
+     "xa": 0.5,
+     "sh90": 2.3,
+     "sh": 4,
+     "kp": 2,
+     "tk": 2,
+     "int": 0,
+     "passPct": 92.2,
+     "accPass90": 34.5,
+     "rating": 6.42,
+     "inferred": [
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 688300,
+   "name": "Samuel Chukwueze",
+   "short": "Chukwueze",
+   "num": 21,
+   "dob": "1999-05-22",
+   "nat": "Nigeria",
+   "roles": "LW / RWB / RM / RW",
+   "grp": "AM",
+   "pct": [
+    15,
+    14,
+    15,
+    74,
+    68,
+    26,
+    49,
+    61
+   ],
+   "c": {
+    "55": {
+     "mp": 7,
+     "min": 524,
+     "g": 0,
+     "pg": 0,
+     "a": 2,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.7,
+     "xa": 1.2,
+     "sh90": 1.4,
+     "sh": 8,
+     "kp": 12,
+     "tk": 8,
+     "int": 4,
+     "passPct": 79.6,
+     "accPass90": 34.2,
+     "rating": 7.35,
+     "inferred": []
+    },
+    "73": {
+     "mp": 1,
+     "min": 90,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0,
+     "xa": 0.3,
+     "sh90": null,
+     "sh": null,
+     "kp": 4,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": [
+      "xg"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1215652,
+   "name": "Omari Hutchinson",
+   "short": "Hutchinson",
+   "num": 20,
+   "dob": "2003-10-30",
+   "nat": "England",
+   "roles": "RW / RM / AM / LW",
+   "grp": "AM",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 7,
+     "min": 216,
+     "g": 1,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.5,
+     "xa": 0,
+     "sh90": 0.8,
+     "sh": 2,
+     "kp": 2,
+     "tk": 7,
+     "int": 4,
+     "passPct": 86.3,
+     "accPass90": 34.2,
+     "rating": 6.71,
+     "inferred": []
+    },
+    "73": {
+     "mp": 4,
+     "min": 257,
+     "g": 0,
+     "pg": 0,
+     "a": 1,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0.7,
+     "xa": 0.7,
+     "sh90": 3.2,
+     "sh": 9,
+     "kp": 3,
+     "tk": 2,
+     "int": 1,
+     "passPct": 88.2,
+     "accPass90": 36.8,
+     "rating": 6.72,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 604982,
+   "name": "Ruben Loftus-Cheek",
+   "short": "Loftus-Cheek",
+   "num": 8,
+   "dob": "1996-01-23",
+   "nat": "England",
+   "roles": "AM / CM / ST",
+   "grp": "AM",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 7,
+     "min": 241,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 1,
+     "rc": 0,
+     "xg": 0.5,
+     "xa": 0.3,
+     "sh90": 2.6,
+     "sh": 7,
+     "kp": 8,
+     "tk": 1,
+     "int": 0,
+     "passPct": 93.8,
+     "accPass90": 34,
+     "rating": 6.47,
+     "inferred": [
+      "int"
+     ]
+    },
+    "73": {
+     "mp": 2,
+     "min": 135,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.2,
+     "xa": 0,
+     "sh90": 0.7,
+     "sh": 1,
+     "kp": 0,
+     "tk": 7,
+     "int": 0,
+     "passPct": 78.9,
+     "accPass90": 20,
+     "rating": 6.59,
+     "inferred": [
+      "kp",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 940087,
+   "name": "Gonçalo Ramos",
+   "short": "Ramos",
+   "num": 9,
+   "dob": "2001-06-20",
+   "nat": "Portugal",
+   "roles": "ST",
+   "grp": "ST",
+   "pct": [
+    16,
+    60,
+    37,
+    43,
+    7,
+    57,
+    66,
+    54
+   ],
+   "c": {
+    "55": {
+     "mp": 11,
+     "min": 980,
+     "g": 2,
+     "pg": 1,
+     "a": 2,
+     "yc": 2,
+     "rc": 0,
+     "xg": 4.2,
+     "xa": 0.7,
+     "sh90": 2.4,
+     "sh": 26,
+     "kp": 6,
+     "tk": 10,
+     "int": 3,
+     "passPct": 77.6,
+     "accPass90": 16.3,
+     "rating": 6.96,
+     "inferred": []
+    },
+    "73": {
+     "mp": 3,
+     "min": 210,
+     "g": 1,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 1.2,
+     "xa": 0.3,
+     "sh90": 3,
+     "sh": 7,
+     "kp": 3,
+     "tk": 3,
+     "int": 1,
+     "passPct": 80,
+     "accPass90": 12,
+     "rating": 6.78,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 688295,
+   "name": "Christian Pulisic",
+   "short": "Pulisic",
+   "num": 11,
+   "dob": "1998-09-18",
+   "nat": "USA",
+   "roles": "ST / LW / AM",
+   "grp": "ST",
+   "pct": [
+    81,
+    49,
+    7,
+    96,
+    90,
+    99,
+    75,
+    60
+   ],
+   "c": {
+    "55": {
+     "mp": 8,
+     "min": 550,
+     "g": 4,
+     "pg": 0,
+     "a": 1,
+     "yc": 2,
+     "rc": 0,
+     "xg": 2.2,
+     "xa": 1.8,
+     "sh90": 1.8,
+     "sh": 11,
+     "kp": 12,
+     "tk": 7,
+     "int": 2,
+     "passPct": 89.6,
+     "accPass90": 40.9,
+     "rating": 7.59,
+     "inferred": []
+    },
+    "73": {
+     "mp": 3,
+     "min": 120,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.3,
+     "xa": 0.3,
+     "sh90": 3,
+     "sh": 4,
+     "kp": 5,
+     "tk": 1,
+     "int": 1,
+     "passPct": 88.4,
+     "accPass90": 45.8,
+     "rating": 6.86,
+     "inferred": []
+    }
+   }
+  },
+  {
+   "id": 1554575,
+   "name": "Francesco Camarda",
+   "short": "Camarda",
+   "num": 73,
+   "dob": "2008-03-10",
+   "nat": "Italy",
+   "roles": "ST",
+   "grp": "ST",
+   "pct": null,
+   "c": {
+    "55": {
+     "mp": 4,
+     "min": 36,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.4,
+     "xa": 0,
+     "sh90": null,
+     "sh": null,
+     "kp": 1,
+     "tk": null,
+     "int": null,
+     "passPct": null,
+     "accPass90": null,
+     "rating": null,
+     "inferred": []
+    },
+    "73": {
+     "mp": 2,
+     "min": 83,
+     "g": 0,
+     "pg": 0,
+     "a": 0,
+     "yc": 0,
+     "rc": 0,
+     "xg": 0.4,
+     "xa": 0,
+     "sh90": 0,
+     "sh": 0,
+     "kp": 0,
+     "tk": 0,
+     "int": 0,
+     "passPct": null,
+     "accPass90": null,
+     "rating": 6.1,
+     "inferred": [
+      "sh",
+      "kp",
+      "tk",
+      "int"
+     ]
+    }
+   }
+  },
+  {
+   "id": 1794177,
+   "name": "Cheveyo Mul-Balentien",
+   "short": "Mul-Balentien",
+   "num": 25,
+   "dob": "2006-12-18",
+   "nat": "Suriname",
+   "roles": "",
+   "grp": "ST",
+   "pct": null,
+   "c": {}
+  }
+ ]
+}
