@@ -85,13 +85,18 @@
     }
    ],
    "team": {
-    "xg": {
-     "v": 18.3,
+    "cleanSheets": {
+     "v": 3,
      "rank": 6,
      "matches": 11
     },
+<<<<<<< HEAD
     "cleanSheets": {
      "v": 3,
+=======
+    "xg": {
+     "v": 18.3,
+>>>>>>> 000d4382f5ef8ae746843aae284eda01b596262a
      "rank": 6,
      "matches": 11
     },
@@ -182,6 +187,14 @@
     "xg": {
      "v": 5.8,
      "rank": 20,
+<<<<<<< HEAD
+=======
+     "matches": 4
+    },
+    "xga": {
+     "v": 7.7,
+     "rank": 29,
+>>>>>>> 000d4382f5ef8ae746843aae284eda01b596262a
      "matches": 4
     },
     "possession": {
