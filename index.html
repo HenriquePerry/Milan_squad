@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AC Milan 2026/27: squad and player stats</title>
+<script>/* Owner-only details (sources, collection dates, validation, methodology) appear only when the address ends in ?debug */
+try { if (new URLSearchParams(location.search).has("debug")) document.documentElement.classList.add("debug"); } catch (e) {}</script>
 <meta name="description" content="Interactive AC Milan 2026/27 squad: starting XI, player cards, position radar, comparator and Serie A, Europa League and Coppa Italia stats, with source and collection date.">
 <link rel="canonical" href="https://henriqueperry.github.io/Milan_squad/">
 <meta name="robots" content="index, follow">
@@ -215,6 +217,7 @@ section{padding-top:38px;scroll-margin-top:96px}
 .term{border-bottom:1px dotted var(--muted);cursor:help}
 #tip{position:fixed;z-index:50;max-width:280px;background:#000;border:1px solid var(--red);color:var(--ink);padding:9px 11px;border-radius:4px;font-size:12.5px;line-height:1.4;pointer-events:none;display:none;box-shadow:0 6px 24px rgba(0,0,0,.6)}
 #tip b{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:2px}
+html:not(.debug) .dbg,html:not(.debug) .src{display:none!important}
 .src{font-size:10px;font-weight:700;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 4px;cursor:help;white-space:nowrap}
 
 /* card rail */
@@ -450,12 +453,12 @@ footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-si
       <h1>AC Milan Squad</h1>
       <p class="muted" style="margin-top:8px" id="subtitle"></p>
     </div>
-    <div class="stamp" id="stamp"></div>
+    <div class="stamp dbg" id="stamp"></div>
   </header>
   <div class="bar">
     <div class="seg" id="f-comp" role="group" aria-label="Competition"><span class="lab">Competition</span></div>
     <nav class="jump" aria-label="Sections">
-      <a href="#highlights">Highlights</a><a href="#team">Team</a><a href="#trends">Trends</a><a href="#matches">Matches</a><a href="#squad">Squad</a><a href="#compare">Compare</a><a href="#table">Table</a><a href="#validation" hidden>Validation</a><a href="#methodology">Methodology</a>
+      <a href="#highlights">Highlights</a><a href="#team">Team</a><a href="#trends">Trends</a><a href="#matches">Matches</a><a href="#squad">Squad</a><a href="#compare">Compare</a><a href="#table">Table</a><a href="#validation" class="dbg">Validation</a><a href="#methodology" class="dbg">Methodology</a>
     </nav>
   </div>
 
@@ -560,15 +563,15 @@ footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-si
       </div>
     </div>
     <div class="scroll"><table class="big num" id="big"></table></div>
-    <p class="small muted" style="margin-top:8px">Per 90 min: only players with at least 90 minutes. † inferred zero. ≈ value combined across competitions (see Methodology). Km: distance covered in UEFA competitions only. FM: fantamedia, Serie A only.</p>
+    <p class="small muted" style="margin-top:8px">Per 90 min: only players with at least 90 minutes. † inferred zero. ≈ value combined across competitions<span class="dbg"> (see Methodology)</span>. Km: distance covered in UEFA competitions only. FM: fantamedia, Serie A only.</p>
   </section>
 
-  <section id="validation" hidden>
+  <section id="validation" class="dbg">
     <div class="sec-head"><h2>Data validation</h2><p class="small muted">Checks recomputed from the DATA block every time the page loads.</p></div>
     <div class="checks" id="checks"></div>
   </section>
 
-  <section id="methodology">
+  <section id="methodology" class="dbg">
     <div class="sec-head"><h2>Methodology</h2></div>
     <div class="method">
       <div class="card"><h3>Sources and collection date</h3><ul id="m-sources"></ul></div>
@@ -1015,7 +1018,7 @@ function statRows(p) {
   return keys.map(k => {
     const m = M[k], i = ax.indexOf(pk[k]), pc = p.pct && i >= 0 ? p.pct[i] : null;
     const pcCell = has(pc) ? `<td><span class="pbar"><i style="width:${pc}%"></i></span>${pc}</td>` : `<td class="nd">${i >= 0 ? ND : ""}</td>`;
-    return `<tr><td>${m.g ? term(m.g, m.l) : m.l}${k === "g" && s.pg ? ` <span class="muted small">(${s.pg} pen.)</span>` : ""}</td>${cell(k, p, "tot")}${m.rate ? cell(k, p, "p90") : "<td></td>"}${pcCell}<td>${m.s ? srcTag(m.s) : ""}</td></tr>`;
+    return `<tr><td>${m.g ? term(m.g, m.l) : m.l}${k === "g" && s.pg ? ` <span class="muted small">(${s.pg} pen.)</span>` : ""}</td>${cell(k, p, "tot")}${m.rate ? cell(k, p, "p90") : "<td></td>"}${pcCell}<td class="dbg">${m.s ? srcTag(m.s) : ""}</td></tr>`;
   }).join("");
 }
 function renderCard(animate) {
@@ -1028,7 +1031,7 @@ function renderCard(animate) {
   if (!s || !s.min) body = `<p class="muted" style="margin-top:14px">No minutes in ${selLower()}. There are no stats to show.</p>`;
   else body = `<div class="pc-body">
       <div class="scroll" style="border:0;background:none"><table class="stat num">
-        <tr><th>Metric</th><th>Total</th><th>${term("p90", "/90")}</th><th>${term("pct", "SA percentile")}</th><th title="Source">Src</th></tr>${statRows(p)}</table>
+        <tr><th>Metric</th><th>Total</th><th>${term("p90", "/90")}</th><th>${term("pct", "SA percentile")}</th><th class="dbg" title="Source">Src</th></tr>${statRows(p)}</table>
         <p class="small muted" style="margin-top:6px">Stats: ${selLower()}.${(s.inferred || []).length ? " † inferred zero: the player meets the minimums for the source's list but does not appear in it." : ""}${(s.derived || []).length ? " ≈ value combined across competitions." : ""}</p>
       </div>
       <div>
@@ -1150,9 +1153,8 @@ add("note", "Distance covered: European matches only", EX.phys ? `UEFA publishes
 CFG.manualChecks.forEach(c => add("note", c[0], c[1]));
 $("#checks").innerHTML = checks.map(c => `<div class="check"><span class="badge ${c[0]}">${c[0] === "ok" ? "PASS" : c[0] === "fail" ? "FAIL" : "NOTE"}</span><div><b>${esc(c[1])}</b><br><span class="muted">${esc(c[2])}</span></div></div>`).join("");
 
-// The validation section is for the site owner: hidden unless the address ends in ?debug (e.g. index.html?debug).
-if (new URLSearchParams(location.search).has("debug")) { $("#validation").hidden = false; document.querySelector('nav.jump a[href="#validation"]').hidden = false; }
-else if (checks.some(c => c[0] === "fail")) console.warn("Data validation: " + checks.filter(c => c[0] === "fail").map(c => c[1]).join("; ") + ". Open the page with ?debug for details.");
+// Validation and methodology are owner-only (shown with ?debug, see the script in <head>).
+if (!document.documentElement.classList.contains("debug") && checks.some(c => c[0] === "fail")) console.warn("Data validation: " + checks.filter(c => c[0] === "fail").map(c => c[1]).join("; ") + ". Open the page with ?debug for details.");
 
 /* ---------- Methodology ---------- */
 $("#m-sources").innerHTML = Object.values(SOURCES).map(s => `<li><span class="src">${s.tag}</span> <a href="${s.url}" rel="noopener">${esc(s.name)}</a>. ${esc(s.note)}${s.collected ? ` Collected on ${longDate(s.collected)}.` : ""}</li>`).join("");

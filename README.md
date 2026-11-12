@@ -19,6 +19,10 @@ Página interativa (em inglês) com as estatísticas do plantel do AC Milan em t
 - **Touch heatmap** de cada jogador, por competição.
 - **Distância percorrida e velocidade máxima**, só nos jogos europeus (ver limitações).
 
+## Versão para o dono (`?debug`)
+
+Abrindo o site com `?debug` no fim do endereço (por exemplo `index.html?debug`) aparecem também: data de recolha, etiquetas de fonte de cada número (FM, FC, UEFA), a secção Validation e a secção Methodology. Sem `?debug`, os visitantes não veem nada disto.
+
 ## Publicar
 
 1. Cria um repositório público no GitHub e envia estes ficheiros para o ramo `main` (incluindo a pasta `cache/`).
