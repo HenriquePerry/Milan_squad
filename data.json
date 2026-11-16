@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-14",
+  "collected": "2026-11-16",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -8588,11 +8588,18 @@
   "matchId": 5749750,
   "list": [
    {
+    "id": 466439,
+    "name": "Mike Maignan",
+    "type": "injury",
+    "reason": "Muscle injury",
+    "back": "Doubtful"
+   },
+   {
     "id": 1048023,
     "name": "Strahinja Pavlović",
     "type": "injury",
     "reason": "Knee injury",
-    "back": "About 1-2 weeks"
+    "back": "Doubtful"
    },
    {
     "id": 749662,
@@ -9573,7 +9580,7 @@
    "num": 33,
    "dob": "2005-12-29",
    "nat": "Italy",
-   "roles": "LM / LB / LWB / CB",
+   "roles": "LM / LWB / LB / CB",
    "grp": "FB",
    "pct": null,
    "heat": {
@@ -10388,7 +10395,7 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / LM / LWB",
+   "roles": "RW / RWB / LWB / LM / LW / RM",
    "grp": "AM",
    "pct": [
     97,
