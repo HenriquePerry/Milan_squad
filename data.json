@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-16",
+  "collected": "2026-11-17",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -8620,7 +8620,7 @@
     "name": "Ruben Loftus-Cheek",
     "type": "injury",
     "reason": "Thigh injury",
-    "back": "Doubtful"
+    "back": "Early December 2026"
    },
    {
     "id": 688300,
@@ -10395,7 +10395,7 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / LWB / LM / LW / RM",
+   "roles": "RW / RWB / LM / LWB",
    "grp": "AM",
    "pct": [
     97,
