@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-17",
+  "collected": "2026-11-18",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -8588,20 +8588,6 @@
   "matchId": 5749750,
   "list": [
    {
-    "id": 466439,
-    "name": "Mike Maignan",
-    "type": "injury",
-    "reason": "Muscle injury",
-    "back": "Doubtful"
-   },
-   {
-    "id": 1048023,
-    "name": "Strahinja Pavlović",
-    "type": "injury",
-    "reason": "Knee injury",
-    "back": "Doubtful"
-   },
-   {
     "id": 749662,
     "name": "Fikayo Tomori",
     "type": "injury",
@@ -8750,11 +8736,11 @@
   },
   "CM": {
    "label": "Central midfielders",
-   "n": 72
+   "n": 73
   },
   "AM": {
    "label": "Attacking midfielders and wingers",
-   "n": 48
+   "n": 47
   },
   "ST": {
    "label": "Strikers",
@@ -9838,13 +9824,13 @@
    "grp": "CM",
    "pct": [
     25,
-    30,
+    29,
     3,
-    15,
+    14,
     3,
-    85,
-    6,
-    52
+    86,
+    8,
+    53
    ],
    "heat": {
     "55": {
@@ -9927,12 +9913,12 @@
    "grp": "CM",
    "pct": [
     98,
-    83,
-    69,
+    82,
+    68,
     66,
-    62,
-    51,
-    41,
+    61,
+    50,
+    42,
     12
    ],
    "heat": {
@@ -10018,10 +10004,10 @@
     25,
     1,
     2,
-    55,
+    54,
     60,
     90,
-    28,
+    29,
     95
    ],
    "heat": {
@@ -10109,12 +10095,12 @@
    "grp": "CM",
    "pct": [
     25,
-    76,
+    75,
     53,
     31,
-    59,
+    58,
     88,
-    2,
+    3,
     16
    ],
    "heat": {
@@ -10311,12 +10297,12 @@
    "pct": [
     99,
     97,
-    61,
+    63,
     18,
     14,
-    61,
-    7,
-    26
+    63,
+    5,
+    27
    ],
    "heat": {
     "55": {
@@ -10400,11 +10386,11 @@
    "pct": [
     97,
     39,
-    30,
-    72,
+    31,
+    71,
     16,
-    74,
-    57,
+    76,
+    56,
     78
    ],
    "heat": {
@@ -10489,14 +10475,14 @@
    "roles": "LW / RWB / RM / RW",
    "grp": "AM",
    "pct": [
-    15,
+    14,
     14,
     15,
-    74,
-    68,
-    26,
-    49,
-    61
+    73,
+    67,
+    27,
+    48,
+    63
    ],
    "heat": {
     "55": {
