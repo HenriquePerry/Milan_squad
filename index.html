@@ -247,7 +247,8 @@ nav.jump{display:flex;gap:var(--s5);min-width:0;margin-left:auto;overflow-x:auto
 nav.jump::-webkit-scrollbar{display:none}
 nav.jump a{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:var(--t-13);text-decoration:none;color:var(--l8);display:block;line-height:52px;white-space:nowrap;transition:color var(--d1),box-shadow var(--d1)}
 nav.jump a:hover{color:var(--ink);box-shadow:inset 0 -2px 0 var(--l5)}
-nav.jump a[aria-current="true"]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--red)}
+nav.jump a[aria-current]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--red)}
+#card:focus,#match:focus{outline:none}
 .stamp{font-size:12.5px;color:var(--l8);border-bottom:1px solid var(--l3);padding:var(--s3) 0;margin-top:var(--s4)}
 section{padding-top:var(--s9);scroll-margin-top:72px}
 .sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2) var(--s5);align-items:baseline;margin-bottom:var(--s5)}
@@ -553,9 +554,10 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
   nav.jump a{flex:none;line-height:52px;padding:0 var(--s3)}
   nav.jump::after{content:"";flex:none;width:var(--s5)}
   nav.jump{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent)}
-  nav.jump a[aria-current="true"]{box-shadow:inset 0 3px 0 var(--red)}
+  nav.jump a[aria-current]{box-shadow:inset 0 3px 0 var(--red)}
+  .top-card .all{min-height:44px}
   body{padding-bottom:calc(53px + env(safe-area-inset-bottom))}
-  .bar .seg button{min-height:40px;padding:0 11px}
+  .bar .seg button{min-height:40px;min-width:44px;padding:0 11px}
   .pc-body{grid-template-columns:minmax(0,1fr)}
   .tok{width:72px}.tok .n{width:38px;height:38px;font-size:16px}.tok .nm{font-size:var(--t-11);padding:2px 6px}
   .tile .val{font-size:var(--t-36)}
@@ -598,7 +600,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
   <div class="rail" id="rail" tabindex="0" aria-label="Squad players. Use the arrow keys to browse."></div>
   <button type="button" class="rail-btn next" id="rail-next" aria-label="Next player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 </div>
-<div class="rail-cap" id="rail-cap" aria-live="polite"></div>
+<div class="rail-cap" id="rail-cap"></div>
 
 <main class="wrap" id="main" tabindex="-1">
   <div class="stamp dbg" id="stamp"></div>
@@ -647,7 +649,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
       <select id="m-sel" aria-label="Choose a match"></select>
       <button type="button" id="m-next" aria-label="Next match"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
-    <div class="card" id="match" aria-live="polite"></div>
+    <div class="card" id="match" tabindex="-1"></div>
     <h3 style="margin:20px 0 8px">Match log</h3>
     <div class="scroll"><table class="big plain num" id="mlog"></table></div>
     <p class="small muted" style="margin-top:8px">Click a row to open the match. Rating: FotMob's average rating for Milan's players in that match.</p>
@@ -670,7 +672,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
         </div>
         <div class="bench" id="bench"></div>
       </div>
-      <div class="card" id="card" aria-live="polite"></div>
+      <div class="card" id="card" tabindex="-1"></div>
     </div>
   </section>
 
@@ -719,6 +721,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
 </main>
 <footer>Portfolio project with no affiliation to AC Milan, Lega Serie A, UEFA or the sources cited. Club crests belong to their respective owners and are loaded from FotMob.</footer>
 <div id="tip" role="tooltip"></div>
+<p id="sr-live" class="sr-only" aria-live="polite"></p>
 
 <script>
 (function(){
@@ -924,12 +927,17 @@ rail.innerHTML = railPlayers.map((p, i) => {
     <span class="pcard${photo ? " ph" : ""}">${photo ? `<img src="${esc(photo)}" alt="" loading="lazy">` : BUST}<span class="pn">${esc(p.short)}</span><span class="pnum num">${p.num}</span><span class="ppos">${p.grp}</span></span></button>`;
 }).join("");
 const hangs = [...rail.children];
-let focusIdx = -1;
+let focusIdx = -1, railReady = false;
+// One short polite announcement instead of live regions that re-read whole cards
+const say = t => { const el = $("#sr-live"); if (!el) return; el.textContent = ""; setTimeout(() => { el.textContent = t; }, 40); };
+// Scroll to an element: uses the smooth-scroll engine when motion is on (set up at the end), the native behaviour otherwise
+const calm = () => matchMedia("(prefers-reduced-motion:reduce)").matches;
+const goTo = (el, block) => { if (!el) return; if (window.__lenis) window.__lenis.scrollTo(el, {offset: block === "center" ? -Math.max(0, (innerHeight - el.offsetHeight) / 2) : -72}); else el.scrollIntoView({block: block || "start", behavior: calm() ? "auto" : "smooth"}); };
 const centerOf = el => el.offsetLeft + el.offsetWidth / 2;
 function railFocus() {
   const mid = rail.scrollLeft + rail.clientWidth / 2; let best = 0, bd = Infinity;
   hangs.forEach((h, i) => { const d = Math.abs(centerOf(h) - mid); if (d < bd) { bd = d; best = i; } });
-  if (best !== focusIdx) { focusIdx = best; hangs.forEach((h, i) => h.classList.toggle("on", i === best)); renderRailCap(); }
+  if (best !== focusIdx) { focusIdx = best; hangs.forEach((h, i) => h.classList.toggle("on", i === best)); renderRailCap(); if (railReady) say(railPlayers[best].name); }
 }
 function railGo(i, smooth) {
   i = Math.max(0, Math.min(hangs.length - 1, i));
@@ -963,7 +971,7 @@ function renderTops() {
   }).join("");
 }
 const maxMp = () => Math.max(0, ...P.map(p => (stat(p) || {mp: 0}).mp));
-$("#tops").addEventListener("click", e => { const b = e.target.closest("[data-sort]"); if (!b) return; st.sort = b.dataset.sort === "gpa" ? "g" : b.dataset.sort; st.dir = -1; st.pos = "ALL"; syncPos(); renderTable(); $("#table").scrollIntoView(); });
+$("#tops").addEventListener("click", e => { const b = e.target.closest("[data-sort]"); if (!b) return; st.sort = b.dataset.sort === "gpa" ? "g" : b.dataset.sort; st.dir = -1; st.pos = "ALL"; syncPos(); renderTable(); goTo($("#table")); });
 
 /* ---------- Team ---------- */
 const resLetter = r => r.gf > r.ga ? "W" : r.gf === r.ga ? "D" : "L";
@@ -1101,7 +1109,7 @@ function renderMatches() {
   renderMatch();
   $("#mlog").innerHTML = `<thead><tr><th>Date</th><th>Opponent</th><th>Comp</th><th>H/A</th><th>Result</th><th title="Expected goals">xG</th><th title="Expected goals against">xGA</th><th title="Possession">Poss%</th><th title="Shots for and against">Shots</th><th title="Shots on target for and against">On target</th><th title="Average FotMob rating of Milan's players">Rating</th></tr></thead><tbody>` +
     list.slice().reverse().map(f => { const M = MT[f.id], st = (M && M.st) || {}, pr = (k, d) => st[k] ? fmt(st[k][0], d) : ND, both = k => st[k] ? `${st[k][0]}–${st[k][1]}` : ND;
-      return `<tr data-m="${f.id}" class="${f.id === curMatch ? "sel" : ""}"><td>${dFmt(f.date)}</td><td>${esc(f.opp)}</td><td class="muted">${D.comps[f.comp].short}</td><td class="muted">${f.venue}</td><td><span class="r ${resLetter(f)}">${resLetter(f)}</span> ${f.gf}–${f.ga}</td><td>${pr("xg", 2)}</td><td>${st.xg ? fmt(st.xg[1], 2) : ND}</td><td>${pr("poss", 0)}</td><td>${both("shots")}</td><td>${both("sot")}</td><td>${M && M.tr ? fmt(M.tr[0], 2) : ND}</td></tr>`; }).join("") + "</tbody>";
+      return `<tr data-m="${f.id}" tabindex="0" class="${f.id === curMatch ? "sel" : ""}"><td>${dFmt(f.date)}</td><td>${esc(f.opp)}</td><td class="muted">${D.comps[f.comp].short}</td><td class="muted">${f.venue}</td><td><span class="r ${resLetter(f)}">${resLetter(f)}</span> ${f.gf}–${f.ga}</td><td>${pr("xg", 2)}</td><td>${st.xg ? fmt(st.xg[1], 2) : ND}</td><td>${pr("poss", 0)}</td><td>${both("shots")}</td><td>${both("sot")}</td><td>${M && M.tr ? fmt(M.tr[0], 2) : ND}</td></tr>`; }).join("") + "</tbody>";
 }
 function renderMatch() {
   const el = $("#match"), f = fxById[curMatch]; if (!f) { el.innerHTML = `<p class="muted">No matches in this competition yet.</p>`; return; }
@@ -1124,7 +1132,7 @@ function renderMatch() {
       ${M.subs.length ? `<div class="bench" style="margin-top:var(--s5)"><div class="row"><span class="glab">Substitutes used</span>${M.subs.map(sub).join("")}</div></div>` : ""}
       <p class="small muted" style="margin-top:var(--s4)">Numbers next to players are FotMob ratings (0–10); the star marks the player of the match. G goal, A assist, ↓ minute substituted off, ↑ minute brought on. Click a player to see his numbers in this match.</p>
     </div>
-    <div><div class="pitch">${pitchLines}${M.xi.filter(x => has(x.x)).map(tok).join("")}</div><p class="radar-cap">${esc(TEAM)}'s starting XI${M.form ? " in a " + M.form : ""}, attacking upwards.</p></div></div><div id="m-player" aria-live="polite"></div>`;
+    <div><div class="pitch">${pitchLines}${M.xi.filter(x => has(x.x)).map(tok).join("")}</div><p class="radar-cap">${esc(TEAM)}'s starting XI${M.form ? " in a " + M.form : ""}, attacking upwards.</p></div></div><div id="m-player"></div>`;
   el.innerHTML = h; renderMP();
 }
 const mpGroup = (t, a) => `<div class="mp-g"><span class="glab">${t}</span><div class="facts">${a.join("")}</div></div>`;
@@ -1154,7 +1162,8 @@ function openMatch(id, scroll) {
   if (!selIds().includes(f.comp)) $('#f-comp [data-comp="ALL"]').click();
   curMatch = id; renderMatches();
   try { history.replaceState(null, "", "#match-" + id); } catch (e) {}
-  if (scroll) $("#matches").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"});
+  say(`Match: ${scoreLine(f)}`);
+  if (scroll) goTo($("#matches"));
 }
 $("#m-sel").addEventListener("change", e => openMatch(+e.target.value, false));
 $("#m-prev").addEventListener("click", () => { const l = doneFx(), i = l.findIndex(f => f.id === curMatch); if (i > 0) openMatch(l[i - 1].id, false); });
@@ -1210,10 +1219,19 @@ function renderCard(animate) {
 }
 function select(name, scroll) {
   if (!byName[name]) return; current = byName[name]; renderCard(true);
-  if (scroll) $("#card").scrollIntoView({block: "center", behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"});
+  say(`Player card: ${current.name}`);
+  if (scroll) goTo($("#card"), "center");
 }
-document.addEventListener("click", e => { const mp = e.target.closest("[data-mp]"); if (mp) { curMP = +mp.dataset.mp; renderMP(); return; } const b = e.target.closest("[data-p]"); if (b) { select(b.dataset.p, true); return; } const m = e.target.closest("[data-m]"); if (m) openMatch(+m.dataset.m, true); });
-document.addEventListener("keydown", e => { if (e.key !== "Enter" && e.key !== " ") return; const m = e.target.closest && e.target.closest(".res[data-m]"); if (m) { e.preventDefault(); openMatch(+m.dataset.m, true); } });
+document.addEventListener("click", e => { const mp = e.target.closest("[data-mp]"); if (mp) { curMP = +mp.dataset.mp; renderMP(); const x = $("#m-player .pc-name"); if (x) say(`${x.textContent}: numbers in this match`); return; } const b = e.target.closest("[data-p]"); if (b) { select(b.dataset.p, true); return; } const m = e.target.closest("[data-m]"); if (m) openMatch(+m.dataset.m, true); });
+// Keyboard: result chips and table rows (squad table, match log) open with Enter or Space; focus follows to what opened
+document.addEventListener("keydown", e => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const m = e.target.closest && e.target.closest(".res[data-m]"); if (m) { e.preventDefault(); openMatch(+m.dataset.m, true); return; }
+  const r = e.target.matches && e.target.matches("tr[data-p], tr[data-m]") ? e.target : null; if (!r) return;
+  e.preventDefault();
+  if (r.dataset.p) { select(r.dataset.p, true); $("#card").focus({preventScroll: true}); }
+  else { openMatch(+r.dataset.m, true); $("#match").focus({preventScroll: true}); }
+});
 
 /* touch heatmap and physical data on the player card */
 function heatBlock(p) {
@@ -1272,7 +1290,7 @@ function renderTable() {
     const a = val(st.sort, x, st.mode), b = val(st.sort, y, st.mode); if (!has(a) && !has(b)) return 0; if (!has(a)) return 1; if (!has(b)) return -1; return (a - b) * st.dir;
   });
   $("#big").innerHTML = `<thead><tr><th>#</th><th>Player</th><th>Group</th>${COLS.map(k => `<th data-k="${k}" tabindex="0" title="${M[k].l}${st.mode === "p90" && M[k].rate ? " per 90 min" : ""}" ${st.sort === k ? `aria-sort="${st.dir < 0 ? "descending" : "ascending"}"` : ""}>${SHORT[k]}</th>`).join("")}</tr></thead><tbody>` +
-    rows.map(p => `<tr data-p="${esc(p.name)}"${played(p) ? "" : ' class="dim"'}><td>${p.num}</td><td>${esc(p.name)}</td><td class="muted">${p.grp}</td>${COLS.map(k => { const c = cell(k, p, st.mode); return st.sort === k && !c.includes('class="nd"') ? c.replace("<td>", '<td class="sorted">') : c; }).join("")}</tr>`).join("") + "</tbody>";
+    rows.map(p => `<tr data-p="${esc(p.name)}" tabindex="0"${played(p) ? "" : ' class="dim"'}><td>${p.num}</td><td>${esc(p.name)}</td><td class="muted">${p.grp}</td>${COLS.map(k => { const c = cell(k, p, st.mode); return st.sort === k && !c.includes('class="nd"') ? c.replace("<td>", '<td class="sorted">') : c; }).join("")}</tr>`).join("") + "</tbody>";
   $("#f-sort").value = st.sort;
 }
 $("#f-pos").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st.pos = b.dataset.pos; syncPos(); renderTable(); });
@@ -1369,8 +1387,24 @@ $("#f-comp").addEventListener("click", e => { const b = e.target.closest("button
 const startIdx = Math.max(0, railPlayers.indexOf(current));
 railGo(startIdx, false); if (focusIdx < 0) { focusIdx = startIdx; hangs.forEach((h, i) => h.classList.toggle("on", i === startIdx)); }
 renderOut(); renderAll();
-const fromHash = () => { const hm = /^#match-(\d+)$/.exec(location.hash), f = hm && fxById[+hm[1]]; if (f && f.done && f.id !== curMatch) openMatch(f.id, true); else if (f && f.done) $("#matches").scrollIntoView(); };
+const fromHash = () => { const hm = /^#match-(\d+)$/.exec(location.hash), f = hm && fxById[+hm[1]]; if (f && f.done && f.id !== curMatch) openMatch(f.id, true); else if (f && f.done) goTo($("#matches")); };
 fromHash(); addEventListener("hashchange", fromHash);
+railReady = true;
+
+/* ---------- Section nav: mark the section in view (desktop tabs and the phone bottom bar) ---------- */
+const spyLinks = [...document.querySelectorAll("nav.jump a")].map(a => [a, document.getElementById(a.hash.slice(1))]).filter(x => x[1]);
+let spyTick = false, spyCur = null;
+function spy() {
+  spyTick = false; let cur = null;
+  for (const [a, s] of spyLinks) { if (!s.offsetParent) continue; if (s.getBoundingClientRect().top <= 140) cur = a; }
+  if (cur === spyCur) return; spyCur = cur;
+  spyLinks.forEach(([a]) => a.removeAttribute("aria-current"));
+  if (!cur) return;
+  cur.setAttribute("aria-current", "location");
+  const nav = cur.parentElement; if (nav.scrollWidth > nav.clientWidth) nav.scrollTo({left: cur.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2, behavior: calm() ? "auto" : "smooth"});
+}
+addEventListener("scroll", () => { if (!spyTick) { spyTick = true; requestAnimationFrame(spy); } }, {passive: true});
+spy();
 })();
 </script>
 </body>
