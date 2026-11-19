@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AC Milan 2026/27: squad and player stats</title>
 <script>/* Owner-only details (sources, collection dates, validation, methodology) appear only when the address ends in ?debug */
-try { if (new URLSearchParams(location.search).has("debug")) document.documentElement.classList.add("debug"); } catch (e) {}</script>
+try { if (new URLSearchParams(location.search).has("debug")) document.documentElement.classList.add("debug"); } catch (e) {}
+/* Motion: the rail entrance may hold the shirts for at most 1.2 s while the (deferred) motion library arrives; then they show regardless. */
+try { if (!matchMedia("(prefers-reduced-motion: reduce)").matches) { document.documentElement.classList.add("motion-pending"); setTimeout(function () { document.documentElement.classList.remove("motion-pending"); }, 1200); } } catch (e) {}</script>
 <meta name="description" content="Interactive AC Milan 2026/27 squad: starting XI, player cards, position radar, comparator and Serie A, Europa League and Coppa Italia stats, with source and collection date.">
 <link rel="canonical" href="https://henriqueperry.github.io/Milan_squad/">
 <meta name="robots" content="index, follow">
@@ -21,6 +23,11 @@ try { if (new URLSearchParams(location.search).has("debug")) document.documentEl
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@5.2.6/800.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5.2.7/600.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5.2.7/700.css">
+<!-- Motion (progressive enhancement, pinned + SRI): GSAP and ScrollTrigger from cdnjs, Lenis smooth scroll from jsDelivr. The page works without them. -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous"></script>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content="AC Milan 2026/27: squad and player stats">
@@ -278,8 +285,12 @@ html:not(.debug) .dbg,html:not(.debug) .src{display:none!important}
 .out .n,.md .toks .n{filter:grayscale(1) brightness(.85)}
 
 /* ===== Rail: the dressing-room peg rail ===== */
-.rail-wrap{position:relative;margin:0;background:linear-gradient(var(--l1),var(--l0) 88%)}
-.rail-wrap::before{content:"";position:absolute;left:0;right:0;top:22px;height:7px;background:linear-gradient(#a6a6ae,#5a5a62 55%,#2c2c32);box-shadow:0 3px 8px rgba(0,0,0,.7);z-index:1;transform-origin:50% 50%}
+.rail-wrap{--pole:1;position:relative;margin:0;background:linear-gradient(var(--l1),var(--l0) 88%)}
+.rail-wrap::before{content:"";position:absolute;left:0;right:0;top:22px;height:7px;background:linear-gradient(#a6a6ae,#5a5a62 55%,#2c2c32);box-shadow:0 3px 8px rgba(0,0,0,.7);z-index:1;transform-origin:50% 50%;transform:scaleX(var(--pole))}
+.pcard{transform-origin:50% -20px}
+.motion-pending #rail .pcard,.motion-pending #rail-cap>*{opacity:0}
+html.lenis,html.lenis body{height:auto} html.lenis{scroll-behavior:auto}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
 .rail{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px calc(50% - 75px) 44px;scrollbar-width:none;-webkit-overflow-scrolling:touch;outline-offset:-3px}
 .rail::-webkit-scrollbar{display:none}
 .hang{flex:none;width:150px;scroll-snap-align:center;border:0;background:none;padding:0;cursor:pointer;position:relative;color:inherit;transform-origin:50% 0;transform:scale(.8) rotate(var(--tilt,0deg));opacity:.6;filter:saturate(.7) brightness(.9);transition:transform var(--d3) var(--ease),opacity var(--d2),filter var(--d2)}
@@ -573,7 +584,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
   .chip{min-height:44px}
   .filters .seg button{min-height:44px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tok .n,.hang{transition:none}#card.pop{animation:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tok .n,.hang,.btn,.rail-btn,.hx .hv{transition:none}#card.pop{animation:none}.hang:hover{transform:scale(.8) rotate(var(--tilt,0deg))}.hang.on:hover{transform:scale(1.16) translateY(6px)}}
 </style>
 </head>
 <body>
@@ -597,7 +608,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
 
 <div class="rail-wrap" id="top">
   <button type="button" class="rail-btn prev" id="rail-prev" aria-label="Previous player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-  <div class="rail" id="rail" tabindex="0" aria-label="Squad players. Use the arrow keys to browse."></div>
+  <div class="rail" id="rail" data-lenis-prevent tabindex="0" aria-label="Squad players. Use the arrow keys to browse."></div>
   <button type="button" class="rail-btn next" id="rail-next" aria-label="Next player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 </div>
 <div class="rail-cap" id="rail-cap"></div>
@@ -651,7 +662,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
     </div>
     <div class="card" id="match" tabindex="-1"></div>
     <h3 style="margin:20px 0 8px">Match log</h3>
-    <div class="scroll"><table class="big plain num" id="mlog"></table></div>
+    <div class="scroll" data-lenis-prevent><table class="big plain num" id="mlog"></table></div>
     <p class="small muted" style="margin-top:8px">Click a row to open the match. Rating: FotMob's average rating for Milan's players in that match.</p>
   </section>
 
@@ -699,7 +710,7 @@ body>footer{border-top:1px solid var(--l3);padding:var(--s6) max(var(--gutter),c
         <button type="button" data-mode="tot" aria-pressed="true">Totals</button><button type="button" data-mode="p90" aria-pressed="false">Per 90 min</button>
       </div>
     </div>
-    <div class="scroll"><table class="big num" id="big"></table></div>
+    <div class="scroll" data-lenis-prevent><table class="big num" id="big"></table></div>
     <p class="small muted" style="margin-top:8px">Per 90 min: only players with at least 90 minutes. † inferred zero. ≈ value combined across competitions<span class="dbg"> (see Methodology)</span>. Km: distance covered in UEFA competitions only. FM: fantamedia, Serie A only.</p>
   </section>
 
@@ -1406,6 +1417,65 @@ function spy() {
 addEventListener("scroll", () => { if (!spyTick) { spyTick = true; requestAnimationFrame(spy); } }, {passive: true});
 spy();
 })();
+</script>
+<script>
+/* =====================================================================
+   Motion: progressive enhancement only. GSAP + ScrollTrigger animate, Lenis smooths page scroll.
+   Content is visible and usable without them (CDN down, JS error) and nothing here runs under
+   prefers-reduced-motion. No number is ever animated through intermediate values.
+   ===================================================================== */
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+  var root = document.documentElement, pending = root.classList.contains("motion-pending");
+  var release = function () { root.classList.remove("motion-pending"); };
+  try {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return release();
+    var G = window.gsap, ST = window.ScrollTrigger, L = window.Lenis, lenis = null;
+
+    // Smooth page scroll. The rail, the scrollable tables and the section bar keep native scrolling.
+    if (L) {
+      lenis = new L({ lerp: 0.12, autoRaf: !G, stopInertiaOnNavigate: true,
+        prevent: function (n) { return !!(n && n.nodeType === 1 && (n.id === "rail" || n.classList.contains("scroll") || n.matches("nav.jump, select, #tip"))); } });
+      window.__lenis = lenis;
+      // In-page links glide with the sticky-bar offset; the skip link keeps its native jump so focus lands on <main>.
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="#"]:not(.skip)');
+        if (!a || e.defaultPrevented || a.hash.length < 2) return;
+        var t = document.getElementById(a.hash.slice(1)); if (!t) return;
+        e.preventDefault(); lenis.scrollTo(t, { offset: -72 });
+      });
+    }
+    if (!G) return release();
+    if (ST) { G.registerPlugin(ST); if (lenis) lenis.on("scroll", ST.update); }
+    if (lenis) { G.ticker.add(function (t) { lenis.raf(t * 1000); }); G.ticker.lagSmoothing(0); }
+
+    var mm = G.matchMedia();
+    mm.add("(prefers-reduced-motion: no-preference)", function () {
+      // The one authored moment: the pole draws, then the shirts drop onto their pegs from the focused one outward and settle with a small swing.
+      if (pending) {
+        var cards = G.utils.toArray("#rail .pcard"), on = document.querySelector("#rail .hang.on");
+        var tl = G.timeline({ defaults: { ease: "power3.out" } });
+        tl.from(".rail-wrap", { "--pole": 0, duration: 0.55, ease: "power2.inOut" })
+          .from(cards, { y: -30, autoAlpha: 0, rotation: function (i) { return (i % 2 ? 1 : -1) * 6; }, duration: 1, ease: "elastic.out(1, 0.5)", stagger: { each: 0.035, from: on ? +on.dataset.i : "center" } }, "-=0.2")
+          .from("#rail-cap > *", { y: 14, autoAlpha: 0, duration: 0.5, stagger: 0.07 }, 0.45);
+      }
+      release();
+      if (!ST) return;
+      // Data draws as it scrolls in, once: chart lines trace left to right (dashed xG lines fade), match stat bars grow from the middle.
+      G.utils.toArray("#trends .chart").forEach(function (box) {
+        ST.create({ trigger: box, start: "top 85%", once: true, onEnter: function () {
+          box.querySelectorAll("polyline").forEach(function (pl) {
+            if (pl.getAttribute("stroke-dasharray")) { G.from(pl, { opacity: 0, duration: 0.9, delay: 0.3 }); return; }
+            var len = pl.getTotalLength();
+            G.fromTo(pl, { strokeDasharray: len, strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.2, ease: "power2.out", clearProps: "strokeDasharray,strokeDashoffset" });
+          });
+        } });
+      });
+      ST.create({ trigger: "#match", start: "top 80%", once: true, onEnter: function () { G.from("#match .bar2 i", { scaleX: 0, duration: 0.8, stagger: 0.025, ease: "power3.out" }); } });
+    });
+    if (ST && document.fonts) document.fonts.ready.then(function () { ST.refresh(); });
+  } catch (err) { release(); }
+});
 </script>
 </body>
 </html>
