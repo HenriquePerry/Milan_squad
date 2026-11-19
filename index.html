@@ -270,20 +270,19 @@ section{padding-top:var(--s9);scroll-margin-top:72px}
 #tip{position:fixed;z-index:50;max-width:300px;background:var(--l2);border:1px solid var(--l5);color:var(--ink);padding:10px 12px;border-radius:10px;font-size:13px;line-height:1.45;pointer-events:none;display:none;box-shadow:0 12px 32px rgba(0,0,0,.65)}
 #tip b{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:2px}
 html:not(.debug) .dbg,html:not(.debug) .src{display:none!important}
-.src{font-size:var(--t-11);font-weight:700;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 4px;cursor:help;white-space:nowrap}
+.src{margin-left:.4em;font-size:var(--t-11);font-weight:700;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 4px;cursor:help;white-space:nowrap}
 
 /* ===== Kit-number token (the signature): shirt number in kit lettering on a dark disc ringed by rossoneri stripes ===== */
-.top-row .n,.tok .n,.chip .n,.md .n{position:relative;display:grid;place-items:center;border-radius:50%;flex:none;color:#fff;font-family:var(--display);font-weight:800;line-height:1;text-shadow:0 1px 2px rgba(0,0,0,.8);
-  background:linear-gradient(90deg,var(--red) 0 50%,#0e0d0e 50%);box-shadow:0 0 0 1px var(--l4)}
+.top-row .n,.tok .n,.chip .n,.md .n{position:relative;display:grid;place-items:center;border-radius:50%;flex:none;color:#fff;font-family:var(--display);font-weight:800;line-height:1;text-shadow:0 0 2px #000,0 1px 3px #000;
+  background:repeating-linear-gradient(90deg,#0e0d0e 0 20%,var(--red) 20% 40%);box-shadow:0 0 0 1px var(--l4)}
 .top-row .n{width:34px;height:34px;font-size:15px}
 .chip .n{width:28px;height:28px;font-size:var(--t-13)}
-.md .n{width:34px;height:34px;font-size:15px}
+.md .n{width:30px;height:30px;font-size:14px}
 /* photo variant: the cut-out's face inside the disc, the number as a small kit badge */
 .n.ph{background:repeating-linear-gradient(90deg,var(--red) 0 4px,#050405 4px 8px);box-shadow:0 0 0 1px var(--l4)}
 .n.ph .fc{position:absolute;inset:0;border-radius:50%;overflow:hidden}
 .n.ph img{position:absolute;width:290%;max-width:none;left:-95%;top:-2%}
 .n.ph b{position:absolute;right:-5px;bottom:-4px;min-width:20px;height:20px;padding:0 3px;border-radius:999px;display:grid;place-items:center;background:var(--l0);box-shadow:0 0 0 1.5px var(--l4);font:800 13px/1 var(--display);color:var(--ink)}
-.out .n,.md .toks .n{filter:grayscale(1) brightness(.85)}
 
 /* ===== Rail: the dressing-room peg rail ===== */
 .rail-wrap{--pole:1;position:relative;margin:0;background:linear-gradient(var(--l1),var(--l0) 88%)}
@@ -311,7 +310,7 @@ html.lenis,html.lenis body{height:auto} html.lenis{scroll-behavior:auto}
 .pcard .pnum{position:absolute;left:0;right:0;bottom:4px;text-align:center;font-family:var(--display);font-weight:800;font-size:56px;line-height:1;text-shadow:0 2px 6px #000}
 .pcard.ph .pnum{left:auto;right:9px;bottom:3px;font-size:36px;text-align:right}
 .pcard .ppos{position:absolute;left:7px;bottom:8px;font:700 var(--t-11)/1 var(--label);letter-spacing:.08em;background:rgba(0,0,0,.78);border-radius:999px;padding:3px 7px;color:var(--l8)}
-.rail-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:44px;height:44px;border-radius:50%;border:1px solid var(--l4);background:rgba(11,10,11,.82);cursor:pointer;display:grid;place-items:center;padding:0;transition:border-color var(--d1),background var(--d1)}
+.rail-btn{position:absolute;bottom:var(--s4);z-index:4;width:44px;height:44px;border-radius:50%;border:1px solid var(--l4);background:rgba(11,10,11,.82);cursor:pointer;display:grid;place-items:center;padding:0;transition:border-color var(--d1),background var(--d1)}
 .rail-btn svg,.match-ctl button svg{width:20px;height:20px;fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .rail-btn:hover{border-color:var(--ink);background:var(--l0)} .rail-btn.prev{left:var(--gutter)} .rail-btn.next{right:var(--gutter)}
 .rail-cap{display:flex;flex-wrap:wrap;gap:var(--s4) var(--s7);align-items:flex-end;justify-content:center;padding:var(--s3) var(--gutter) var(--s7);max-width:var(--maxw);margin:0 auto}
@@ -324,7 +323,7 @@ html.lenis,html.lenis body{height:auto} html.lenis{scroll-behavior:auto}
 .btn:hover{background:#de1636} .btn:active{transform:translateY(1px)}
 
 /* ===== Matchday line: last result, next fixture, who is out, league position ===== */
-.md{display:grid;grid-template-columns:1.2fr 1.2fr .85fr .75fr;border-top:1px solid var(--l3);border-bottom:1px solid var(--l3)}
+.md{display:grid;grid-template-columns:1.15fr 1.15fr 1fr .7fr;border-top:1px solid var(--l3);border-bottom:1px solid var(--l3)}
 .md>*{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:var(--s5);border:0;border-left:1px solid var(--l3);background:none;color:inherit;text-align:left;text-decoration:none;font:inherit;min-width:0;transition:background var(--d1)}
 .md>:first-child{border-left:0;padding-left:0}
 .md>a:hover,.md>button:hover{background:linear-gradient(var(--l1),var(--l0))}
@@ -334,7 +333,9 @@ html.lenis,html.lenis body{height:auto} html.lenis{scroll-behavior:auto}
 .md .big em{font-style:normal;color:var(--red-tx)}
 .md .big .dif{margin-left:var(--s2)}
 .md .sub{display:block;font-size:13px;color:var(--l8);margin-top:var(--s2)}
-.md .toks{display:flex;flex-wrap:wrap;gap:var(--s2);padding:2px 0}
+.md .toks{display:flex;flex-wrap:wrap;gap:6px;padding:2px 0}
+.nw{white-space:nowrap}
+.chev{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;vertical-align:-1px;margin-left:3px;flex:none}
 .md .r{flex:none;display:inline-block;width:22px;height:22px;border-radius:50%;font:700 11px/22px var(--body);text-align:center}
 
 /* ===== Head coach ===== */
@@ -911,7 +912,7 @@ const radarCaption = p => p.pct
 $("#kicker").textContent = `${D.meta.season.replace("/20", "/")} season`;   // match count lives in the Team overview, not repeated here
 $("#updated").innerHTML = `Updated <time datetime="${esc(D.meta.collected)}">${longDate(D.meta.collected)}</time>`;
 $("#subtitle").innerHTML = `Head coach: ${esc(D.meta.coach || ND)} · ${term("form", "most-used formation")}: ${FORM}`;
-$("#stamp").innerHTML = `<b>Data collected on ${longDate(D.meta.collected)}.</b> Source of each number: ${srcTag("fotmob")} ${srcTag("fanta")} ${srcTag("uefa")}. Missing values are shown as n/a.`;
+$("#stamp").innerHTML = `<b>Data collected on ${longDate(D.meta.collected)}.</b> Source of each number:${srcTag("fotmob")}${srcTag("fanta")}${srcTag("uefa")}. Missing values are shown as n/a.`;
 $("#f-comp").insertAdjacentHTML("beforeend", [["ALL", "All"]].concat(D.compOrder.map(id => [id, D.comps[id].label])).map(o => {
   const off = o[0] !== "ALL" && !D.comps[o[0]].played;
   return `<button type="button" data-comp="${o[0]}" aria-pressed="${o[0] === SEL}" ${off ? 'disabled title="No matches in this competition yet"' : ""}>${o[1]}</button>`;
@@ -924,6 +925,7 @@ const railPlayers = P.filter(p => played(p, "ALL") || photoOf(p)); // players wi
 // Player faces from CONFIG.photos: a disc token on the pitch (number as a small kit badge) and a portrait on the cards; number-only fallback.
 const face = (p, num) => { const ph = p && photoOf(p), n = has(num) ? num : ""; return ph ? `<span class="n ph"><span class="fc"><img src="${esc(ph)}" alt="" loading="lazy"></span><b class="num">${n}</b></span>` : `<span class="n num">${n}</span>`; };
 const avatar = (p, num) => { const ph = p && photoOf(p), n = has(num) ? num : ""; return ph ? `<div class="avatar ph"><img src="${esc(ph)}" alt=""><b class="num">${n}</b></div>` : `<div class="avatar num">${n}</div>`; };
+const CHEV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>', ARROW = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>';
 const STAR = '<svg class="star-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg>';
 const BUST = '<svg viewBox="0 0 100 133" aria-hidden="true"><rect width="100" height="133" fill="url(#shade)"/><circle cx="50" cy="50" r="17" fill="#060607" fill-opacity=".78"/><path d="M14 133c0-30 14-46 36-46s36 16 36 46z" fill="#060607" fill-opacity=".78"/></svg>';
 document.body.insertAdjacentHTML("beforeend", '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".45"/><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".75"/></linearGradient><filter id="heatblur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.4"/></filter></defs></svg>');
@@ -971,10 +973,10 @@ addEventListener("resize", () => railGo(Math.max(focusIdx, 0), false));
 /* ---------- Highlights (top 3) ---------- */
 const TOPS = [["g", "Top scorer", 0], ["a", "Assists", 0], ["gpa", "Goals + assists", 0], ["rating", "FotMob rating", 2], ["min", "Minutes played", 0], ["km", "Distance (km) · UEFA", 1]];
 function renderTops() {
-  $("#tops-note").innerHTML = `${selLabel()} ${srcTag("fotmob")}`;
+  $("#tops-note").innerHTML = `${selLabel()}${srcTag("fotmob")}`;
   $("#tops").innerHTML = TOPS.map(([k, title, d]) => {
     const rows = P.map(p => [p, val(k, p)]).filter(x => has(x[1]) && x[1] > 0 && (k !== "rating" || stat(x[0]).mp >= Math.min(5, Math.ceil(maxMp() / 2)))).sort((x, y) => y[1] - x[1] || ((stat(y[0]) || {}).min || 0) - ((stat(x[0]) || {}).min || 0)).slice(0, 3);
-    return `<div class="top-card"><header><h3>${M[k].g ? term(M[k].g, title) : title}</h3><button type="button" class="all" data-sort="${k}">View all ›</button></header>${rows.length ? rows.map(([p, v]) => `<button type="button" class="top-row" data-p="${esc(p.name)}"><span class="n num">${p.num}</span><span>${esc(p.name)}</span><span class="v num">${fmt(v, d)}${mark(k, p)}</span></button>`).join("") : `<div class="top-empty">No data in this competition.</div>`}</div>`;
+    return `<div class="top-card"><header><h3>${M[k].g ? term(M[k].g, title) : title}</h3><button type="button" class="all" data-sort="${k}">View all${CHEV}</button></header>${rows.length ? rows.map(([p, v]) => `<button type="button" class="top-row" data-p="${esc(p.name)}"><span class="n num">${p.num}</span><span>${esc(p.name)}</span><span class="v num">${fmt(v, d)}${mark(k, p)}</span></button>`).join("") : `<div class="top-empty">No data in this competition.</div>`}</div>`;
   }).join("");
 }
 const maxMp = () => Math.max(0, ...P.map(p => (stat(p) || {mp: 0}).mp));
@@ -1003,7 +1005,7 @@ function renderTeam() {
   $("#mister").innerHTML = `${CFG.coachPhoto ? `<img src="${esc(CFG.coachPhoto)}" alt="">` : `<span class="ph0">${esc(ini)}</span>`}
     <div class="id"><div class="name">${esc(coach || ND)}</div><p>Head coach · ${selLabel()}</p></div>
     <div class="facts"><span><b class="num">${FORM}</b>${term("form", "Formation")}</span><span><b class="num">${done.length ? fmt(w / done.length * 100, 0) + "%" : ND}</b>Win rate</span><span><b class="num">${done.length ? fmt((3 * w + d) / done.length, 2) : ND}</b>Points/match</span></div>`;
-  $("#team-src").innerHTML =`${selLabel()} · standings, results and xG ${srcTag("fotmob")}`;
+  $("#team-src").innerHTML =`${selLabel()} · standings, results and xG${srcTag("fotmob")}`;
   $("#results").innerHTML = done.length ? done.map((r, i) => `<div class="res ${i >= done.length - 5 ? "last5" : ""}" tabindex="0" role="button" data-m="${r.id}" data-tip="${esc(D.comps[r.comp].label)} · ${dFmt(r.date)}|${r.venue === "H" ? "Milan" : esc(r.opp)} ${r.venue === "H" ? r.gf + "–" + r.ga : r.ga + "–" + r.gf} ${r.venue === "H" ? esc(r.opp) : "Milan"}.">
     <span class="r ${resLetter(r)}">${resLetter(r)}</span><b class="num">${r.gf}–${r.ga}</b>${esc(r.opp)}<br><span class="muted">${r.venue === "H" ? "home" : "away"}${SEL === "ALL" ? ` · <span class="ctag">${D.comps[r.comp].short}</span>` : ""}</span></div>`).join("") : `<p class="muted">No matches in this competition yet.</p>`;
   const tc = one && one.top ? one : D.comps[PRIMARY];
@@ -1024,7 +1026,7 @@ function diffChip(f) {
 $("#diff-legend").innerHTML = `<span class="dl-t">${term("dif", "Difficulty")}, by the opponent's table position:</span>` + [1, 2, 3, 4, 5].map(lv => `<span class="dl-i">${pips(lv)}<span>${DIFF[lv]}</span></span>`).join("");
 function renderOut() {
   const u = D.unavailable, nf = u && fxById[u.matchId], list = (u && u.list) || [];
-  $("#out-note").innerHTML = `${nf ? `Injured or suspended for the next match: ${esc(nf.opp)} (${nf.venue === "H" ? "home" : "away"}, ${dFmt(nf.date)})` : "Injured or suspended players"} ${srcTag("fotmob")}`;
+  $("#out-note").innerHTML = `${nf ? `Injured or suspended for the next match: ${esc(nf.opp)} (${nf.venue === "H" ? "home" : "away"}, ${dFmt(nf.date)})` : "Injured or suspended players"}${srcTag("fotmob")}`;
   $("#out").innerHTML = list.length ? list.map(x => { const p = byId[x.id], sus = x.type === "suspension";
     return `<button type="button" class="top-row" ${p ? `data-p="${esc(p.name)}"` : "disabled"}><span class="n num">${p ? p.num : "–"}</span><span>${esc(x.name)}<br><span class="small muted">${sus ? "Suspended" : esc(x.reason)}</span></span><span class="small muted" style="text-align:right">${sus ? "Suspension" : x.back ? "Back: " + esc(x.back) : ND}</span></button>`; }).join("")
     : `<p class="muted small" style="padding:0 16px 16px">No player is listed as injured or suspended.</p>`;
@@ -1041,7 +1043,7 @@ function renderMatchday() {
     : `<div><span class="lbl">Last result</span><span class="sub">No matches in ${selLower()} yet.</span></div>`;
   const lv = next ? diffLv(next) : 0;
   const nextH = next
-    ? `<a href="#team"><span class="lbl">Next · ${esc(D.comps[next.comp].label)}${roundLab(next)}</span><span class="big">${next.venue === "H" ? `<em>${esc(TEAM)}</em> – ${esc(next.opp)}` : `${esc(next.opp)} – <em>${esc(TEAM)}</em>`}${lv ? pips(lv) : ""}</span><span class="sub">${day(next.date)} · ${tFmt(next.date)} · ${next.venue === "H" ? "home" : "away"}${has(next.oppPos) ? ` · ${esc(next.opp)} ${ord(next.oppPos)}` : ""}${lv ? ` · difficulty ${lv}/5` : ""}</span></a>`
+    ? `<a href="#team"><span class="lbl">Next · ${esc(D.comps[next.comp].label)}${roundLab(next)}</span><span class="big">${next.venue === "H" ? `<em>${esc(TEAM)}</em> – ${esc(next.opp)}` : `${esc(next.opp)} – <em>${esc(TEAM)}</em>`}${lv ? pips(lv) : ""}</span><span class="sub">${day(next.date)} · ${tFmt(next.date)} · ${next.venue === "H" ? "home" : "away"}${has(next.oppPos) ? ` · ${esc(next.opp)} ${ord(next.oppPos)}` : ""}${lv ? ` · <span class="nw">difficulty ${lv}/5</span>` : ""}</span></a>`
     : `<div><span class="lbl">Next</span><span class="sub">No fixtures scheduled.</span></div>`;
   const u = D.unavailable, nf = u && fxById[u.matchId], list = (u && u.list) || [];
   const outH = `<a href="#team"><span class="lbl">Unavailable</span>${list.length ? `<span class="toks" aria-hidden="true">${list.map(x => { const p = byId[x.id]; return `<span class="n num">${p ? p.num : "–"}</span>`; }).join("")}</span>` : ""}<span class="sub">${list.length ? `${list.length} out${nf ? ` for ${esc(nf.opp)}` : ""}<span class="sr-only">: ${list.map(x => esc(x.name)).join(", ")}</span>` : "Nobody listed as injured or suspended"}</span></a>`;
@@ -1075,7 +1077,7 @@ function lineChart(o) {
 const RED = "var(--red-tx)", BLUE = "var(--series-b)";
 function renderTrends() {
   const C = D.comps[PRIMARY], R = (C && C.rounds) || [], nT = (C && C.teams) || 20;
-  $("#trends-note").innerHTML = `Form and xG: ${selLower()} · position: ${C ? C.label : ""} ${srcTag("fotmob")}`;
+  $("#trends-note").innerHTML = `Form and xG: ${selLower()} · position: ${C ? C.label : ""}${srcTag("fotmob")}`;
   $("#ch-pos-sub").textContent = `${C ? C.label : ""} only, after each matchday. 1st is at the top.`;
   $("#ch-pos").innerHTML = lineChart({ n: R.length, label: `League position by matchday, currently ${R.length ? ord(R[R.length - 1].pos) : ND}`, yMin: 1, yMax: nT, invert: true,
     ticks: [1, 5, 10, 15, nT].filter((v, i, a) => a.indexOf(v) === i), xTick: i => R[i].r === 1 || R[i].r % 5 === 0 ? "MD" + R[i].r : "",
@@ -1109,7 +1111,7 @@ const mEv = x => (x.g ? `<span class="ev">${x.g > 1 ? x.g : ""}G</span>` : "") +
 function renderMatches() {
   const list = doneFx();
   if (!list.some(f => f.id === curMatch)) curMatch = list.length ? list[list.length - 1].id : null;
-  $("#match-note").innerHTML = `${selLabel()} · line-ups, scorers, xG and ratings ${srcTag("fotmob")}`;
+  $("#match-note").innerHTML = `${selLabel()} · line-ups, scorers, xG and ratings${srcTag("fotmob")}`;
   $("#m-sel").innerHTML = list.slice().reverse().map(f => `<option value="${f.id}">${esc(`${dFmt(f.date)} · ${scoreLine(f)} · ${f.round ? "Matchday " + f.round : D.comps[f.comp].label}`)}</option>`).join("");
   if (curMatch) $("#m-sel").value = String(curMatch);
   const i = list.findIndex(f => f.id === curMatch); $("#m-prev").disabled = i <= 0; $("#m-next").disabled = i < 0 || i >= list.length - 1;
@@ -1160,8 +1162,8 @@ function renderMP() {
     + mpGroup("On the ball", [fact("Touches", n("tch")), fact("Passes", frac("pa")), fact("Passes into final third", n("f3"))])
     + mpGroup("Defending and duels", [fact("Tackles", n("tk")), fact("Interceptions", n("int")), fact("Clearances", n("clr")), fact("Recoveries", n("rec")), fact("Duels won–lost", `${n("dw")}–${n("dl")}`), fact("Fouls", n("fc")), fact("Was fouled", n("fd"))]);
   box.innerHTML = `<div class="mp-head">${avatar(p, x.num)}
-      <div style="flex:1 1 220px;min-width:0"><div class="pc-name" style="font-size:var(--t-36)">${esc(p ? p.name : x.name)}</div><div class="muted small">This match only: ${esc(scoreLine(f))}, ${dFmt(f.date)} · ${role} ${srcTag("fotmob")}</div></div>
-      ${p ? `<button type="button" class="btn" data-p="${esc(p.name)}">Season card ›</button>` : ""}</div>
+      <div style="flex:1 1 220px;min-width:0"><div class="pc-name" style="font-size:var(--t-36)">${esc(p ? p.name : x.name)}</div><div class="muted small">This match only: ${esc(scoreLine(f))}, ${dFmt(f.date)} · ${role}${srcTag("fotmob")}</div></div>
+      ${p ? `<button type="button" class="btn" data-p="${esc(p.name)}">Season card${CHEV}</button>` : ""}</div>
     <div class="facts">${fact("FotMob rating", has(x.r) ? fmt(x.r, 1) : ND)}${fact("Minutes", s && has(s.min) ? s.min : ND)}${fact("Yellow cards", x.yc || 0)}${fact("Red cards", x.rc || 0)}${M.potm && M.potm.id === x.id ? `<span class="fact"><b>Award</b>${STAR}Player of the match</span>` : ""}</div>${body}`;
 }
 function openMatch(id, scroll) {
@@ -1178,7 +1180,7 @@ $("#m-next").addEventListener("click", () => { const l = doneFx(), i = l.findInd
 
 /* ---------- Squad: pitch, bench, player card ---------- */
 let current = byName["Adrien Rabiot"] || railPlayers[0] || P[0];
-$("#lineup-note").innerHTML = LU ? `Starting XI in the most-used formation, ${term("form", LU.formation)}: for each position, the player who started there most often in ${D.comps[PRIMARY].label} ${srcTag("fotmob")}. Updated automatically.` : "No line-up data yet.";
+$("#lineup-note").innerHTML = LU ? `Starting XI in the most-used formation, ${term("form", LU.formation)}: for each position, the player who started there most often in ${D.comps[PRIMARY].label}${srcTag("fotmob")}. Updated automatically.` : "No line-up data yet.";
 const outTip = p => { const u = OUT[p.id]; return u ? ` data-tip="${esc(p.short)} · unavailable|${esc(u.type === "suspension" ? "Suspended" : u.reason)}${u.back ? ". Expected return: " + esc(u.back) : ""}."` : ""; };
 const tokBtn = (p, cls, inner, style) => `<button type="button" class="${cls}${OUT[p.id] ? " out" : ""}" ${style || ""} data-p="${esc(p.name)}"${outTip(p)} aria-pressed="false" aria-label="${esc(p.name)}, number ${p.num}${OUT[p.id] ? ", unavailable" : ""}">${inner}</button>`;
 const lineup = (LU ? LU.xi : []).map(s => ({ p: byId[s.id], x: s.x * 100, y: s.y * 100 })).filter(s => s.p);
@@ -1215,13 +1217,13 @@ function renderCard(animate) {
       </div>
       <div>
         <div class="radar-box">${radar([p])}<p class="radar-cap">${radarCaption(p)}</p></div>
-        <div class="facts" style="margin-top:10px">${f ? `<span class="fact"><b>${term("fm", "Fantamedia")}</b>${fmt(f.fm, 2)}</span><span class="fact"><b>${term("mv", "Media voto")}</b>${fmt(f.mv, 2)}</span><span class="fact"><b>Partite a voto</b>${f.pv}</span> ${srcTag("fanta")}` : `<span class="fact"><b>Fantamedia</b>${ND}</span>`}</div>
+        <div class="facts" style="margin-top:10px">${f ? `<span class="fact"><b>${term("fm", "Fantamedia")}</b>${fmt(f.fm, 2)}</span><span class="fact"><b>${term("mv", "Media voto")}</b>${fmt(f.mv, 2)}</span><span class="fact"><b>Partite a voto</b>${f.pv}</span>${srcTag("fanta")}` : `<span class="fact"><b>Fantamedia</b>${ND}</span>`}</div>
         <div class="facts" style="margin-top:6px">${physFacts(p)}</div>
         ${heatBlock(p)}
       </div></div>`;
   const card = $("#card");
-  card.innerHTML = `<div class="pc-head">${avatar(p, p.num)}<div><div class="pc-name">${esc(p.name)}</div><div class="muted small">Player data ${srcTag("fotmob")}</div></div></div>
-    <div class="facts">${facts.map(x => `<span class="fact"><b>${x[0]}</b>${x[1]}</span>`).join("")}</div>${OUT[p.id] ? `<p class="out-note"><span class="badge fail">OUT</span>${esc(OUT[p.id].type === "suspension" ? "Suspended" : OUT[p.id].reason)}${OUT[p.id].back ? ` · expected return: ${esc(OUT[p.id].back)}` : ""} ${srcTag("fotmob")}</p>` : ""}${body}`;
+  card.innerHTML = `<div class="pc-head">${avatar(p, p.num)}<div><div class="pc-name">${esc(p.name)}</div><div class="muted small">Player data${srcTag("fotmob")}</div></div></div>
+    <div class="facts">${facts.map(x => `<span class="fact"><b>${x[0]}</b>${x[1]}</span>`).join("")}</div>${OUT[p.id] ? `<p class="out-note"><span class="badge fail">OUT</span>${esc(OUT[p.id].type === "suspension" ? "Suspended" : OUT[p.id].reason)}${OUT[p.id].back ? ` · expected return: ${esc(OUT[p.id].back)}` : ""}${srcTag("fotmob")}</p>` : ""}${body}`;
   if (animate) { card.classList.remove("pop"); void card.offsetWidth; card.classList.add("pop"); }
 }
 function select(name, scroll) {
@@ -1248,16 +1250,16 @@ function heatBlock(p) {
   hs.forEach(h => { n += h.n; k += h.k; for (let i = 0; i < cells.length; i++) cells[i] += parseInt(h.g[i], 36) / 35 * h.m; });
   const max = Math.max(...cells), cw = 105 / GX, ch = 68 / GY; let a = "", b = "";
   cells.forEach((v, i) => { if (!v) return; const t = v / max, x = (i % GX * cw).toFixed(2), y = (Math.floor(i / GX) * ch).toFixed(2), r = `<rect x="${x}" y="${y}" width="${cw.toFixed(2)}" height="${ch.toFixed(2)}"`; a += `${r} fill-opacity="${Math.pow(t, .9).toFixed(2)}"/>`; if (t > .5) b += `${r} fill-opacity="${(Math.pow((t - .5) * 2, 1.5) * .7).toFixed(2)}"/>`; });
-  return `<div class="heat"><h3>${term("heat", "Touch heatmap")} ${srcTag("fotmob")}</h3>
+  return `<div class="heat"><h3>${term("heat", "Touch heatmap")}${srcTag("fotmob")}</h3>
     <svg viewBox="0 0 105 68" role="img" aria-label="Touch heatmap of ${esc(p.name)}: ${n} touches in ${k} matches"><rect width="105" height="68" fill="#121011"/>
       <g filter="url(#heatblur)"><g fill="#ff5468">${a}</g><g fill="#ffe1e4">${b}</g></g>
       <g fill="none" stroke="#5a5250" stroke-width=".4"><rect x=".5" y=".5" width="104" height="67"/><path d="M52.5 .5V67.5"/><circle cx="52.5" cy="34" r="9.15"/><rect x=".5" y="13.85" width="16.5" height="40.3"/><rect x="88" y="13.85" width="16.5" height="40.3"/><rect x=".5" y="24.85" width="5.5" height="18.3"/><rect x="99" y="24.85" width="5.5" height="18.3"/></g>
-    </svg><p class="radar-cap">${fmt(n)} touches in ${k} ${k === 1 ? "match" : "matches"} · ${selLower()}. Milan attack from left to right →</p></div>`;
+    </svg><p class="radar-cap">${fmt(n)} touches in ${k} ${k === 1 ? "match" : "matches"} · ${selLower()}. Milan attack from left to right${ARROW}</p></div>`;
 }
 function physFacts(p) {
   const ph = p.phys || {}, ids = Object.keys(ph);
   if (!ids.length) return `<span class="fact"><b>${term("km", "Distance covered")}</b>${ND}</span>`;
-  return ids.map(id => { const x = ph[id], c = D.comps[id]; return `<span class="fact"><b>${term("km", "Distance")} · ${c ? c.short : id}</b>${fmt(x.km, 1)} km</span>${x.min >= 45 ? `<span class="fact"><b>Per 90</b>${fmt(x.km / x.min * 90, 1)} km</span>` : ""}${has(x.top) ? `<span class="fact"><b>Top speed</b>${fmt(x.top, 1)} km/h</span>` : ""}`; }).join("") + ` ${srcTag("uefa")}`;
+  return ids.map(id => { const x = ph[id], c = D.comps[id]; return `<span class="fact"><b>${term("km", "Distance")} · ${c ? c.short : id}</b>${fmt(x.km, 1)} km</span>${x.min >= 45 ? `<span class="fact"><b>Per 90</b>${fmt(x.km / x.min * 90, 1)} km</span>` : ""}${has(x.top) ? `<span class="fact"><b>Top speed</b>${fmt(x.top, 1)} km/h</span>` : ""}`; }).join("") + `${srcTag("uefa")}`;
 }
 
 /* ---------- Compare ---------- */
