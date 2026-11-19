@@ -22,4 +22,4 @@ FORM: The Dressing Room, candidate 6 of my ordered list of 7 grounded directions
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
 ## Signature interaction and motion grammar
-Shirts drop onto their pegs from the centre outward on load with a small settling swing; the pole draws first. Scroll reveals once (16px rise, 450ms power3.out), chart lines draw, match stat bars grow. No animated counting. Lenis for page scroll only; everything static under reduced motion or if the CDN fails.
+Shirts drop onto their pegs from the focused one outward on load with a small settling swing; the pole draws first; the player name and quick numbers rise in while "Open player card" stays visible from the first frame. On scroll, once: chart lines draw and match stat bars grow (no generic per-section reveals: one authored moment, per the craft floor). No animated counting. Lenis for page scroll only; everything static under reduced motion or if the CDN fails.

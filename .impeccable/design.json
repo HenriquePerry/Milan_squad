@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T00:00:00Z",
+  "title": "Design System: AC Milan Squad",
+  "extensions": {
+    "colorMeta": {
+      "l0": { "role": "neutral", "displayName": "Locker Black", "canonical": "#0b0a0b", "tonalRamp": ["#0b0a0b", "#121011", "#1a1718", "#262122", "#38322f", "#58514d", "#7a736d", "#9e978f", "#c9c2b8", "#f2ede4"] },
+      "l1": { "role": "neutral", "displayName": "Bench Shadow", "canonical": "#121011" },
+      "l2": { "role": "neutral", "displayName": "Locker Panel", "canonical": "#1a1718" },
+      "l3": { "role": "neutral", "displayName": "Hairline", "canonical": "#262122" },
+      "l4": { "role": "neutral", "displayName": "Steel Edge", "canonical": "#38322f" },
+      "l5": { "role": "neutral", "displayName": "Worn Grey", "canonical": "#58514d" },
+      "l6": { "role": "neutral", "displayName": "Chalk Grey", "canonical": "#7a736d" },
+      "l7": { "role": "neutral", "displayName": "Support Grey", "canonical": "#9e978f" },
+      "l8": { "role": "neutral", "displayName": "Kit Stone", "canonical": "#c9c2b8" },
+      "ink": { "role": "neutral", "displayName": "Kit-Print White", "canonical": "#f2ede4" },
+      "kit-black": { "role": "neutral", "displayName": "Kit Black", "canonical": "#0e0d0e" },
+      "red": { "role": "primary", "displayName": "Rossoneri Red", "canonical": "#c8102e", "tonalRamp": ["#3d0610", "#5e0a19", "#8a0e24", "#c8102e", "#de1636", "#ff5468", "#ff8a98", "#ffc4cb"] },
+      "red-hover": { "role": "primary", "displayName": "Floodlit Red", "canonical": "#de1636" },
+      "red-tx": { "role": "primary", "displayName": "Signal Red", "canonical": "#ff5468" },
+      "series-b": { "role": "secondary", "displayName": "Curva Sky", "canonical": "#6cb4ee", "tonalRamp": ["#0f2c44", "#174566", "#21608e", "#3a86c0", "#6cb4ee", "#94c9f3", "#bcdcf7", "#e1effb"] },
+      "win": { "role": "tertiary", "displayName": "Pitch Green", "canonical": "#3fae7d", "tonalRamp": ["#0b2a1d", "#12422e", "#1a5d41", "#2a8660", "#3fae7d", "#6cc49d", "#9ed9bf", "#d1eee1"] },
+      "draw": { "role": "tertiary", "displayName": "Terrace Grey", "canonical": "#6a635e", "tonalRamp": ["#1d1b1a", "#2c2927", "#3f3b38", "#55504c", "#6a635e", "#8a847f", "#b2ada8", "#dad6d3"] },
+      "warn": { "role": "tertiary", "displayName": "Card Amber", "canonical": "#e0a93b", "tonalRamp": ["#3a2a0a", "#5a4210", "#7e5c16", "#ad7f22", "#e0a93b", "#e9c06b", "#f1d59b", "#f8eacc"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Focused player name under the rail, player card name, match score. Uppercase kit lettering." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings (h2); masthead title at 28px (20px on phones)." },
+      "numeral": { "displayName": "Numeral", "purpose": "Any number a fan came for: 36px quick numbers, 48px tiles, 28px list values, 20px match stats." },
+      "title": { "displayName": "Title", "purpose": "Subsection headings, section tabs, primary pill text, names on shirts. Tracked condensed caps." },
+      "label": { "displayName": "Label", "purpose": "Field labels, table headers, captions. Tracked condensed caps in l7." },
+      "body": { "displayName": "Body", "purpose": "Sentences, notes (max 64ch) and table text (13.5 to 14px)." },
+      "micro": { "displayName": "Micro", "purpose": "Competition and position tags, OUT marks, rating badges, source tags. The 11px floor." }
+    },
+    "typeScale": ["11px", "13px", "15px", "20px", "28px", "36px", "48px", "64px"],
+    "shadows": [
+      { "name": "hung-shirt", "value": "0 12px 26px rgba(0,0,0,.6)", "purpose": "Every shirt hanging on the rail." },
+      { "name": "focused-shirt", "value": "0 22px 44px rgba(0,0,0,.75), 0 0 0 2px #f2ede4", "purpose": "The focused shirt, outlined in ink." },
+      { "name": "pole", "value": "0 3px 8px rgba(0,0,0,.7)", "purpose": "The steel pole of the peg rail." },
+      { "name": "floating-tip", "value": "0 12px 32px rgba(0,0,0,.65)", "purpose": "Glossary and chart tooltips." },
+      { "name": "selected-token", "value": "0 0 0 2.5px #f2ede4, 0 6px 18px rgba(0,0,0,.6)", "purpose": "Selected player token on the pitch." },
+      { "name": "kit-ring", "value": "0 0 0 1px #38322f", "purpose": "Hairline ring around every kit disc and portrait (a ring, not elevation)." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "CSS state transitions." },
+      { "name": "d1", "value": "150ms", "purpose": "Colour, outline and background changes on controls." },
+      { "name": "d2", "value": "250ms", "purpose": "Opacity and filter on rail shirts." },
+      { "name": "d3", "value": "450ms", "purpose": "Rail shirt transform; player card settle (12px rise)." },
+      { "name": "d4", "value": "700ms", "purpose": "Longest duration token." },
+      { "name": "pole-draw", "value": "550ms power2.inOut, scaleX 0 to 1", "purpose": "First beat of the rail entrance." },
+      { "name": "shirt-drop", "value": "1000ms elastic.out(1, 0.5), y -30px, rotation ±6deg, stagger 35ms from the focused shirt", "purpose": "The one authored moment: shirts drop onto their pegs and settle." },
+      { "name": "caption-rise", "value": "500ms power3.out, y 14px, stagger 70ms, starts at 450ms", "purpose": "Rail caption after the shirts; the primary pill is never hidden." },
+      { "name": "line-draw", "value": "1200ms power2.out stroke-dashoffset; dashed series fade 900ms after 300ms", "purpose": "Trend lines trace once on scroll (top 85%)." },
+      { "name": "bar-grow", "value": "800ms power3.out scaleX, stagger 25ms", "purpose": "Match stat bars grow from the centre once (top 80%)." },
+      { "name": "lenis", "value": "lerp 0.12", "purpose": "Page scroll only; rail, scroll boxes, section bar and selects keep native scroll." },
+      { "name": "motion-hold", "value": "1200ms", "purpose": "Maximum time shirts stay hidden while the deferred library loads." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "640px" },
+      { "name": "stack", "value": "900px" },
+      { "name": "matchday-2col", "value": "1100px" },
+      { "name": "tabs-fade", "value": "1180px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Kit-Number Token",
+      "kind": "custom",
+      "refersTo": "kit-number",
+      "description": "The player's identity everywhere: shirt number in kit lettering on a rossoneri-striped disc.",
+      "html": "<span class=\"ds-n\">10</span><span class=\"ds-n ds-n-lg\">7</span>",
+      "css": ".ds-n { display: inline-grid; place-items: center; width: 34px; height: 34px; margin-right: 8px; border-radius: 50%; color: #fff; font: 800 15px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; text-shadow: 0 0 2px #000, 0 1px 3px #000; background: repeating-linear-gradient(90deg, #0e0d0e 0 20%, var(--red, #c8102e) 20% 40%); box-shadow: 0 0 0 1px var(--l4, #38322f); transition: transform 150ms cubic-bezier(.2,.8,.2,1), box-shadow 150ms; } .ds-n-lg { width: 48px; height: 48px; font-size: 20px; cursor: pointer; } .ds-n-lg:hover { transform: scale(1.08); } .ds-n-lg:focus-visible, .ds-n-lg:active { box-shadow: 0 0 0 2.5px #f2ede4, 0 6px 18px rgba(0,0,0,.6); background: var(--red, #c8102e); }"
+    },
+    {
+      "name": "Kit-Number Token, Photo Variant",
+      "kind": "custom",
+      "refersTo": "kit-number",
+      "description": "With a player photo: the face inside a finely striped disc, the number as a small kit badge.",
+      "html": "<span class=\"ds-np\"><span class=\"ds-np-face\"></span><b>12</b></span>",
+      "css": ".ds-np { position: relative; display: inline-block; width: 48px; height: 48px; border-radius: 50%; background: repeating-linear-gradient(90deg, var(--red, #c8102e) 0 4px, #050405 4px 8px); box-shadow: 0 0 0 1px var(--l4, #38322f); } .ds-np-face { position: absolute; inset: 10px 12px 0; border-radius: 50% 50% 0 0; background: #58514d; } .ds-np b { position: absolute; right: -5px; bottom: -4px; min-width: 20px; height: 20px; padding: 0 3px; border-radius: 999px; display: grid; place-items: center; background: #0b0a0b; box-shadow: 0 0 0 1.5px #38322f; font: 800 13px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; color: #f2ede4; }"
+    },
+    {
+      "name": "Hanging Card",
+      "kind": "card",
+      "refersTo": "hanging-card",
+      "description": "A shirt on the peg rail: rest is small, tilted and desaturated; focused is larger, full colour, ink outline.",
+      "html": "<div class=\"ds-rail\"><button class=\"ds-hang\" style=\"--tilt:-2deg\"><span class=\"ds-pcard\"><span class=\"ds-pn\">Pulisic</span><span class=\"ds-pnum\">11</span></span></button><button class=\"ds-hang ds-on\"><span class=\"ds-pcard\"><span class=\"ds-pn\">Rabiot</span><span class=\"ds-pnum\">12</span></span></button></div>",
+      "css": ".ds-rail { position: relative; display: flex; gap: 6px; padding: 28px 24px 40px; background: linear-gradient(#121011, #0b0a0b 88%); } .ds-rail::before { content: ''; position: absolute; left: 0; right: 0; top: 22px; height: 7px; background: linear-gradient(#a6a6ae, #5a5a62 55%, #2c2c32); box-shadow: 0 3px 8px rgba(0,0,0,.7); } .ds-hang { width: 120px; border: 0; background: none; padding: 0; cursor: pointer; color: #f2ede4; transform-origin: 50% 0; transform: scale(.8) rotate(var(--tilt, 0deg)); opacity: .6; filter: saturate(.7) brightness(.9); transition: transform 450ms cubic-bezier(.2,.8,.2,1), opacity 250ms, filter 250ms; } .ds-hang::before { content: ''; display: block; width: 2px; height: 20px; margin: 0 auto; background: linear-gradient(#9a9aa2, #4a4a52); } .ds-hang:hover { opacity: .92; filter: none; transform: scale(.86) translateY(4px) rotate(calc(var(--tilt, 0deg) * -1)); } .ds-hang:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; } .ds-hang.ds-on { transform: scale(1.16) translateY(6px); opacity: 1; filter: none; } .ds-pcard { display: block; position: relative; aspect-ratio: 3/4; border-radius: 12px; overflow: hidden; border: 1px solid #000; box-shadow: 0 12px 26px rgba(0,0,0,.6); background: repeating-linear-gradient(90deg, #c8102e 0 15px, #0e0d0e 15px 30px); } .ds-on .ds-pcard { box-shadow: 0 22px 44px rgba(0,0,0,.75), 0 0 0 2px #f2ede4; } .ds-pn { position: absolute; left: 0; right: 0; top: 8px; text-align: center; font: 700 13px/1.2 'Saira Condensed','Arial Narrow',sans-serif; letter-spacing: .14em; text-transform: uppercase; text-shadow: 0 1px 3px #000; } .ds-pnum { position: absolute; left: 0; right: 0; bottom: 4px; text-align: center; font: 800 48px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; text-shadow: 0 2px 6px #000; }"
+    },
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per view (Open player card).",
+      "html": "<button class=\"ds-btn\">Open player card</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--red, #c8102e); color: #fff; cursor: pointer; font: 700 13px/1 'Saira Condensed','Arial Narrow',sans-serif; letter-spacing: .12em; text-transform: uppercase; transition: background 150ms, transform 150ms; } .ds-btn:hover { background: #de1636; } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Circle (rail and match arrows)",
+      "kind": "button",
+      "refersTo": "rail-arrow",
+      "description": "44px disc with a steel ring and an ink SVG chevron.",
+      "html": "<button class=\"ds-circ\" aria-label=\"Next\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-circ { width: 44px; height: 44px; border-radius: 50%; border: 1px solid #38322f; background: rgba(11,10,11,.82); cursor: pointer; display: grid; place-items: center; padding: 0; transition: border-color 150ms, background 150ms; } .ds-circ svg { width: 20px; height: 20px; fill: none; stroke: #f2ede4; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-circ:hover { border-color: #f2ede4; background: #0b0a0b; } .ds-circ:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; } .ds-circ:disabled { opacity: .35; cursor: not-allowed; }"
+    },
+    {
+      "name": "Competition Segment",
+      "kind": "chip",
+      "refersTo": "competition-segment",
+      "description": "Pill track in the sign bar; the selected competition is solid red.",
+      "html": "<div class=\"ds-seg\"><button aria-pressed=\"true\">All</button><button aria-pressed=\"false\">Serie A</button><button aria-pressed=\"false\">Europa League</button><button disabled>Coppa</button></div>",
+      "css": ".ds-seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: #1a1718; } .ds-seg button { border: 0; background: none; border-radius: 999px; padding: 7px 14px; font: 600 13px/1.2 system-ui, sans-serif; color: #c9c2b8; cursor: pointer; transition: background 150ms, color 150ms; } .ds-seg button:hover:not(:disabled):not([aria-pressed='true']) { color: #f2ede4; } .ds-seg button[aria-pressed='true'] { background: var(--red, #c8102e); color: #fff; } .ds-seg button:disabled { color: #58514d; cursor: not-allowed; } .ds-seg button:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Section Tabs",
+      "kind": "nav",
+      "refersTo": "section-tab",
+      "description": "Sign-bar wayfinding: tracked condensed caps, red underline on the current section (moves to a fixed bottom bar on phones with the red rule on top).",
+      "html": "<nav class=\"ds-jump\"><a href=\"#\">Highlights</a><a href=\"#\" aria-current=\"true\">Team</a><a href=\"#\">Trends</a><a href=\"#\">Matches</a></nav>",
+      "css": ".ds-jump { display: flex; gap: 24px; background: #0b0a0b; border-bottom: 1px solid #262122; } .ds-jump a { display: block; line-height: 52px; font: 700 13px/52px 'Saira Condensed','Arial Narrow',sans-serif; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: #c9c2b8; transition: color 150ms, box-shadow 150ms; } .ds-jump a:hover { color: #f2ede4; box-shadow: inset 0 -2px 0 #58514d; } .ds-jump a[aria-current] { color: #f2ede4; box-shadow: inset 0 -3px 0 var(--red, #c8102e); } .ds-jump a:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Pill and Player Chip",
+      "kind": "chip",
+      "refersTo": "filter-pill",
+      "description": "Outlined pills for filters (selected solid red) and bench chips carrying a kit-number token (selected ink outline).",
+      "html": "<button class=\"ds-fp\" aria-pressed=\"true\">All</button><button class=\"ds-fp\" aria-pressed=\"false\">Defenders</button><button class=\"ds-chip\" aria-pressed=\"false\"><span class=\"ds-cn\">19</span>Theo</button>",
+      "css": ".ds-fp { border: 1px solid #38322f; background: none; border-radius: 999px; padding: 0 14px; min-height: 36px; margin-right: 6px; font: 400 13px/1 system-ui, sans-serif; color: #c9c2b8; cursor: pointer; transition: border-color 150ms, background 150ms, color 150ms; } .ds-fp:hover { border-color: #7a736d; color: #f2ede4; } .ds-fp[aria-pressed='true'] { background: var(--red, #c8102e); border-color: var(--red, #c8102e); color: #fff; } .ds-fp:focus-visible, .ds-chip:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; } .ds-chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #262122; background: none; border-radius: 999px; padding: 4px 12px 4px 4px; min-height: 38px; font: 400 13px/1 system-ui, sans-serif; color: #f2ede4; cursor: pointer; transition: border-color 150ms, background 150ms; } .ds-chip:hover { border-color: #7a736d; } .ds-chip[aria-pressed='true'] { border-color: #f2ede4; background: #1a1718; } .ds-cn { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font: 800 13px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; background: repeating-linear-gradient(90deg, #0e0d0e 0 20%, #c8102e 20% 40%); box-shadow: 0 0 0 1px #38322f; text-shadow: 0 0 2px #000; }"
+    },
+    {
+      "name": "Select",
+      "kind": "input",
+      "refersTo": "select",
+      "description": "Pill select with a steel outline and an SVG chevron.",
+      "html": "<select class=\"ds-sel\"><option>Diego Moreira</option><option>Rafael Leão</option></select>",
+      "css": ".ds-sel { appearance: none; -webkit-appearance: none; background: #121011 url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9c2b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\") no-repeat right 14px center/14px; border: 1px solid #38322f; border-radius: 999px; padding: 0 40px 0 16px; min-height: 44px; font: 400 14px/1.2 system-ui, sans-serif; color: #f2ede4; cursor: pointer; transition: border-color 150ms; } .ds-sel:hover { border-color: #7a736d; } .ds-sel:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Matchday Line",
+      "kind": "custom",
+      "refersTo": "matchday-line",
+      "description": "Ruled strip of matchday facts: label, kit-lettering line, sub-line; no boxes.",
+      "html": "<div class=\"ds-md\"><a href=\"#\"><span class=\"ds-l\">Last result</span><span class=\"ds-big\">Genoa 1–<em>2</em> Milan</span><span class=\"ds-sub\">Serie A · Matchday 11</span></a><a href=\"#\"><span class=\"ds-l\">Next</span><span class=\"ds-big\">Milan – Frosinone</span><span class=\"ds-sub\">Sun 23 Nov · 18:00</span></a><a href=\"#\"><span class=\"ds-l\">Position</span><span class=\"ds-big\">4th</span><span class=\"ds-sub\">24 pts</span></a></div>",
+      "css": ".ds-md { display: grid; grid-template-columns: 1.15fr 1.15fr .7fr; border-top: 1px solid #262122; border-bottom: 1px solid #262122; } .ds-md a { display: flex; flex-direction: column; padding: 24px; border-left: 1px solid #262122; color: #f2ede4; text-decoration: none; transition: background 150ms; } .ds-md a:first-child { border-left: 0; padding-left: 0; } .ds-md a:hover { background: linear-gradient(#121011, #0b0a0b); } .ds-md a:focus-visible { outline: 2px solid #f2ede4; outline-offset: 2px; } .ds-l { font: 600 12px/1.2 'Saira Condensed','Arial Narrow',sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #9e978f; margin-bottom: 12px; } .ds-big { font: 800 32px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; text-transform: uppercase; white-space: nowrap; } .ds-big em { font-style: normal; color: #ff5468; } .ds-sub { font: 400 13px/1.4 system-ui, sans-serif; color: #c9c2b8; margin-top: 8px; }"
+    },
+    {
+      "name": "Highlight List",
+      "kind": "card",
+      "refersTo": "highlight-list",
+      "description": "Boxless list under a 2px red top rule; hairline rows; the leader's value in signal red.",
+      "html": "<div class=\"ds-top\"><header><span class=\"ds-h3\">Top scorer</span><button class=\"ds-all\">All</button></header><button class=\"ds-row\"><span class=\"ds-cn\">11</span><span>Christian Pulisic</span><b>6</b></button><button class=\"ds-row\"><span class=\"ds-cn\">9</span><span>Santiago Giménez</span><b>4</b></button></div>",
+      "css": ".ds-top { border-top: 2px solid var(--red, #c8102e); max-width: 360px; } .ds-top header { display: flex; justify-content: space-between; align-items: center; min-height: 44px; } .ds-h3 { font: 700 13px/1.2 'Saira Condensed','Arial Narrow',sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #c9c2b8; } .ds-all { background: none; border: 0; color: #9e978f; font: 400 12.5px system-ui, sans-serif; cursor: pointer; } .ds-all:hover { color: #f2ede4; } .ds-row { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; width: 100%; min-height: 54px; padding: 8px 4px 8px 0; border: 0; border-top: 1px solid #262122; background: none; color: #f2ede4; text-align: left; font: 400 14.5px system-ui, sans-serif; cursor: pointer; transition: background 150ms; } .ds-row:hover { background: #121011; } .ds-row:focus-visible { outline: 2px solid #f2ede4; outline-offset: -2px; } .ds-row b { font: 800 28px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; } .ds-row:first-of-type b { color: #ff5468; } .ds-cn { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; color: #fff; font: 800 15px/1 'Saira Extra Condensed','Arial Narrow',sans-serif; background: repeating-linear-gradient(90deg, #0e0d0e 0 20%, #c8102e 20% 40%); box-shadow: 0 0 0 1px #38322f; text-shadow: 0 0 2px #000; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dressing Room",
+    "overview": "The squad is a row of hung shirts in the San Siro dressing room. Every player is found by shirt and number, printed like kit lettering, and the rest of the page reads like the lettering and signage of that room: condensed caps, numbers set large, warm locker-black walls and one red that belongs to the club. The system refuses the category default of a dark dashboard built from identical rounded cards with one accent; there are no boxes. Sections are separated by type, space, hairlines and a 2px red rule, never by a filled container.\n\nDensity is that of a data tool: tables, charts and lists sit close, but every block opens on a large condensed headline or numeral so the eye finds the number first. The one physical object in the world is the peg rail at the top: a steel pole edge to edge with shirts hanging from it, the focused shirt larger and outlined in kit-print white. Everything below the rail is flat print on the dark wall.\n\nHonesty is visual too: players without minutes recede to grey, missing values read \"n/a\" in the support grey, and colour never decorates. Red marks Milan and the current selection; nothing else gets it.",
+    "keyCharacteristics": [
+      "Warm locker-black ground on one numbered neutral ramp (l0 to l8, plus ink).",
+      "Milan red only for Milan fields and selection; a lighter red for red as text or as a data series.",
+      "Saira Extra Condensed for numerals and headings, Saira Condensed tracked caps for labels and navigation, the platform UI face for reading and tables.",
+      "The kit-number token (number in kit lettering on a rossoneri-striped disc) identifies a player everywhere.",
+      "No boxes: hairlines, 2px red top rules and space.",
+      "One authored motion moment (the shirts dropping onto their pegs); data draws in once; numbers never count up."
+    ],
+    "rules": [
+      { "name": "The Club Colour Rule", "body": "Red appears only for Milan and for the current selection. An opponent, a neutral control, a heading or a decoration never gets red. If it is not Milan's and not selected, it is on the neutral ramp.", "section": "colors" },
+      { "name": "The Two Reds Rule", "body": "`red` fills, `red-tx` speaks. Red text, red lines and red data marks on the dark ground always use `red-tx`; `red` is never set as small text on l0.", "section": "colors" },
+      { "name": "The Grey Bench Rule", "body": "Grey (grayscale filter, `l7` text) is reserved for players without minutes and for missing values. A player who has played is never greyed for any other reason.", "section": "colors" },
+      { "name": "The Numbered Ramp Rule", "body": "Every neutral is one of l0 to l8 or ink. A new grey is not invented; it snaps to the nearest step.", "section": "colors" },
+      { "name": "The Kit Lettering Rule", "body": "Any number a fan came for (shirt, score, goals, rating, position) is set in Saira Extra Condensed 800. A key number in the body face is a mistake.", "section": "typography" },
+      { "name": "The Eleven Floor Rule", "body": "No text below 11px, chart axis labels included.", "section": "typography" },
+      { "name": "The Signage Caps Rule", "body": "Labels and navigation are tracked condensed caps; sentences are never set in caps.", "section": "typography" },
+      { "name": "The Sign Band Rule", "body": "There is exactly one sticky line of wayfinding. Nothing else sticks except table headers and identity columns inside their own scroll box.", "section": "layout" },
+      { "name": "The No Box Rule", "body": "Content is never placed in a filled, bordered, rounded container. A section, card or panel is a top hairline (`l3`) or a 2px red top rule plus space. Rounded fills are for controls (pills, chips, select) and for kit objects (disc, shirt, avatar, pitch).", "section": "elevation" },
+      { "name": "The Only Object Rule", "body": "Physical shadow belongs to the rail and to what floats. A flat block below the rail never gets a drop shadow to look important.", "section": "elevation" },
+      { "name": "The Honest Numbers Rule", "body": "Numbers are never animated through intermediate values. A count-up shows figures that were never true.", "section": "components" }
+    ],
+    "dos": [
+      "**Do** identify every player with the kit-number token (or its photo variant) wherever a player is listed.",
+      "**Do** separate sections with a hairline (`l3`), a 2px red top rule or space, never a filled container.",
+      "**Do** keep red for Milan fields and the current selection; use `red-tx` for red text, lines and series.",
+      "**Do** set every key number in Saira Extra Condensed 800 and every label in tracked Saira Condensed caps.",
+      "**Do** grey out (grayscale, `l7`) players without minutes and nothing else; show missing values as \"n/a\" in `l7`.",
+      "**Do** snap every neutral to the l0 to l8 ramp or ink.",
+      "**Do** give every control a 44px touch target on phones and the 2px ink focus ring.",
+      "**Do** keep the one sticky sign bar on desktop and the fixed bottom section bar on phones."
+    ],
+    "donts": [
+      "**Don't** wrap content in dark rounded cards with borders; that is the dashboard default this world refuses.",
+      "**Don't** use red for opponents, headings, decoration or anything that is neither Milan nor selected.",
+      "**Don't** set any text below 11px.",
+      "**Don't** animate a number through intermediate values or add count-ups.",
+      "**Don't** add drop shadows to flat blocks below the rail.",
+      "**Don't** add an eyebrow or kicker label above a heading; a heading stands on its own.",
+      "**Don't** use glyph or emoji icons; icons are inline SVG strokes in ink.",
+      "**Don't** add crests or logos as decoration, or player photos beyond the supplied set."
+    ]
+  }
+}
