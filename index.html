@@ -15,6 +15,12 @@ try { if (new URLSearchParams(location.search).has("debug")) document.documentEl
 <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<!-- Type: Saira (kit lettering) from jsDelivr, pinned. If it fails, the condensed system fallback in --display/--label takes over. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@5.2.6/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@5.2.6/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5.2.7/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5.2.7/700.css">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content="AC Milan 2026/27: squad and player stats">
@@ -177,18 +183,30 @@ const CONFIG = {
 </script>
 <style>
 :root{
-  /* Layout: card rail at the top, then single-column sections; pitch + player card side by side on wide screens. Single dark theme. */
-  --bg:#0d0d0f; --surface:#16161a; --surface-2:#1e1e24; --line:#2c2c34; --line-soft:#222228;
-  --ink:#f4f1ea; --ink-2:#bdb9b1; --muted:#8d8a86;
-  --red:#e8414d; --red-deep:#a3121d; --blue:#3a98cf;
-  --good:#46b384; --warn:#d9a441;
-  --display:"Avenir Next Condensed","Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  /* "The Dressing Room": warm locker-black neutrals on one numbered ramp (l0 page … l8 support text, ink = kit-print white).
+     Red is reserved for Milan and selection: --red fills fields, --red-tx is red as text or a data series on dark. */
+  --l0:#0b0a0b; --l1:#121011; --l2:#1a1718; --l3:#262122; --l4:#38322f; --l5:#58514d; --l6:#7a736d; --l7:#9e978f; --l8:#c9c2b8; --ink:#f2ede4;
+  --red:#c8102e; --red-deep:#8e0b20; --red-tx:#ff5468; --series-b:#6cb4ee;
+  --win:#3fae7d; --draw:#6a635e; --warn:#e0a93b;
+  /* Names the JS templates still use */
+  --bg:var(--l0); --surface:var(--l0); --surface-2:var(--l2); --line:var(--l3); --line-soft:var(--l3);
+  --ink-2:var(--l8); --muted:var(--l7); --blue:var(--series-b); --good:var(--win);
+  /* Type: kit lettering for numerals and headings, tracked condensed caps for labels, the platform UI face for reading */
+  --display:"Saira Extra Condensed","Arial Narrow","Roboto Condensed",sans-serif;
+  --label:"Saira Condensed","Arial Narrow","Roboto Condensed",sans-serif;
   --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --t-11:11px; --t-13:13px; --t-15:15px; --t-20:20px; --t-28:28px; --t-36:36px; --t-48:48px; --t-64:64px;
+  /* Space (4px base) and motion */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px;
+  --gutter:40px; --maxw:1280px;
+  --ease:cubic-bezier(.2,.8,.2,1); --d1:150ms; --d2:250ms; --d3:450ms; --d4:700ms;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);-webkit-text-size-adjust:100%;caret-color:var(--red-tx)}
+::selection{background:var(--red);color:#fff}
+html{scrollbar-color:var(--l4) var(--l0)}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px}
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;margin:0;text-wrap:balance;font-weight:700}
 h1{font-size:clamp(34px,6vw,58px);line-height:.95}
@@ -731,7 +749,7 @@ const AX = {
 };
 const RADAR = { outfield: ["npg90", "xg90", "sh90", "xa90", "kp90", "passPct", "tk90", "int90"], gk: ["saves90", "savePct", "ga90", "prevented90", "csPct", "passPct"] };
 const axesOf = p => p.grp === "GK" ? RADAR.gk : RADAR.outfield;
-const COL = ["var(--red)", "var(--blue)"];
+const COL = ["var(--red-tx)", "var(--series-b)"];
 function radar(players) {
   const pl = players.filter(p => p && p.pct);
   if (!pl.length) return "";
@@ -899,7 +917,7 @@ function lineChart(o) {
   for (let i = 0; i < n; i++) s += `<g class="hx"><line class="hv" x1="${f1(X(i))}" x2="${f1(X(i))}" y1="${m.t}" y2="${m.t + h}" stroke="var(--muted)" stroke-width="1"/>${o.series.map(sr => `<circle class="hv" cx="${f1(X(i))}" cy="${f1(Y(sr.vals[i]))}" r="4.5" fill="${sr.color}" stroke="var(--surface)" stroke-width="2"/>`).join("")}<rect x="${f1(X(i) - band / 2)}" y="${m.t}" width="${f1(band)}" height="${H - m.t}" fill="transparent" tabindex="0" data-tip="${esc(o.tip(i))}"/></g>`;
   return s + "</svg>";
 }
-const RED = "var(--red)", BLUE = "var(--blue)";
+const RED = "var(--red-tx)", BLUE = "var(--series-b)";
 function renderTrends() {
   const C = D.comps[PRIMARY], R = (C && C.rounds) || [], nT = (C && C.teams) || 20;
   $("#trends-note").innerHTML = `Form and xG: ${selLower()} · position: ${C ? C.label : ""} ${srcTag("fotmob")}`;
