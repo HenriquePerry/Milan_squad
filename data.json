@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-18",
+  "collected": "2026-11-20",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -95,8 +95,8 @@
      "matches": 11
     },
     "xga": {
-     "v": 14.3,
-     "rank": 7,
+     "v": 14.2,
+     "rank": 6,
      "matches": 11
     },
     "possession": {
@@ -8588,13 +8588,6 @@
   "matchId": 5749750,
   "list": [
    {
-    "id": 749662,
-    "name": "Fikayo Tomori",
-    "type": "injury",
-    "reason": "Muscle injury",
-    "back": "Doubtful"
-   },
-   {
     "id": 281762,
     "name": "Pietro Terracciano",
     "type": "injury",
@@ -8602,18 +8595,11 @@
     "back": "Doubtful"
    },
    {
-    "id": 604982,
-    "name": "Ruben Loftus-Cheek",
+    "id": 749662,
+    "name": "Fikayo Tomori",
     "type": "injury",
-    "reason": "Thigh injury",
-    "back": "Early December 2026"
-   },
-   {
-    "id": 688300,
-    "name": "Samuel Chukwueze",
-    "type": "injury",
-    "reason": "Thigh injury",
-    "back": "Mid January 2027"
+    "reason": "Muscle injury",
+    "back": "Doubtful"
    },
    {
     "id": 844996,
@@ -8627,6 +8613,20 @@
     "name": "Alexis Saelemaekers",
     "type": "injury",
     "reason": "Ankle injury",
+    "back": "Mid January 2027"
+   },
+   {
+    "id": 604982,
+    "name": "Ruben Loftus-Cheek",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "Early December 2026"
+   },
+   {
+    "id": 688300,
+    "name": "Samuel Chukwueze",
+    "type": "injury",
+    "reason": "Thigh injury",
     "back": "Mid January 2027"
    }
   ]
@@ -8728,19 +8728,19 @@
   },
   "CB": {
    "label": "Centre-backs",
-   "n": 68
+   "n": 67
   },
   "FB": {
    "label": "Full-backs and wing-backs",
-   "n": 44
+   "n": 45
   },
   "CM": {
    "label": "Central midfielders",
-   "n": 73
+   "n": 72
   },
   "AM": {
    "label": "Attacking midfielders and wingers",
-   "n": 47
+   "n": 48
   },
   "ST": {
    "label": "Strikers",
@@ -8945,7 +8945,7 @@
    "num": 41,
    "dob": "2008-08-14",
    "nat": "France",
-   "roles": "",
+   "roles": "GK",
    "grp": "GK",
    "pct": null,
    "heat": null,
@@ -8964,13 +8964,13 @@
    "grp": "CB",
    "pct": [
     33,
-    54,
-    35,
+    53,
+    34,
     7,
     17,
     93,
-    40,
-    63
+    41,
+    62
    ],
    "heat": {
     "55": {
@@ -9053,8 +9053,8 @@
    "grp": "CB",
    "pct": [
     33,
-    67,
-    71,
+    66,
+    70,
     72,
     34,
     75,
@@ -9143,7 +9143,7 @@
    "roles": "CB",
    "grp": "CB",
    "pct": [
-    76,
+    75,
     68,
     10,
     65,
@@ -9650,12 +9650,12 @@
    "grp": "FB",
    "pct": [
     31,
-    69,
-    75,
-    15,
+    70,
+    76,
     17,
+    19,
     90,
-    51,
+    52,
     97
    ],
    "heat": {
@@ -9820,17 +9820,17 @@
    "num": 80,
    "dob": "2002-11-29",
    "nat": "USA",
-   "roles": "DM / CM",
+   "roles": "DM / CM / LM",
    "grp": "CM",
    "pct": [
-    25,
-    29,
+    26,
+    30,
     3,
-    14,
+    15,
     3,
-    86,
+    85,
     8,
-    53
+    52
    ],
    "heat": {
     "55": {
@@ -9913,12 +9913,12 @@
    "grp": "CM",
    "pct": [
     98,
-    82,
-    68,
+    81,
+    69,
     66,
-    61,
-    50,
-    42,
+    60,
+    49,
+    41,
     12
    ],
    "heat": {
@@ -10001,13 +10001,13 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": [
-    25,
+    26,
     1,
     2,
-    54,
-    60,
+    53,
+    59,
     90,
-    29,
+    30,
     95
    ],
    "heat": {
@@ -10094,8 +10094,8 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": [
-    25,
-    75,
+    26,
+    74,
     53,
     31,
     58,
@@ -10292,17 +10292,17 @@
    "num": 70,
    "dob": "2006-10-22",
    "nat": "Italy",
-   "roles": "AM / ST / CM",
+   "roles": "AM / ST / CM / LW",
    "grp": "AM",
    "pct": [
     99,
     97,
-    63,
+    64,
     18,
     14,
-    63,
+    64,
     5,
-    27
+    26
    ],
    "heat": {
     "55": {
@@ -10381,16 +10381,16 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / LM / LWB",
+   "roles": "RW / RWB / RM / LWB / LM / LW",
    "grp": "AM",
    "pct": [
     97,
-    39,
-    31,
-    71,
+    41,
+    30,
+    72,
     16,
     76,
-    56,
+    57,
     78
    ],
    "heat": {
@@ -10478,11 +10478,11 @@
     14,
     14,
     15,
-    73,
-    67,
-    27,
-    48,
-    63
+    74,
+    68,
+    26,
+    49,
+    64
    ],
    "heat": {
     "55": {
@@ -10817,11 +10817,11 @@
    "num": 11,
    "dob": "1998-09-18",
    "nat": "USA",
-   "roles": "ST / LW / AM",
+   "roles": "ST / LW / AM / RW",
    "grp": "ST",
    "pct": [
     81,
-    49,
+    41,
     7,
     96,
     90,
@@ -10865,7 +10865,7 @@
      "a": 1,
      "yc": 2,
      "rc": 0,
-     "xg": 2.2,
+     "xg": 2.1,
      "xa": 1.8,
      "sh90": 1.8,
      "sh": 11,
