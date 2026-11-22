@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-21",
+  "collected": "2026-11-22",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -41,6 +41,14 @@
    "top": [
     {
      "pos": 2,
+     "team": "Roma",
+     "p": 12,
+     "gd": 25,
+     "pts": 30,
+     "me": false
+    },
+    {
+     "pos": 3,
      "team": "Inter",
      "p": 11,
      "gd": 15,
@@ -48,18 +56,10 @@
      "me": false
     },
     {
-     "pos": 3,
-     "team": "Roma",
-     "p": 11,
-     "gd": 21,
-     "pts": 27,
-     "me": false
-    },
-    {
      "pos": 4,
      "team": "Como",
      "p": 12,
-     "gd": 9,
+     "gd": 10,
      "pts": 26,
      "me": false
     },
@@ -73,30 +73,30 @@
     },
     {
      "pos": 6,
-     "team": "Frosinone",
-     "p": 11,
-     "gd": 9,
-     "pts": 20,
+     "team": "Juventus",
+     "p": 12,
+     "gd": 7,
+     "pts": 21,
      "me": false
     },
     {
      "pos": 7,
-     "team": "Juventus",
+     "team": "Frosinone",
      "p": 11,
-     "gd": 3,
-     "pts": 18,
+     "gd": 9,
+     "pts": 20,
      "me": false
     }
    ],
    "team": {
     "xg": {
      "v": 18.3,
-     "rank": 6,
+     "rank": 8,
      "matches": 11
     },
     "xga": {
      "v": 14.2,
-     "rank": 6,
+     "rank": 3,
      "matches": 11
     },
     "possession": {
@@ -106,7 +106,7 @@
     },
     "cleanSheets": {
      "v": 3,
-     "rank": 6,
+     "rank": 8,
      "matches": 11
     }
    },
@@ -314,7 +314,7 @@
    "done": true,
    "gf": 2,
    "ga": 1,
-   "oppPos": 11,
+   "oppPos": 13,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 1
@@ -329,7 +329,7 @@
    "done": true,
    "gf": 2,
    "ga": 0,
-   "oppPos": 19,
+   "oppPos": 20,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 2
@@ -344,7 +344,7 @@
    "done": true,
    "gf": 1,
    "ga": 1,
-   "oppPos": 7,
+   "oppPos": 6,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 3
@@ -464,7 +464,7 @@
    "done": true,
    "gf": 2,
    "ga": 0,
-   "oppPos": 20,
+   "oppPos": 19,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 8
@@ -479,7 +479,7 @@
    "done": true,
    "gf": 2,
    "ga": 4,
-   "oppPos": 8,
+   "oppPos": 9,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 9
@@ -494,7 +494,7 @@
    "done": true,
    "gf": 3,
    "ga": 1,
-   "oppPos": 2,
+   "oppPos": 3,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 10
@@ -524,7 +524,7 @@
    "done": true,
    "gf": 2,
    "ga": 1,
-   "oppPos": 13,
+   "oppPos": 10,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 11
@@ -539,7 +539,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 6,
+   "oppPos": 7,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 12
@@ -568,7 +568,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 9,
+   "oppPos": 11,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 13
@@ -612,7 +612,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 10,
+   "oppPos": 8,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 15
@@ -672,7 +672,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 3,
+   "oppPos": 2,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 19
@@ -701,7 +701,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 11,
+   "oppPos": 13,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 20
@@ -730,7 +730,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 6,
+   "oppPos": 7,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 21
@@ -759,7 +759,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 7,
+   "oppPos": 6,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 22
@@ -774,7 +774,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 8,
+   "oppPos": 9,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 23
@@ -789,7 +789,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 2,
+   "oppPos": 3,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 24
@@ -804,7 +804,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 13,
+   "oppPos": 10,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 25
@@ -834,7 +834,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 9,
+   "oppPos": 11,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 27
@@ -909,7 +909,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 10,
+   "oppPos": 8,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 32
@@ -969,7 +969,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 3,
+   "oppPos": 2,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 36
@@ -984,7 +984,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 19,
+   "oppPos": 20,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 37
@@ -999,7 +999,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 20,
+   "oppPos": 19,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 38
@@ -8724,11 +8724,11 @@
  "groups": {
   "GK": {
    "label": "Goalkeepers",
-   "n": 21
+   "n": 20
   },
   "CB": {
    "label": "Centre-backs",
-   "n": 67
+   "n": 73
   },
   "FB": {
    "label": "Full-backs and wing-backs",
@@ -8736,7 +8736,7 @@
   },
   "CM": {
    "label": "Central midfielders",
-   "n": 72
+   "n": 73
   },
   "AM": {
    "label": "Attacking midfielders and wingers",
@@ -8744,7 +8744,7 @@
   },
   "ST": {
    "label": "Strikers",
-   "n": 34
+   "n": 36
   }
  },
  "players": [
@@ -8759,11 +8759,11 @@
    "grp": "GK",
    "pct": [
     43,
-    74,
-    79,
-    69,
-    57,
-    79
+    78,
+    78,
+    78,
+    60,
+    78
    ],
    "heat": {
     "55": {
@@ -8963,14 +8963,14 @@
    "roles": "CB",
    "grp": "CB",
    "pct": [
-    33,
-    53,
     34,
-    7,
+    55,
+    38,
+    8,
     17,
     93,
-    41,
-    62
+    38,
+    65
    ],
    "heat": {
     "55": {
@@ -9052,14 +9052,14 @@
    "roles": "CB",
    "grp": "CB",
    "pct": [
-    33,
-    66,
-    69,
-    72,
     34,
-    74,
+    66,
+    72,
+    73,
+    35,
+    72,
     86,
-    14
+    20
    ],
    "heat": {
     "55": {
@@ -9143,14 +9143,14 @@
    "roles": "CB",
    "grp": "CB",
    "pct": [
-    75,
+    79,
     68,
-    10,
-    65,
-    80,
-    72,
-    77,
-    31
+    14,
+    69,
+    82,
+    70,
+    79,
+    35
    ],
    "heat": {
     "55": {
@@ -9614,7 +9614,7 @@
      "int": 1,
      "passPct": 75.2,
      "accPass90": 26.4,
-     "rating": 6.54,
+     "rating": null,
      "inferred": []
     },
     "73": {
@@ -9653,9 +9653,9 @@
     70,
     76,
     17,
-    19,
-    89,
-    52,
+    17,
+    91,
+    57,
     97
    ],
    "heat": {
@@ -9823,14 +9823,14 @@
    "roles": "DM / CM / LM",
    "grp": "CM",
    "pct": [
-    26,
-    30,
+    25,
+    32,
+    5,
+    18,
     3,
-    15,
-    3,
-    85,
-    8,
-    52
+    84,
+    9,
+    54
    ],
    "heat": {
     "55": {
@@ -9913,13 +9913,13 @@
    "grp": "CM",
    "pct": [
     98,
-    81,
-    69,
-    66,
-    60,
+    83,
+    70,
+    68,
+    58,
     49,
-    41,
-    10
+    43,
+    12
    ],
    "heat": {
     "55": {
@@ -10001,13 +10001,13 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": [
-    26,
+    25,
     1,
-    2,
-    53,
-    59,
-    90,
-    27,
+    3,
+    58,
+    57,
+    89,
+    25,
     95
    ],
    "heat": {
@@ -10094,14 +10094,14 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": [
-    26,
-    74,
-    53,
+    25,
+    76,
+    55,
     31,
-    58,
-    88,
-    3,
-    15
+    55,
+    87,
+    5,
+    17
    ],
    "heat": {
     "55": {
@@ -10299,10 +10299,10 @@
     97,
     64,
     18,
-    11,
-    64,
-    5,
-    26
+    9,
+    65,
+    7,
+    28
    ],
    "heat": {
     "55": {
@@ -10386,12 +10386,12 @@
    "pct": [
     97,
     41,
-    30,
-    72,
+    29,
+    70,
     16,
     76,
-    57,
-    78
+    59,
+    80
    ],
    "heat": {
     "55": {
@@ -10476,13 +10476,13 @@
    "grp": "AM",
    "pct": [
     14,
-    14,
-    13,
-    74,
-    68,
-    26,
-    49,
-    61
+    11,
+    16,
+    72,
+    64,
+    27,
+    51,
+    66
    ],
    "heat": {
     "55": {
@@ -10611,7 +10611,7 @@
      "int": 4,
      "passPct": 86.3,
      "accPass90": 34.2,
-     "rating": 6.71,
+     "rating": null,
      "inferred": []
     },
     "73": {
@@ -10731,14 +10731,14 @@
    "roles": "ST",
    "grp": "ST",
    "pct": [
-    16,
-    60,
-    35,
+    18,
+    57,
+    43,
     43,
     7,
-    57,
-    66,
-    51
+    59,
+    71,
+    63
    ],
    "heat": {
     "55": {
@@ -10820,14 +10820,14 @@
    "roles": "ST / LW / AM / RW",
    "grp": "ST",
    "pct": [
-    78,
-    41,
-    7,
+    79,
+    47,
+    13,
     96,
     90,
     99,
-    75,
-    60
+    82,
+    65
    ],
    "heat": {
     "55": {
