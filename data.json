@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-23",
+  "collected": "2026-11-24",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -396,7 +396,7 @@
    "done": true,
    "gf": 3,
    "ga": 0,
-   "oppPos": 14,
+   "oppPos": 15,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 5
@@ -411,7 +411,7 @@
    "done": true,
    "gf": 1,
    "ga": 1,
-   "oppPos": 17,
+   "oppPos": 18,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 6
@@ -590,7 +590,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 16,
+   "oppPos": 17,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 14
@@ -649,7 +649,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 18,
+   "oppPos": 14,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 17
@@ -664,7 +664,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 15,
+   "oppPos": 16,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 18
@@ -694,7 +694,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 18,
+   "oppPos": 14,
    "oppOf": 20,
    "oppTbl": "55"
   },
@@ -856,7 +856,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 17,
+   "oppPos": 18,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 28
@@ -886,7 +886,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 18,
+   "oppPos": 14,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 30
@@ -901,7 +901,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 15,
+   "oppPos": 16,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 31
@@ -931,7 +931,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 14,
+   "oppPos": 15,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 33
@@ -961,7 +961,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 16,
+   "oppPos": 17,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 35
@@ -9142,6 +9142,13 @@
     "back": "Early December 2026"
    },
    {
+    "id": 1048023,
+    "name": "Strahinja Pavlović",
+    "type": "injury",
+    "reason": "Stomach injury",
+    "back": "Doubtful"
+   },
+   {
     "id": 940087,
     "name": "Gonçalo Ramos",
     "type": "injury",
@@ -9289,7 +9296,7 @@
   },
   "CB": {
    "label": "Centre-backs",
-   "n": 75
+   "n": 76
   },
   "FB": {
    "label": "Full-backs and wing-backs",
@@ -9297,7 +9304,7 @@
   },
   "CM": {
    "label": "Central midfielders",
-   "n": 74
+   "n": 75
   },
   "AM": {
    "label": "Attacking midfielders and wingers",
@@ -9305,7 +9312,7 @@
   },
   "ST": {
    "label": "Strikers",
-   "n": 36
+   "n": 37
   }
  },
  "players": [
@@ -9319,7 +9326,7 @@
    "roles": "GK",
    "grp": "GK",
    "pct": [
-    33,
+    35,
     78,
     78,
     78,
@@ -9525,12 +9532,12 @@
    "grp": "CB",
    "pct": [
     35,
-    54,
-    27,
+    55,
+    29,
     14,
-    17,
+    16,
     93,
-    37,
+    38,
     69
    ],
    "heat": {
@@ -9616,11 +9623,11 @@
     35,
     70,
     72,
-    71,
+    72,
     31,
     72,
-    83,
-    19
+    81,
+    20
    ],
    "heat": {
     "55": {
@@ -9705,13 +9712,13 @@
    "grp": "CB",
    "pct": [
     77,
-    67,
-    15,
-    59,
-    81,
+    68,
+    16,
+    60,
+    82,
     65,
-    85,
-    39
+    82,
+    40
    ],
    "heat": {
     "55": {
@@ -9798,11 +9805,11 @@
     35,
     5,
     5,
-    49,
-    42,
+    51,
+    43,
     null,
-    4,
-    4
+    5,
+    5
    ],
    "heat": {
     "55": {
@@ -9887,7 +9894,7 @@
    "num": 23,
    "dob": "1997-12-19",
    "nat": "England",
-   "roles": "CB",
+   "roles": "CB / RB",
    "grp": "CB",
    "pct": null,
    "heat": {
@@ -10228,7 +10235,7 @@
    "pct": [
     31,
     61,
-    77,
+    78,
     10,
     14,
     90,
@@ -10401,13 +10408,13 @@
    "grp": "CM",
    "pct": [
     24,
-    26,
+    27,
+    5,
+    15,
     3,
-    14,
-    3,
-    83,
-    10,
-    45
+    82,
+    11,
+    46
    ],
    "heat": {
     "55": {
@@ -10491,12 +10498,12 @@
    "pct": [
     95,
     79,
-    68,
-    76,
-    70,
+    69,
+    77,
+    72,
     44,
     39,
-    16
+    17
    ],
    "heat": {
     "55": {
@@ -10580,11 +10587,11 @@
    "pct": [
     24,
     1,
-    2,
+    3,
     59,
-    57,
-    86,
-    22,
+    58,
+    85,
+    23,
     87
    ],
    "heat": {
@@ -10673,12 +10680,12 @@
    "pct": [
     86,
     75,
-    59,
-    25,
-    43,
-    93,
-    5,
-    10
+    61,
+    27,
+    45,
+    91,
+    6,
+    11
    ],
    "heat": {
     "55": {
@@ -10869,16 +10876,16 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / RM / LWB / LM / LW",
+   "roles": "RW / RWB / LM / RM / LWB",
    "grp": "AM",
    "pct": [
     97,
-    40,
+    44,
     32,
     66,
     17,
-    61,
-    54,
+    59,
+    52,
     74
    ],
    "heat": {
@@ -10960,15 +10967,15 @@
    "num": 70,
    "dob": "2006-10-22",
    "nat": "Italy",
-   "roles": "AM / CM / ST / LW",
+   "roles": "AM / CM / ST",
    "grp": "AM",
    "pct": [
     99,
     99,
-    62,
+    64,
     15,
     7,
-    73,
+    71,
     5,
     26
    ],
@@ -11053,13 +11060,13 @@
    "grp": "AM",
    "pct": [
     13,
-    11,
+    13,
     15,
     68,
-    62,
+    64,
     28,
-    52,
-    64
+    50,
+    66
    ],
    "heat": {
     "55": {
@@ -11308,14 +11315,14 @@
    "roles": "ST",
    "grp": "ST",
    "pct": [
-    29,
-    60,
-    42,
-    40,
+    31,
+    61,
+    41,
+    39,
     7,
-    49,
-    68,
-    60
+    47,
+    69,
+    58
    ],
    "heat": {
     "55": {
@@ -11394,17 +11401,17 @@
    "num": 11,
    "dob": "1998-09-18",
    "nat": "USA",
-   "roles": "ST / LW / AM / RW",
+   "roles": "ST / LW / AM",
    "grp": "ST",
    "pct": [
-    79,
-    54,
+    80,
+    53,
     15,
     96,
-    90,
+    88,
     99,
-    76,
-    63
+    77,
+    61
    ],
    "heat": {
     "55": {
