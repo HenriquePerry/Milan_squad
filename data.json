@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-24",
+  "collected": "2026-11-25",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -9140,6 +9140,13 @@
     "type": "suspension",
     "reason": "Suspended",
     "back": "Early December 2026"
+   },
+   {
+    "id": 31097,
+    "name": "Luka Modrić",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "About 1-2 weeks"
    },
    {
     "id": 1048023,
