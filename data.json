@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-25",
+  "collected": "2026-11-26",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -9142,6 +9142,20 @@
     "back": "Early December 2026"
    },
    {
+    "id": 1385856,
+    "name": "Davide Bartesaghi",
+    "type": "injury",
+    "reason": "Tendon injury",
+    "back": "Doubtful"
+   },
+   {
+    "id": 1554575,
+    "name": "Francesco Camarda",
+    "type": "injury",
+    "reason": "Ankle injury",
+    "back": "Doubtful"
+   },
+   {
     "id": 31097,
     "name": "Luka Modrić",
     "type": "injury",
@@ -9156,39 +9170,11 @@
     "back": "Doubtful"
    },
    {
-    "id": 940087,
-    "name": "Gonçalo Ramos",
-    "type": "injury",
-    "reason": "Physical discomfort",
-    "back": "Doubtful"
-   },
-   {
     "id": 281762,
     "name": "Pietro Terracciano",
     "type": "injury",
     "reason": "Physical discomfort",
     "back": "Doubtful"
-   },
-   {
-    "id": 749662,
-    "name": "Fikayo Tomori",
-    "type": "injury",
-    "reason": "Muscle injury",
-    "back": "Doubtful"
-   },
-   {
-    "id": 844996,
-    "name": "Matteo Gabbia",
-    "type": "injury",
-    "reason": "Tendon injury",
-    "back": "Early January 2027"
-   },
-   {
-    "id": 921341,
-    "name": "Alexis Saelemaekers",
-    "type": "injury",
-    "reason": "Ankle injury",
-    "back": "Mid January 2027"
    },
    {
     "id": 604982,
@@ -9202,6 +9188,20 @@
     "name": "Samuel Chukwueze",
     "type": "injury",
     "reason": "Thigh injury",
+    "back": "Mid January 2027"
+   },
+   {
+    "id": 844996,
+    "name": "Matteo Gabbia",
+    "type": "injury",
+    "reason": "Tendon injury",
+    "back": "Early January 2027"
+   },
+   {
+    "id": 921341,
+    "name": "Alexis Saelemaekers",
+    "type": "injury",
+    "reason": "Ankle injury",
     "back": "Mid January 2027"
    }
   ]
