@@ -3,7 +3,7 @@
   "team": "Milan",
   "teamId": 8564,
   "season": "2026/2027",
-  "collected": "2026-11-27",
+  "collected": "2026-11-28",
   "coach": "Ruben Amorim",
   "primary": "55",
   "minMinutesRadar": 300,
@@ -81,10 +81,10 @@
     },
     {
      "pos": 6,
-     "team": "Juventus",
-     "p": 12,
+     "team": "Frosinone",
+     "p": 13,
      "gd": 7,
-     "pts": 21,
+     "pts": 23,
      "me": false
     }
    ],
@@ -336,7 +336,7 @@
    "done": true,
    "gf": 2,
    "ga": 0,
-   "oppPos": 20,
+   "oppPos": 19,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 2
@@ -351,7 +351,7 @@
    "done": true,
    "gf": 1,
    "ga": 1,
-   "oppPos": 6,
+   "oppPos": 7,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 3
@@ -471,7 +471,7 @@
    "done": true,
    "gf": 2,
    "ga": 0,
-   "oppPos": 19,
+   "oppPos": 20,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 8
@@ -486,7 +486,7 @@
    "done": true,
    "gf": 2,
    "ga": 4,
-   "oppPos": 9,
+   "oppPos": 8,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 9
@@ -546,7 +546,7 @@
    "done": true,
    "gf": 5,
    "ga": 1,
-   "oppPos": 7,
+   "oppPos": 6,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 12
@@ -620,7 +620,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 8,
+   "oppPos": 9,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 15
@@ -738,7 +738,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 7,
+   "oppPos": 6,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 21
@@ -767,7 +767,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 6,
+   "oppPos": 7,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 22
@@ -782,7 +782,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 9,
+   "oppPos": 8,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 23
@@ -917,7 +917,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 8,
+   "oppPos": 9,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 32
@@ -992,7 +992,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 20,
+   "oppPos": 19,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 37
@@ -1007,7 +1007,7 @@
    "done": false,
    "gf": null,
    "ga": null,
-   "oppPos": 19,
+   "oppPos": 20,
    "oppOf": 20,
    "oppTbl": "55",
    "round": 38
@@ -9672,53 +9672,11 @@
     "back": "Early December 2026"
    },
    {
-    "id": 940087,
-    "name": "Gonçalo Ramos",
-    "type": "injury",
-    "reason": "Physical discomfort",
-    "back": "Doubtful"
-   },
-   {
-    "id": 1385856,
-    "name": "Davide Bartesaghi",
-    "type": "injury",
-    "reason": "Tendon injury",
-    "back": "Doubtful"
-   },
-   {
-    "id": 1554575,
-    "name": "Francesco Camarda",
-    "type": "injury",
-    "reason": "Ankle injury",
-    "back": "Doubtful"
-   },
-   {
-    "id": 31097,
-    "name": "Luka Modrić",
-    "type": "injury",
-    "reason": "Thigh injury",
-    "back": "About 1-2 weeks"
-   },
-   {
     "id": 281762,
     "name": "Pietro Terracciano",
     "type": "injury",
     "reason": "Shoulder injury",
     "back": "Early December 2026"
-   },
-   {
-    "id": 604982,
-    "name": "Ruben Loftus-Cheek",
-    "type": "injury",
-    "reason": "Thigh injury",
-    "back": "Early December 2026"
-   },
-   {
-    "id": 688300,
-    "name": "Samuel Chukwueze",
-    "type": "injury",
-    "reason": "Thigh injury",
-    "back": "Mid January 2027"
    },
    {
     "id": 844996,
@@ -9732,6 +9690,34 @@
     "name": "Alexis Saelemaekers",
     "type": "injury",
     "reason": "Ankle injury",
+    "back": "Mid January 2027"
+   },
+   {
+    "id": 1385856,
+    "name": "Davide Bartesaghi",
+    "type": "injury",
+    "reason": "Tendon injury",
+    "back": "Doubtful"
+   },
+   {
+    "id": 31097,
+    "name": "Luka Modrić",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "About 1-2 weeks"
+   },
+   {
+    "id": 604982,
+    "name": "Ruben Loftus-Cheek",
+    "type": "injury",
+    "reason": "Thigh injury",
+    "back": "Early December 2026"
+   },
+   {
+    "id": 688300,
+    "name": "Samuel Chukwueze",
+    "type": "injury",
+    "reason": "Thigh injury",
     "back": "Mid January 2027"
    }
   ]
@@ -9833,19 +9819,19 @@
   },
   "CB": {
    "label": "Centre-backs",
-   "n": 76
+   "n": 74
   },
   "FB": {
    "label": "Full-backs and wing-backs",
-   "n": 47
+   "n": 49
   },
   "CM": {
    "label": "Central midfielders",
-   "n": 75
+   "n": 76
   },
   "AM": {
    "label": "Attacking midfielders and wingers",
-   "n": 49
+   "n": 51
   },
   "ST": {
    "label": "Strikers",
@@ -9865,8 +9851,8 @@
    "pct": [
     35,
     78,
-    78,
-    78,
+    75,
+    73,
     57,
     73
    ],
@@ -10070,12 +10056,12 @@
    "pct": [
     35,
     55,
-    29,
+    30,
     14,
-    16,
+    17,
     93,
-    38,
-    69
+    39,
+    71
    ],
    "heat": {
     "55": {
@@ -10158,13 +10144,13 @@
    "grp": "CB",
    "pct": [
     35,
-    70,
-    72,
-    72,
-    31,
-    72,
-    81,
-    20
+    71,
+    73,
+    71,
+    32,
+    71,
+    80,
+    21
    ],
    "heat": {
     "55": {
@@ -10245,15 +10231,15 @@
    "num": 34,
    "dob": "2000-08-29",
    "nat": "Spain",
-   "roles": "CB",
+   "roles": "CB / RB",
    "grp": "CB",
    "pct": [
-    77,
+    78,
     68,
-    16,
+    17,
     60,
     82,
-    65,
+    64,
     82,
     40
    ],
@@ -10342,8 +10328,8 @@
     35,
     5,
     5,
-    51,
-    43,
+    52,
+    44,
     null,
     5,
     5
@@ -10679,14 +10665,14 @@
    "roles": "LM / LWB / LB / CB",
    "grp": "FB",
    "pct": [
-    31,
+    32,
     99,
     50,
-    82,
-    76,
-    10,
-    97,
-    27
+    83,
+    77,
+    9,
+    95,
+    26
    ],
    "heat": {
     "55": {
@@ -10768,13 +10754,13 @@
    "roles": "LM / LWB / LB",
    "grp": "FB",
    "pct": [
-    31,
-    61,
-    78,
-    10,
-    14,
-    90,
-    63,
+    32,
+    60,
+    77,
+    11,
+    13,
+    91,
+    64,
     97
    ],
    "heat": {
@@ -10940,7 +10926,7 @@
    "num": 80,
    "dob": "2002-11-29",
    "nat": "USA",
-   "roles": "DM / CM / LM",
+   "roles": "DM / LM / CM",
    "grp": "CM",
    "pct": [
     24,
@@ -10948,9 +10934,9 @@
     5,
     15,
     3,
-    82,
+    83,
     11,
-    46
+    47
    ],
    "heat": {
     "55": {
@@ -11033,13 +11019,13 @@
    "grp": "CM",
    "pct": [
     95,
-    79,
-    69,
-    77,
+    80,
+    68,
+    76,
     72,
-    44,
-    39,
-    17
+    46,
+    40,
+    15
    ],
    "heat": {
     "55": {
@@ -11124,11 +11110,11 @@
     24,
     1,
     3,
-    59,
-    58,
+    56,
+    57,
     85,
-    23,
-    87
+    24,
+    88
    ],
    "heat": {
     "55": {
@@ -11214,12 +11200,12 @@
    "roles": "CM / DM",
    "grp": "CM",
    "pct": [
-    86,
-    75,
+    85,
+    77,
     61,
-    27,
-    45,
-    91,
+    28,
+    43,
+    92,
     6,
     11
    ],
@@ -11415,15 +11401,15 @@
    "num": 22,
    "dob": "2004-08-06",
    "nat": "Belgium",
-   "roles": "RW / RWB / LM / RM / LWB",
+   "roles": "RW / RWB / RM / LW",
    "grp": "AM",
    "pct": [
     97,
     44,
-    32,
-    66,
-    17,
-    59,
+    34,
+    68,
+    21,
+    60,
     52,
     74
    ],
@@ -11509,12 +11495,12 @@
    "pct": [
     99,
     99,
-    64,
+    66,
     15,
     7,
-    71,
-    5,
-    26
+    70,
+    7,
+    25
    ],
    "heat": {
     "55": {
@@ -11596,14 +11582,14 @@
    "roles": "LW / RWB / RM / RW",
    "grp": "AM",
    "pct": [
+    14,
     13,
     13,
-    15,
+    70,
     68,
-    64,
-    28,
+    29,
     50,
-    66
+    68
    ],
    "heat": {
     "55": {
